@@ -1955,7 +1955,98 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":
 function render(){
   if (S.screen === "home") renderHome();
   else if (S.screen === "quiz") renderQuiz();
+  else if (S.screen === "badges") renderBadges();
+  else if (S.screen === "parent") renderParent();
   else renderEnd();
+}
+
+/* ---------- badges ---------- */
+const correctIn = subj => BANK.filter(q => q.matiere === subj).reduce((s,q) => s + ((P.stats[q.id] && P.stats[q.id].ok) || 0), 0);
+const totalOk = () => Object.values(P.stats).reduce((s,x) => s + (x.ok||0), 0);
+const BADGES = [
+  {id:"first", name:"Premier pas", desc:"Terminer ta première session", color:"var(--accent)", test:() => (P.sessions||0) >= 1},
+  {id:"daily", name:"Fidèle au poste", desc:"Réussir 5 défis du jour", color:"var(--accent)", test:() => Object.values(P.days).filter(d => d.mix).length >= 5},
+  {id:"s3", name:"Ça chauffe", desc:"3 jours d'affilée", color:"var(--flame)", test:() => (P.best||0) >= 3},
+  {id:"s7", name:"Semaine en feu", desc:"7 jours d'affilée", color:"var(--flame)", test:() => (P.best||0) >= 7},
+  {id:"s30", name:"Inarrêtable", desc:"30 jours d'affilée", color:"var(--flame)", test:() => (P.best||0) >= 30},
+  {id:"perfect", name:"Sans faute", desc:"Une session parfaite", color:"#8C7BFF", test:() => (P.perfect||0) >= 1},
+  {id:"perfect10", name:"Machine de précision", desc:"10 sessions parfaites", color:"#8C7BFF", test:() => (P.perfect||0) >= 10},
+  {id:"comeback", name:"La revanche", desc:"Réussir 5 questions que tu avais ratées", color:"#5BE7FF", test:() => (P.comebacks||0) >= 5},
+  {id:"maths", name:"Matheux", desc:"15 bonnes réponses en maths", color:"var(--maths)", test:() => correctIn("Maths") >= 15},
+  {id:"fr", name:"Plume d'or", desc:"15 bonnes réponses en français", color:"var(--fr)", test:() => correctIn("Français") >= 15},
+  {id:"hg", name:"Historien en herbe", desc:"15 bonnes réponses en histoire-géo", color:"var(--hg)", test:() => correctIn("Histoire-Géo") >= 15},
+  {id:"sc", name:"Savant fou", desc:"15 bonnes réponses en sciences", color:"var(--sc)", test:() => correctIn("Sciences") >= 15},
+  {id:"allround", name:"Touche-à-tout", desc:"50 % de maîtrise dans les 4 matières", color:"var(--accent)", test:() => SUBJECTS.every(s => mastery(s.id) >= 50)},
+  {id:"c100", name:"Centurion", desc:"100 bonnes réponses", color:"#FFC93D", test:() => totalOk() >= 100},
+  {id:"lvl5", name:"Expert", desc:"Atteindre le niveau 5", color:"#FFC93D", test:() => level(P.xp).n >= 5}
+];
+const MEDAL = '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0F1426" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></svg>';
+function checkBadges(){
+  P.badges = P.badges || {};
+  const fresh = [];
+  BADGES.forEach(b => { if (!P.badges[b.id] && b.test()) { P.badges[b.id] = today(); fresh.push(b); } });
+  return fresh;
+}
+function badgeCard(b, on){
+  return `<div class="card" style="align-items:center;text-align:center;gap:6px;${on ? "" : "opacity:.45"}">
+    <span style="width:52px;height:52px;border-radius:50%;background:${on ? b.color : "var(--line)"};display:flex;align-items:center;justify-content:center">${MEDAL}</span>
+    <span style="font-weight:700;font-size:14px">${esc(b.name)}</span><span class="muted small">${esc(b.desc)}</span></div>`;
+}
+function backBar(title){
+  return `<div class="top"><button class="iconbtn" id="back" aria-label="Retour"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button><h1 style="font-size:24px">${title}</h1></div>`;
+}
+function renderBadges(){
+  const got = BADGES.filter(b => P.badges && P.badges[b.id]).length;
+  app.innerHTML = backBar("Mes badges") + `<span class="muted">${got} sur ${BADGES.length} débloqués</span>
+    <div class="grid2">${BADGES.map(b => badgeCard(b, P.badges && P.badges[b.id])).join("")}</div>`;
+  document.getElementById("back").onclick = () => { S = {screen:"home"}; render(); };
+}
+
+/* ---------- espace parent ---------- */
+function renderParent(){
+  const t = today(), week = [...Array(7)].map((_,i) => addDays(t, i-6));
+  const wd = week.map(d => Object.assign({n:0, ok:0, sec:0}, P.days[d]));
+  const active = wd.filter(d => d.n > 0).length, mins = Math.round(wd.reduce((s,d) => s + d.sec, 0) / 60);
+  const wn = wd.reduce((s,d) => s + d.n, 0), wok = wd.reduce((s,d) => s + d.ok, 0);
+  const maxMin = Math.max(1, ...wd.map(d => d.sec / 60));
+  const subj = SUBJECTS.map(s => {
+    let ok = 0, n = 0; BANK.filter(q => q.matiere === s.id).forEach(q => { const st = P.stats[q.id]; if (st){ ok += st.ok||0; n += (st.ok||0) + (st.ko||0); } });
+    return {s, ok, n, pct: n ? Math.round(ok/n*100) : null};
+  });
+  const themes = {};
+  BANK.forEach(q => { const st = P.stats[q.id]; if (!st) return; const k = q.matiere + " · " + q.theme; const o = themes[k] = themes[k] || {ok:0, n:0}; o.ok += st.ok||0; o.n += (st.ok||0) + (st.ko||0); });
+  const weak = Object.entries(themes).filter(([,o]) => o.n >= 2 && o.ok/o.n < 0.6).sort((a,b) => a[1].ok/a[1].n - b[1].ok/b[1].n).slice(0,5);
+  const seen = Object.keys(P.stats).length;
+  const dayName = d => { const [y,m,dd] = d.split("-").map(Number); return new Date(y, m-1, dd).toLocaleDateString("fr-FR", {weekday:"short"}).slice(0,3); };
+  app.innerHTML = backBar("Espace parent") + `
+    <span class="muted">Suivi de Gabriel sur les 7 derniers jours</span>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px">
+      <div class="card" style="gap:2px"><span class="display" style="font-size:22px">${active} / 7</span><span class="muted small">jours actifs</span></div>
+      <div class="card" style="gap:2px"><span class="display" style="font-size:22px">${mins} min</span><span class="muted small">de révision</span></div>
+      <div class="card" style="gap:2px"><span class="display" style="font-size:22px">${wn ? Math.round(wok/wn*100) + " %" : "–"}</span><span class="muted small">de réussite</span></div>
+    </div>
+    <div class="card">
+      <span class="display" style="font-size:16px">Minutes par jour</span>
+      <div style="display:flex;align-items:flex-end;gap:8px;height:120px" role="img" aria-label="Minutes de révision par jour sur 7 jours">
+        ${wd.map((d,i) => { const m = Math.round(d.sec/60); return `<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;justify-content:flex-end;height:100%">
+          <span class="small muted" style="font-variant-numeric:tabular-nums">${m || ""}</span>
+          <div style="width:100%;height:${d.n ? Math.max(6, Math.round(d.sec/60/maxMin*80)) : 4}px;background:${d.n ? "var(--accent)" : "var(--line)"};border-radius:6px"></div>
+          <span class="small muted">${dayName(week[i])}</span></div>`; }).join("")}
+      </div>
+    </div>
+    <div class="card">
+      <span class="display" style="font-size:16px">Réussite par matière</span>
+      ${subj.map(x => `<div class="row"><span style="width:100px;font-size:14px">${esc(x.s.id)}</span>
+        <div class="bar thin" style="flex:1"><i style="width:${x.pct || 0}%;background:${x.s.color}"></i></div>
+        <span style="width:44px;text-align:right;font-size:13px;font-weight:600;font-variant-numeric:tabular-nums">${x.pct === null ? "–" : x.pct + " %"}</span></div>`).join("")}
+      <span class="muted small">${seen} questions vues sur ${BANK.length} · ${P.xp} XP · niveau ${level(P.xp).n} · record de série ${P.best||0} jour${(P.best||0)>1?"s":""}</span>
+    </div>
+    <div class="card" style="background:var(--flamebg);border:1px solid var(--flame)">
+      <span class="display" style="font-size:16px;color:var(--flametext)">Points faibles à surveiller</span>
+      ${weak.length ? weak.map(([k,o]) => `<span style="font-size:14px">${esc(k)} : ${o.ok} sur ${o.n} réussies</span>`).join("")
+        : `<span class="small" style="color:var(--soft)">Pas encore assez de réponses pour repérer des points faibles. Il faut au moins 2 réponses sur un même thème.</span>`}
+    </div>`;
+  document.getElementById("back").onclick = () => { S = {screen:"home"}; render(); };
 }
 
 function renderHome(){
@@ -1989,7 +2080,13 @@ function renderHome(){
           <span class="muted small">${m} % maîtrisé</span>
         </button>`; }).join("")}
     </div>
+    <div class="row">
+      <button class="btn ghost" id="goBadges" style="flex:1">Mes badges · ${BADGES.filter(b => P.badges && P.badges[b.id]).length}/${BADGES.length}</button>
+      <button class="btn ghost" id="goParent" style="flex:1">Espace parent</button>
+    </div>
     <div class="save">${mode === "db" ? "Progression sauvegardée sur ton compte" : "Progression sauvegardée sur cet appareil"}</div>`;
+  document.getElementById("goBadges").onclick = () => { S = {screen:"badges"}; render(); window.scrollTo(0,0); };
+  document.getElementById("goParent").onclick = () => { S = {screen:"parent"}; render(); window.scrollTo(0,0); };
   document.getElementById("goMix").onclick = () => start(null, !mix);
   const d = document.getElementById("goDue"); if (d) d.onclick = startDue;
   app.querySelectorAll("[data-subj]").forEach(b => b.onclick = () => start(b.dataset.subj, false));
@@ -2042,6 +2139,7 @@ function answer(k){
   S.picked = k; if (good) S.ok++;
   const g = gain(good); S.xp += g; P.xp += g;
   const st = Object.assign({ok:0, ko:0, box:0}, P.stats[q.id]);
+  if (good && st.ko > 0 && st.box === 0) P.comebacks = (P.comebacks||0) + 1;
   if (good){ st.ok++; st.box = Math.min((st.box||0)+1, INTERVALS.length); st.due = addDays(t, INTERVALS[st.box-1]); }
   else { st.ko++; st.box = 0; st.due = addDays(t, 1); }
   st.last = t; P.stats[q.id] = st;
@@ -2057,6 +2155,9 @@ function finish(){
   if (before !== t){ P.streak = (before === addDays(t,-1)) ? P.streak + 1 : 1; P.lastDay = t; }
   P.best = Math.max(P.best||0, P.streak);
   S.newStreak = before !== t;
+  P.sessions = (P.sessions||0) + 1;
+  if (S.ok === S.qs.length) P.perfect = (P.perfect||0) + 1;
+  S.newBadges = checkBadges();
   save(); S.screen = "end"; render(); window.scrollTo(0,0);
 }
 
@@ -2081,6 +2182,10 @@ function renderEnd(){
         <span class="muted small">Niveau ${lv.n} · ${lv.name}. Niveau ${lv.n+1} dans ${lv.hi-P.xp} XP</span>
       </div>
     </div>
+    ${(S.newBadges||[]).map(b => `<div class="card pop" style="flex-direction:row;align-items:center;gap:14px;border:1px solid ${b.color}">
+      <span style="width:56px;height:56px;flex-shrink:0;border-radius:50%;background:${b.color};display:flex;align-items:center;justify-content:center">${MEDAL}</span>
+      <div style="display:flex;flex-direction:column;gap:2px"><span class="small muted" style="font-weight:700;letter-spacing:.08em;text-transform:uppercase">Nouveau badge</span>
+      <span class="display" style="font-size:19px">${esc(b.name)}</span><span class="small" style="color:var(--soft)">${esc(b.desc)}</span></div></div>`).join("")}
     ${missed.length ? `<div class="card"><span class="display" style="font-size:16px">À revoir demain</span>
       ${missed.map(q => `<div class="row"><span style="width:10px;height:10px;border-radius:50%;background:${COLOR[q.matiere]};flex-shrink:0"></span><span class="small">${esc(q.matiere)} · ${esc(q.theme)}</span></div>`).join("")}
       <span class="muted small">Les questions ratées reviennent jusqu'à ce que tu les maîtrises.</span></div>` : ""}
