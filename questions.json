@@ -1,0 +1,1805 @@
+{
+ "version": 1,
+ "questions": [
+  {
+   "id": "q001",
+   "matiere": "Maths",
+   "theme": "Probabilités",
+   "question": "Une urne contient 3 boules vertes, 5 rouges et 2 bleues. On tire une boule au hasard. Quelle est la probabilité qu'elle soit verte ?",
+   "choix": [
+    "1/3",
+    "3/5",
+    "3/7",
+    "3/10"
+   ],
+   "reponse": 3,
+   "explication": "Il y a 3 boules vertes sur 10 boules au total : P = 3/10.",
+   "source": "Inspiré du brevet 2025 (Amérique du Nord, ex. 1)"
+  },
+  {
+   "id": "q002",
+   "matiere": "Maths",
+   "theme": "Arithmétique",
+   "question": "Quelle est la décomposition en facteurs premiers de 1 050 ?",
+   "choix": [
+    "3 × 5 × 7 × 10",
+    "2 × 3 × 5² × 7",
+    "2² × 3 × 5 × 7",
+    "2 × 5 × 105"
+   ],
+   "reponse": 1,
+   "explication": "1 050 = 2 × 525 = 2 × 3 × 175 = 2 × 3 × 5 × 35 = 2 × 3 × 5² × 7. Tous les facteurs doivent être premiers (105 et 10 ne le sont pas).",
+   "source": "Inspiré du brevet 2025 (Amérique du Nord, ex. 1)"
+  },
+  {
+   "id": "q003",
+   "matiere": "Maths",
+   "theme": "Pourcentages",
+   "question": "Un article coûte 50 €. Son prix augmente de 14 %. Quel est son nouveau prix ?",
+   "choix": [
+    "64 €",
+    "50,14 €",
+    "57 €",
+    "56 €"
+   ],
+   "reponse": 2,
+   "explication": "Augmenter de 14 %, c'est multiplier par 1,14 : 50 × 1,14 = 57 €.",
+   "source": "Inspiré du brevet 2025 (Amérique du Nord, ex. 1)"
+  },
+  {
+   "id": "q004",
+   "matiere": "Maths",
+   "theme": "Agrandissement",
+   "question": "On agrandit une figure en multipliant toutes ses longueurs par 3. Son aire est multipliée par :",
+   "choix": [
+    "27",
+    "6",
+    "3",
+    "9"
+   ],
+   "reponse": 3,
+   "explication": "Dans un agrandissement de rapport k, les aires sont multipliées par k². Ici 3² = 9.",
+   "source": "Inspiré du brevet 2025 (Amérique du Nord, ex. 1)"
+  },
+  {
+   "id": "q005",
+   "matiere": "Maths",
+   "theme": "Statistiques",
+   "question": "Quelle est la médiane de la série de tailles (en cm) : 152 ; 158 ; 160 ; 163 ; 171 ?",
+   "choix": [
+    "160",
+    "158",
+    "163",
+    "160,8"
+   ],
+   "reponse": 0,
+   "explication": "La série est rangée et a 5 valeurs : la médiane est la 3e, soit 160 cm.",
+   "source": "Inspiré du brevet 2025 (Amérique du Nord, ex. 1)"
+  },
+  {
+   "id": "q006",
+   "matiere": "Maths",
+   "theme": "Statistiques",
+   "question": "Quelle est la moyenne des notes 12 ; 15 ; 9 ; 14 ?",
+   "choix": [
+    "11,5",
+    "12,5",
+    "13",
+    "12"
+   ],
+   "reponse": 1,
+   "explication": "(12 + 15 + 9 + 14) ÷ 4 = 50 ÷ 4 = 12,5.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q007",
+   "matiere": "Maths",
+   "theme": "Pythagore",
+   "question": "Un triangle est rectangle. Ses deux côtés de l'angle droit mesurent 6 cm et 8 cm. Combien mesure l'hypoténuse ?",
+   "choix": [
+    "48 cm",
+    "7 cm",
+    "14 cm",
+    "10 cm"
+   ],
+   "reponse": 3,
+   "explication": "Pythagore : 6² + 8² = 36 + 64 = 100, donc l'hypoténuse mesure √100 = 10 cm.",
+   "source": "Inspiré du brevet 2025 (France, ex. 2)"
+  },
+  {
+   "id": "q008",
+   "matiere": "Maths",
+   "theme": "Pythagore",
+   "question": "Un triangle a des côtés de 5 cm, 12 cm et 13 cm. Est-il rectangle ?",
+   "choix": [
+    "Oui, car 5 + 12 > 13",
+    "Non, aucun angle droit",
+    "On ne peut pas savoir",
+    "Oui, d'après la réciproque de Pythagore"
+   ],
+   "reponse": 3,
+   "explication": "5² + 12² = 25 + 144 = 169 = 13². D'après la réciproque du théorème de Pythagore, le triangle est rectangle.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q009",
+   "matiere": "Maths",
+   "theme": "Thalès",
+   "question": "Les droites (MN) et (BC) sont parallèles, avec M sur [AB] et N sur [AC]. AM = 3, AB = 5 et AC = 10. Combien vaut AN ?",
+   "choix": [
+    "6",
+    "4",
+    "5",
+    "8"
+   ],
+   "reponse": 0,
+   "explication": "Thalès : AM/AB = AN/AC, donc 3/5 = AN/10 et AN = 10 × 3 ÷ 5 = 6.",
+   "source": "Inspiré du brevet 2025 (Centres étrangers, ex. 4)"
+  },
+  {
+   "id": "q010",
+   "matiere": "Maths",
+   "theme": "Trigonométrie",
+   "question": "Dans un triangle rectangle, le cosinus d'un angle aigu est égal à :",
+   "choix": [
+    "hypoténuse ÷ côté adjacent",
+    "côté adjacent ÷ hypoténuse",
+    "côté opposé ÷ hypoténuse",
+    "côté opposé ÷ côté adjacent"
+   ],
+   "reponse": 1,
+   "explication": "Moyen mnémotechnique CAH-SOH-TOA : Cosinus = Adjacent / Hypoténuse.",
+   "source": "Inspiré du brevet 2025 (France, ex. 2)"
+  },
+  {
+   "id": "q011",
+   "matiere": "Maths",
+   "theme": "Vitesse",
+   "question": "Malo parcourt 12 km en 45 minutes. Quelle est sa vitesse moyenne ?",
+   "choix": [
+    "26,7 km/h",
+    "9 km/h",
+    "16 km/h",
+    "15 km/h"
+   ],
+   "reponse": 2,
+   "explication": "45 min = 0,75 h. v = d ÷ t = 12 ÷ 0,75 = 16 km/h.",
+   "source": "Inspiré du brevet 2025 (Amérique du Nord, ex. 4)"
+  },
+  {
+   "id": "q012",
+   "matiere": "Maths",
+   "theme": "Calcul littéral",
+   "question": "Programme : choisir un nombre, ajouter 3, multiplier par 2, soustraire 6. Si on choisit 5, on obtient :",
+   "choix": [
+    "16",
+    "10",
+    "4",
+    "22"
+   ],
+   "reponse": 1,
+   "explication": "5 + 3 = 8 ; 8 × 2 = 16 ; 16 − 6 = 10. En fait, ce programme donne toujours le double du nombre choisi : 2(x + 3) − 6 = 2x.",
+   "source": "Inspiré du brevet 2025 (France, ex. 4)"
+  },
+  {
+   "id": "q013",
+   "matiere": "Maths",
+   "theme": "Calcul littéral",
+   "question": "Quelle est la forme développée de (x + 3)(x − 2) ?",
+   "choix": [
+    "x² + x − 6",
+    "x² + 5x − 6",
+    "x² − x + 6",
+    "x² − 6"
+   ],
+   "reponse": 0,
+   "explication": "(x + 3)(x − 2) = x² − 2x + 3x − 6 = x² + x − 6.",
+   "source": "Inspiré du brevet 2025 (France, ex. 3)"
+  },
+  {
+   "id": "q014",
+   "matiere": "Maths",
+   "theme": "Calcul littéral",
+   "question": "Comment factoriser x² − 9 ?",
+   "choix": [
+    "(x − 9)(x + 1)",
+    "x(x − 9)",
+    "(x − 3)²",
+    "(x − 3)(x + 3)"
+   ],
+   "reponse": 3,
+   "explication": "Identité remarquable a² − b² = (a − b)(a + b), avec a = x et b = 3.",
+   "source": "Inspiré du brevet 2025 (Centres étrangers, ex. 1)"
+  },
+  {
+   "id": "q015",
+   "matiere": "Maths",
+   "theme": "Équations",
+   "question": "Quelle est la solution de l'équation 3x + 5 = 20 ?",
+   "choix": [
+    "x = 3",
+    "x = 15",
+    "x = 25/3",
+    "x = 5"
+   ],
+   "reponse": 3,
+   "explication": "3x = 20 − 5 = 15, donc x = 15 ÷ 3 = 5.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q016",
+   "matiere": "Maths",
+   "theme": "Fonctions",
+   "question": "Soit f(x) = 2x − 3. Combien vaut f(4) ?",
+   "choix": [
+    "5",
+    "11",
+    "−5",
+    "8"
+   ],
+   "reponse": 0,
+   "explication": "f(4) = 2 × 4 − 3 = 8 − 3 = 5.",
+   "source": "Inspiré du brevet 2025 (Asie, ex. 1)"
+  },
+  {
+   "id": "q017",
+   "matiere": "Maths",
+   "theme": "Fonctions",
+   "question": "Soit f(x) = 3x. Quel est l'antécédent de 12 par f ?",
+   "choix": [
+    "12",
+    "36",
+    "9",
+    "4"
+   ],
+   "reponse": 3,
+   "explication": "On cherche x tel que 3x = 12, donc x = 4. L'antécédent est le nombre de départ, l'image est le résultat.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q018",
+   "matiere": "Maths",
+   "theme": "Arithmétique",
+   "question": "Quel est le plus grand nombre de lots identiques qu'on peut faire avec 84 poissons rouges et 60 poissons noirs ?",
+   "choix": [
+    "4",
+    "24",
+    "12",
+    "6"
+   ],
+   "reponse": 2,
+   "explication": "On cherche le PGCD : 84 = 2² × 3 × 7 et 60 = 2² × 3 × 5. PGCD = 2² × 3 = 12 lots.",
+   "source": "Inspiré du brevet 2025 (Asie, ex. 5)"
+  },
+  {
+   "id": "q019",
+   "matiere": "Maths",
+   "theme": "Arithmétique",
+   "question": "Lequel de ces nombres est premier ?",
+   "choix": [
+    "51",
+    "97",
+    "87",
+    "91"
+   ],
+   "reponse": 1,
+   "explication": "91 = 7 × 13, 87 = 3 × 29, 51 = 3 × 17. 97 n'a que deux diviseurs : 1 et 97.",
+   "source": "Inspiré du brevet 2025 (Centres étrangers, ex. 5)"
+  },
+  {
+   "id": "q020",
+   "matiere": "Maths",
+   "theme": "Volumes",
+   "question": "Quel est le volume d'un cylindre de rayon 3 cm et de hauteur 10 cm ?",
+   "choix": [
+    "9π cm³",
+    "60π cm³",
+    "30π cm³",
+    "90π cm³"
+   ],
+   "reponse": 3,
+   "explication": "V = π × r² × h = π × 9 × 10 = 90π cm³, soit environ 283 cm³.",
+   "source": "Inspiré du brevet 2025 (Asie, ex. 5)"
+  },
+  {
+   "id": "q021",
+   "matiere": "Maths",
+   "theme": "Volumes",
+   "question": "Un aquarium (pavé droit) mesure 20 cm × 10 cm × 5 cm. Quel est son volume en litres ?",
+   "choix": [
+    "100 L",
+    "10 L",
+    "0,1 L",
+    "1 L"
+   ],
+   "reponse": 3,
+   "explication": "20 × 10 × 5 = 1 000 cm³, et 1 000 cm³ = 1 dm³ = 1 L.",
+   "source": "Inspiré du brevet 2025 (Asie, ex. 5)"
+  },
+  {
+   "id": "q022",
+   "matiere": "Maths",
+   "theme": "Grandeurs",
+   "question": "2,5 heures, c'est :",
+   "choix": [
+    "2 h 05 min",
+    "2 h 25 min",
+    "2 h 30 min",
+    "2 h 50 min"
+   ],
+   "reponse": 2,
+   "explication": "0,5 h = la moitié d'une heure = 30 minutes.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q023",
+   "matiere": "Maths",
+   "theme": "Pourcentages",
+   "question": "Un jeu vidéo à 80 € est soldé à −25 %. Quel est son nouveau prix ?",
+   "choix": [
+    "55 €",
+    "20 €",
+    "75 €",
+    "60 €"
+   ],
+   "reponse": 3,
+   "explication": "Baisser de 25 %, c'est multiplier par 0,75 : 80 × 0,75 = 60 €.",
+   "source": "Inspiré du brevet 2025 (Asie, ex. 5)"
+  },
+  {
+   "id": "q024",
+   "matiere": "Maths",
+   "theme": "Proportionnalité",
+   "question": "3 kg de pommes coûtent 7,50 €. Combien coûtent 5 kg ?",
+   "choix": [
+    "12 €",
+    "9,50 €",
+    "10,50 €",
+    "12,50 €"
+   ],
+   "reponse": 3,
+   "explication": "1 kg coûte 7,50 ÷ 3 = 2,50 €, donc 5 kg coûtent 5 × 2,50 = 12,50 €.",
+   "source": "Inspiré du brevet 2025 (France, ex. 3)"
+  },
+  {
+   "id": "q025",
+   "matiere": "Maths",
+   "theme": "Transformations",
+   "question": "Une homothétie de rapport −2 transforme une figure en une figure :",
+   "choix": [
+    "agrandie 2 fois, du même côté du centre",
+    "agrandie 2 fois, de l'autre côté du centre",
+    "identique, symétrique",
+    "réduite de moitié, du même côté du centre"
+   ],
+   "reponse": 1,
+   "explication": "Rapport négatif : l'image est de l'autre côté du centre. |−2| = 2 > 1 : c'est un agrandissement.",
+   "source": "Inspiré du brevet 2025 (Centres étrangers, ex. 1)"
+  },
+  {
+   "id": "q026",
+   "matiere": "Maths",
+   "theme": "Algorithmique",
+   "question": "Dans Scratch, « répéter 3 fois : avancer de 50, tourner de 120° » trace :",
+   "choix": [
+    "un carré",
+    "un hexagone",
+    "une étoile",
+    "un triangle équilatéral"
+   ],
+   "reponse": 3,
+   "explication": "3 côtés égaux et 3 rotations de 120° (360 ÷ 3) : c'est un triangle équilatéral.",
+   "source": "Inspiré du brevet 2025 (Asie, ex. 4)"
+  },
+  {
+   "id": "q027",
+   "matiere": "Maths",
+   "theme": "Algorithmique",
+   "question": "Pour tracer un hexagone régulier, de quel angle le lutin doit-il tourner après chaque côté ?",
+   "choix": [
+    "120°",
+    "45°",
+    "90°",
+    "60°"
+   ],
+   "reponse": 3,
+   "explication": "Un hexagone a 6 côtés et le lutin fait un tour complet : 360° ÷ 6 = 60°.",
+   "source": "Inspiré du brevet 2025 (Asie, ex. 4)"
+  },
+  {
+   "id": "q028",
+   "matiere": "Maths",
+   "theme": "Tableur",
+   "question": "Dans un tableur, quelle formule écrire en B1 pour calculer 3 fois le nombre de A1, plus 2 ?",
+   "choix": [
+    "=3A1+2",
+    "=3*A1+2",
+    "=A1*3*2",
+    "3*A1+2"
+   ],
+   "reponse": 1,
+   "explication": "Une formule commence toujours par « = » et la multiplication s'écrit avec « * ».",
+   "source": "Inspiré du brevet 2025 (Asie, ex. 3)"
+  },
+  {
+   "id": "q029",
+   "matiere": "Maths",
+   "theme": "Probabilités",
+   "question": "On lance un dé équilibré à 6 faces. Quelle est la probabilité d'obtenir un multiple de 3 ?",
+   "choix": [
+    "1/6",
+    "1/3",
+    "2/3",
+    "1/2"
+   ],
+   "reponse": 1,
+   "explication": "Les multiples de 3 sont 3 et 6 : 2 issues sur 6, donc 2/6 = 1/3.",
+   "source": "Inspiré du brevet 2025 (France, ex. 1)"
+  },
+  {
+   "id": "q030",
+   "matiere": "Maths",
+   "theme": "Puissances",
+   "question": "Combien vaut 10³ × 10⁻⁵ ?",
+   "choix": [
+    "10²",
+    "10⁻¹⁵",
+    "10⁻²",
+    "10⁸"
+   ],
+   "reponse": 2,
+   "explication": "On additionne les exposants : 3 + (−5) = −2.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q031",
+   "matiere": "Français",
+   "theme": "Conjugaison",
+   "question": "Dans « Il faut que tu viennes », à quel mode est le verbe « venir » ?",
+   "choix": [
+    "Indicatif",
+    "Conditionnel",
+    "Impératif",
+    "Subjonctif"
+   ],
+   "reponse": 3,
+   "explication": "Après « il faut que », on emploie le subjonctif. Astuce : remplace par « que tu fasses ».",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q032",
+   "matiere": "Français",
+   "theme": "Conjugaison",
+   "question": "« Je m'immobilisai en haut du grand escalier. » À quel temps est le verbe ?",
+   "choix": [
+    "Passé composé",
+    "Futur",
+    "Imparfait",
+    "Passé simple"
+   ],
+   "reponse": 3,
+   "explication": "La terminaison « -ai » sans « s » d'un verbe en -er à la 1re personne indique le passé simple (à l'imparfait : je m'immobilisais).",
+   "source": "Inspiré du brevet 2025 (France, Simone de Beauvoir)"
+  },
+  {
+   "id": "q033",
+   "matiere": "Français",
+   "theme": "Conjugaison",
+   "question": "« J'étais là, seule, les mains vides. » À quel temps est « étais » ?",
+   "choix": [
+    "Conditionnel",
+    "Imparfait",
+    "Passé simple",
+    "Plus-que-parfait"
+   ],
+   "reponse": 1,
+   "explication": "« J'étais » : verbe être à l'imparfait de l'indicatif, temps de la description dans un récit au passé.",
+   "source": "Inspiré du brevet 2025 (France, Simone de Beauvoir)"
+  },
+  {
+   "id": "q034",
+   "matiere": "Français",
+   "theme": "Grammaire",
+   "question": "Dans « J'étais là, seule, les mains vides », quelle est la classe grammaticale de « seule » ?",
+   "choix": [
+    "Adverbe",
+    "Pronom",
+    "Nom",
+    "Adjectif qualificatif"
+   ],
+   "reponse": 3,
+   "explication": "« Seule » est un adjectif qualificatif. Il s'accorde au féminin singulier avec « je », car la narratrice est une femme.",
+   "source": "Inspiré du brevet 2025 (France, Simone de Beauvoir)"
+  },
+  {
+   "id": "q035",
+   "matiere": "Français",
+   "theme": "Grammaire",
+   "question": "« J'avais rendu visite à la directrice, mon emploi du temps était fixé. » Comment les deux propositions sont-elles reliées ?",
+   "choix": [
+    "Par coordination",
+    "Elles ne sont pas reliées",
+    "Par subordination",
+    "Par juxtaposition"
+   ],
+   "reponse": 3,
+   "explication": "Les deux propositions sont séparées par une simple virgule, sans mot de liaison : elles sont juxtaposées.",
+   "source": "Inspiré du brevet 2025 (France, Simone de Beauvoir)"
+  },
+  {
+   "id": "q036",
+   "matiere": "Français",
+   "theme": "Vocabulaire",
+   "question": "Dans le mot « immobile », que signifie le préfixe « im- » ?",
+   "choix": [
+    "À l'intérieur",
+    "Le contraire",
+    "Avant",
+    "De nouveau"
+   ],
+   "reponse": 1,
+   "explication": "« im- » (variante de « in- » devant m, b, p) exprime le contraire : immobile = qui ne bouge pas.",
+   "source": "Inspiré du brevet 2025 (France, Simone de Beauvoir)"
+  },
+  {
+   "id": "q037",
+   "matiere": "Français",
+   "theme": "Vocabulaire",
+   "question": "Quel mot est de la même famille que « mobile » ?",
+   "choix": [
+    "Meuble",
+    "Mobilité",
+    "Mobylette",
+    "Moelle"
+   ],
+   "reponse": 1,
+   "explication": "« Mobilité » partage le radical « mobil- » et le sens de mouvement.",
+   "source": "Inspiré du brevet 2025 (France, Simone de Beauvoir)"
+  },
+  {
+   "id": "q038",
+   "matiere": "Français",
+   "theme": "Figures de style",
+   "question": "« Cette ville est un océan de lumières. » Quelle est cette figure de style ?",
+   "choix": [
+    "Hyperbole",
+    "Comparaison",
+    "Métaphore",
+    "Personnification"
+   ],
+   "reponse": 2,
+   "explication": "On rapproche la ville d'un océan sans outil de comparaison (comme, tel…) : c'est une métaphore.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q039",
+   "matiere": "Français",
+   "theme": "Figures de style",
+   "question": "« Ses yeux brillaient comme deux soleils. » Quelle est cette figure de style ?",
+   "choix": [
+    "Comparaison",
+    "Métaphore",
+    "Antithèse",
+    "Litote"
+   ],
+   "reponse": 0,
+   "explication": "La présence de l'outil « comme » indique une comparaison.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q040",
+   "matiere": "Français",
+   "theme": "Figures de style",
+   "question": "« Je meurs de soif ! » Quelle est cette figure de style ?",
+   "choix": [
+    "Anaphore",
+    "Hyperbole",
+    "Oxymore",
+    "Euphémisme"
+   ],
+   "reponse": 1,
+   "explication": "L'hyperbole exagère volontairement pour frapper l'esprit.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q041",
+   "matiere": "Français",
+   "theme": "Figures de style",
+   "question": "« Le vent hurlait dans les arbres. » Quelle est cette figure de style ?",
+   "choix": [
+    "Personnification",
+    "Énumération",
+    "Comparaison",
+    "Métaphore"
+   ],
+   "reponse": 0,
+   "explication": "On prête au vent un comportement humain (hurler) : c'est une personnification.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q042",
+   "matiere": "Français",
+   "theme": "Orthographe",
+   "question": "Quelle phrase est correctement accordée ?",
+   "choix": [
+    "Les lettres que j'ai écrit",
+    "Les lettres que j'ai écrites",
+    "Les lettres que j'ai écrits",
+    "Les lettres que j'ai écrite"
+   ],
+   "reponse": 1,
+   "explication": "Avec avoir, le participe passé s'accorde avec le COD s'il est placé avant : « que » reprend « les lettres » (féminin pluriel).",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q043",
+   "matiere": "Français",
+   "theme": "Conjugaison",
+   "question": "Complète : « Si j'avais le temps, je … te voir. »",
+   "choix": [
+    "viendrai",
+    "vienne",
+    "viens",
+    "viendrais"
+   ],
+   "reponse": 3,
+   "explication": "Après « si » + imparfait, on utilise le conditionnel présent : je viendrais.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q044",
+   "matiere": "Français",
+   "theme": "Grammaire",
+   "question": "Dans « Le chien de Paul dort », quelle est la fonction de « de Paul » ?",
+   "choix": [
+    "COD",
+    "Complément circonstanciel",
+    "Sujet",
+    "Complément du nom"
+   ],
+   "reponse": 3,
+   "explication": "« de Paul » complète le nom « chien » : c'est un complément du nom.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q045",
+   "matiere": "Français",
+   "theme": "Grammaire",
+   "question": "Dans « Gabriel révise ses leçons », quelle est la fonction de « ses leçons » ?",
+   "choix": [
+    "Sujet",
+    "Attribut du sujet",
+    "COI",
+    "COD"
+   ],
+   "reponse": 3,
+   "explication": "Gabriel révise quoi ? Ses leçons. Le complément est relié directement au verbe : c'est un COD.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q046",
+   "matiere": "Français",
+   "theme": "Grammaire",
+   "question": "Dans « Elle semble fatiguée », quelle est la fonction de « fatiguée » ?",
+   "choix": [
+    "Épithète",
+    "Complément du nom",
+    "COD",
+    "Attribut du sujet"
+   ],
+   "reponse": 3,
+   "explication": "« Sembler » est un verbe d'état : l'adjectif qui suit donne une caractéristique du sujet, c'est un attribut du sujet.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q047",
+   "matiere": "Français",
+   "theme": "Grammaire",
+   "question": "« Le livre que je lis est passionnant. » Quelle est la nature de « que je lis » ?",
+   "choix": [
+    "Proposition indépendante",
+    "Proposition subordonnée conjonctive",
+    "Groupe nominal",
+    "Proposition subordonnée relative"
+   ],
+   "reponse": 3,
+   "explication": "Elle est introduite par le pronom relatif « que », qui reprend « le livre » : c'est une subordonnée relative.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q048",
+   "matiere": "Français",
+   "theme": "Grammaire",
+   "question": "« Je pense qu'il viendra. » Quelle est la nature de « qu'il viendra » ?",
+   "choix": [
+    "Subordonnée conjonctive complétive",
+    "Subordonnée circonstancielle",
+    "Subordonnée relative",
+    "Proposition principale"
+   ],
+   "reponse": 0,
+   "explication": "Introduite par la conjonction « que », elle complète le verbe « penser » (fonction COD) : c'est une conjonctive complétive.",
+   "source": "Inspiré du brevet 2025 (France, ex. 8)"
+  },
+  {
+   "id": "q049",
+   "matiere": "Français",
+   "theme": "Conjugaison",
+   "question": "Quel est le passé simple de « venir » à la 3e personne du singulier ?",
+   "choix": [
+    "il vena",
+    "il vint",
+    "il venait",
+    "il vit"
+   ],
+   "reponse": 1,
+   "explication": "Venir au passé simple : je vins, tu vins, il vint.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q050",
+   "matiere": "Français",
+   "theme": "Orthographe",
+   "question": "Complète : « Il … mangé tout le gâteau. »",
+   "choix": [
+    "as",
+    "ah",
+    "a",
+    "à"
+   ],
+   "reponse": 2,
+   "explication": "On peut remplacer par « avait » : c'est le verbe avoir, donc « a » sans accent.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q051",
+   "matiere": "Français",
+   "theme": "Orthographe",
+   "question": "Complète : « … important de réviser un peu chaque jour. »",
+   "choix": [
+    "Ses",
+    "Ces",
+    "S'est",
+    "C'est"
+   ],
+   "reponse": 3,
+   "explication": "On peut remplacer par « cela est » : c'est le pronom « c' » suivi du verbe être.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q052",
+   "matiere": "Français",
+   "theme": "Discours rapporté",
+   "question": "Il a dit : « Je viendrai demain. » Au discours indirect, cela donne :",
+   "choix": [
+    "Il a dit qu'il viendrait le lendemain.",
+    "Il a dit que je viendrai demain.",
+    "Il a dit qu'il viendra demain.",
+    "Il a dit qu'il venait demain."
+   ],
+   "reponse": 0,
+   "explication": "Au passé, le futur devient conditionnel (viendrait), « je » devient « il » et « demain » devient « le lendemain ».",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q053",
+   "matiere": "Français",
+   "theme": "Littérature",
+   "question": "« La Force de l'âge » de Simone de Beauvoir, où l'autrice raconte sa propre vie, est :",
+   "choix": [
+    "Une pièce de théâtre",
+    "Un roman policier",
+    "Une autobiographie",
+    "Un recueil de poèmes"
+   ],
+   "reponse": 2,
+   "explication": "L'autrice, la narratrice et le personnage principal sont la même personne : c'est une autobiographie (des mémoires).",
+   "source": "Inspiré du brevet 2025 (France, texte de Simone de Beauvoir)"
+  },
+  {
+   "id": "q054",
+   "matiere": "Français",
+   "theme": "Littérature",
+   "question": "Un texte qui cherche à émouvoir le lecteur et à susciter sa pitié relève du registre :",
+   "choix": [
+    "Comique",
+    "Fantastique",
+    "Épique",
+    "Pathétique"
+   ],
+   "reponse": 3,
+   "explication": "Le registre pathétique fait naître la pitié et la compassion.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q055",
+   "matiere": "Français",
+   "theme": "Conjugaison",
+   "question": "« La Terre tourne autour du Soleil. » Quelle est la valeur du présent ?",
+   "choix": [
+    "Présent d'habitude",
+    "Présent de narration",
+    "Présent d'énonciation",
+    "Présent de vérité générale"
+   ],
+   "reponse": 3,
+   "explication": "C'est une vérité toujours valable : présent de vérité générale.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q056",
+   "matiere": "Français",
+   "theme": "Grammaire",
+   "question": "Dans « Je la vois », quelle est la nature de « la » ?",
+   "choix": [
+    "Article défini",
+    "Déterminant possessif",
+    "Nom",
+    "Pronom personnel COD"
+   ],
+   "reponse": 3,
+   "explication": "Devant un verbe, « la » remplace un nom (je vois Marie → je la vois) : pronom personnel COD.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q057",
+   "matiere": "Français",
+   "theme": "Vocabulaire",
+   "question": "Quel est l'antonyme (le contraire) de « généreux » ?",
+   "choix": [
+    "Riche",
+    "Gentil",
+    "Avare",
+    "Prodigue"
+   ],
+   "reponse": 2,
+   "explication": "Un avare garde tout pour lui, à l'inverse d'une personne généreuse.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q058",
+   "matiere": "Français",
+   "theme": "Vocabulaire",
+   "question": "« Vagues, écume, marée, rivage » forment le champ lexical de :",
+   "choix": [
+    "La mer",
+    "La ville",
+    "La forêt",
+    "La montagne"
+   ],
+   "reponse": 0,
+   "explication": "Tous ces mots se rapportent à la mer.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q059",
+   "matiere": "Français",
+   "theme": "Réécriture",
+   "question": "Réécris au pluriel : « Je grimpai et je rôdai dans les ruelles. »",
+   "choix": [
+    "Nous grimpions et nous rôdions",
+    "Nous grimpâmes et nous rôdâmes",
+    "Nous grimpons et nous rôdons",
+    "Nous grimpâmes et nous rôdions"
+   ],
+   "reponse": 1,
+   "explication": "Au passé simple, 1re personne du pluriel des verbes en -er : -âmes (nous grimpâmes, nous rôdâmes).",
+   "source": "Inspiré du brevet 2025 (France, réécriture)"
+  },
+  {
+   "id": "q060",
+   "matiere": "Français",
+   "theme": "Grammaire",
+   "question": "Dans « Il pleut », le pronom « il » est :",
+   "choix": [
+    "un déterminant",
+    "un pronom relatif",
+    "un pronom personnel qui remplace un nom",
+    "un pronom impersonnel"
+   ],
+   "reponse": 3,
+   "explication": "« Il » ne remplace personne : c'est un sujet grammatical, pronom impersonnel. On le retrouve dans « il faut », « il neige ».",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q061",
+   "matiere": "Histoire-Géo",
+   "theme": "Décolonisation",
+   "question": "En quelle année l'Inde devient-elle indépendante ?",
+   "choix": [
+    "1954",
+    "1947",
+    "1962",
+    "1945"
+   ],
+   "reponse": 1,
+   "explication": "L'Inde obtient son indépendance en 1947, avec la partition entre l'Inde et le Pakistan.",
+   "source": "Inspiré du brevet 2025 (histoire)"
+  },
+  {
+   "id": "q062",
+   "matiere": "Histoire-Géo",
+   "theme": "Décolonisation",
+   "question": "Quelle méthode Gandhi utilise-t-il pour lutter contre la domination britannique ?",
+   "choix": [
+    "Le coup d'État",
+    "La lutte armée",
+    "L'alliance avec l'URSS",
+    "La désobéissance civile non violente"
+   ],
+   "reponse": 3,
+   "explication": "Gandhi prône la non-violence : boycott des produits britanniques, refus de l'impôt, marches pacifiques.",
+   "source": "Inspiré du brevet 2025 (histoire)"
+  },
+  {
+   "id": "q063",
+   "matiere": "Histoire-Géo",
+   "theme": "Décolonisation",
+   "question": "Qu'est-ce que la « marche du sel » de 1930 ?",
+   "choix": [
+    "Une fête religieuse hindoue",
+    "Une révolte de marins",
+    "Une marche de Gandhi pour défier le monopole britannique sur le sel",
+    "Une guerre contre le Pakistan"
+   ],
+   "reponse": 2,
+   "explication": "Gandhi et ses partisans marchent plus de 300 km pour produire eux-mêmes du sel, en défiant la loi britannique.",
+   "source": "Inspiré du brevet 2025 (histoire)"
+  },
+  {
+   "id": "q064",
+   "matiere": "Histoire-Géo",
+   "theme": "Décolonisation",
+   "question": "En 1947, l'ancienne colonie britannique des Indes est partagée en deux États :",
+   "choix": [
+    "Inde et Sri Lanka",
+    "Inde et Pakistan",
+    "Inde et Népal",
+    "Inde et Bangladesh"
+   ],
+   "reponse": 1,
+   "explication": "La partition crée l'Inde (majorité hindoue) et le Pakistan (majorité musulmane), et provoque environ 10 millions de réfugiés.",
+   "source": "Inspiré du brevet 2025 (histoire)"
+  },
+  {
+   "id": "q065",
+   "matiere": "Histoire-Géo",
+   "theme": "Société",
+   "question": "En quelle année les Françaises votent-elles pour la première fois ?",
+   "choix": [
+    "1968",
+    "1936",
+    "1958",
+    "1945"
+   ],
+   "reponse": 3,
+   "explication": "Le droit de vote est accordé en avril 1944, et les femmes votent pour la première fois aux municipales d'avril 1945.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q066",
+   "matiere": "Histoire-Géo",
+   "theme": "Première Guerre mondiale",
+   "question": "Quelle date marque la fin des combats de la Première Guerre mondiale ?",
+   "choix": [
+    "11 novembre 1918",
+    "14 juillet 1919",
+    "8 mai 1945",
+    "28 juin 1914"
+   ],
+   "reponse": 0,
+   "explication": "L'armistice est signé le 11 novembre 1918. Le traité de Versailles suit en 1919.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q067",
+   "matiere": "Histoire-Géo",
+   "theme": "Seconde Guerre mondiale",
+   "question": "Quelles sont les dates de la Seconde Guerre mondiale ?",
+   "choix": [
+    "1940 – 1946",
+    "1914 – 1918",
+    "1936 – 1944",
+    "1939 – 1945"
+   ],
+   "reponse": 3,
+   "explication": "Elle commence en septembre 1939 (invasion de la Pologne) et s'achève en 1945 (8 mai en Europe, 2 septembre en Asie).",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q068",
+   "matiere": "Histoire-Géo",
+   "theme": "Seconde Guerre mondiale",
+   "question": "Comment appelle-t-on le génocide des Juifs d'Europe par les nazis ?",
+   "choix": [
+    "La Nuit de Cristal",
+    "Le Blitz",
+    "La Shoah",
+    "L'Holodomor"
+   ],
+   "reponse": 2,
+   "explication": "La Shoah : environ 6 millions de Juifs assassinés, notamment dans les centres de mise à mort comme Auschwitz-Birkenau.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q069",
+   "matiere": "Histoire-Géo",
+   "theme": "Régimes totalitaires",
+   "question": "En quelle année a lieu la révolution russe qui porte les bolcheviks au pouvoir ?",
+   "choix": [
+    "1924",
+    "1905",
+    "1917",
+    "1933"
+   ],
+   "reponse": 2,
+   "explication": "En octobre 1917, Lénine et les bolcheviks prennent le pouvoir.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q070",
+   "matiere": "Histoire-Géo",
+   "theme": "Seconde Guerre mondiale",
+   "question": "Qui dirige le régime de Vichy, qui collabore avec l'Allemagne nazie ?",
+   "choix": [
+    "Philippe Pétain",
+    "Jean Moulin",
+    "Léon Blum",
+    "Charles de Gaulle"
+   ],
+   "reponse": 0,
+   "explication": "Le maréchal Pétain obtient les pleins pouvoirs en juillet 1940 et mène une politique de collaboration.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q071",
+   "matiere": "Histoire-Géo",
+   "theme": "Seconde Guerre mondiale",
+   "question": "Que se passe-t-il le 18 juin 1940 ?",
+   "choix": [
+    "L'appel du général de Gaulle à continuer le combat",
+    "Le débarquement en Normandie",
+    "L'armistice avec l'Allemagne",
+    "La libération de Paris"
+   ],
+   "reponse": 0,
+   "explication": "Depuis Londres, à la radio BBC, de Gaulle appelle les Français à poursuivre la lutte.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q072",
+   "matiere": "Histoire-Géo",
+   "theme": "République",
+   "question": "En quelle année la Ve République est-elle fondée ?",
+   "choix": [
+    "1958",
+    "1962",
+    "1946",
+    "1981"
+   ],
+   "reponse": 0,
+   "explication": "La Constitution de la Ve République est adoptée par référendum en 1958, avec de Gaulle.",
+   "source": "Inspiré du brevet 2025 (EMC)"
+  },
+  {
+   "id": "q073",
+   "matiere": "Histoire-Géo",
+   "theme": "Guerre froide",
+   "question": "Le mur de Berlin est construit en 1961. Quand tombe-t-il ?",
+   "choix": [
+    "1975",
+    "1989",
+    "1991",
+    "1968"
+   ],
+   "reponse": 1,
+   "explication": "Le mur tombe le 9 novembre 1989. L'Allemagne est réunifiée en 1990 et l'URSS disparaît en 1991.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q074",
+   "matiere": "Histoire-Géo",
+   "theme": "Guerre froide",
+   "question": "Pendant la guerre froide, quelles sont les deux superpuissances qui s'opposent ?",
+   "choix": [
+    "États-Unis et URSS",
+    "Chine et Japon",
+    "France et Allemagne",
+    "Royaume-Uni et URSS"
+   ],
+   "reponse": 0,
+   "explication": "Les États-Unis (bloc de l'Ouest, capitaliste) et l'URSS (bloc de l'Est, communiste) s'affrontent de 1947 à 1991, sans guerre directe.",
+   "source": "Inspiré du brevet 2025 (histoire)"
+  },
+  {
+   "id": "q075",
+   "matiere": "Histoire-Géo",
+   "theme": "Décolonisation",
+   "question": "Quelles sont les dates de la guerre d'Algérie ?",
+   "choix": [
+    "1954 – 1962",
+    "1945 – 1954",
+    "1962 – 1970",
+    "1939 – 1945"
+   ],
+   "reponse": 0,
+   "explication": "Elle commence le 1er novembre 1954 et se termine avec les accords d'Évian et l'indépendance en 1962.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q076",
+   "matiere": "Histoire-Géo",
+   "theme": "Construction européenne",
+   "question": "Quel traité crée la Communauté économique européenne (CEE) en 1957 ?",
+   "choix": [
+    "Traité de Rome",
+    "Traité de Maastricht",
+    "Traité de Lisbonne",
+    "Traité de Versailles"
+   ],
+   "reponse": 0,
+   "explication": "Le traité de Rome (1957) réunit 6 pays fondateurs, dont la France.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q077",
+   "matiere": "Histoire-Géo",
+   "theme": "Société",
+   "question": "Quelle loi de 1975 est portée par Simone Veil ?",
+   "choix": [
+    "La majorité à 18 ans",
+    "La légalisation de l'IVG",
+    "Le droit de vote des femmes",
+    "Le congé maternité"
+   ],
+   "reponse": 1,
+   "explication": "La loi Veil (1975) dépénalise l'interruption volontaire de grossesse.",
+   "source": "Inspiré du brevet 2025 (EMC, égalité femmes-hommes)"
+  },
+  {
+   "id": "q078",
+   "matiere": "Histoire-Géo",
+   "theme": "Entre-deux-guerres",
+   "question": "Quelle mesure célèbre le Front populaire obtient-il en 1936 ?",
+   "choix": [
+    "Le droit de vote des femmes",
+    "Le RMI",
+    "La Sécurité sociale",
+    "Les congés payés"
+   ],
+   "reponse": 3,
+   "explication": "En 1936, les accords de Matignon accordent deux semaines de congés payés et la semaine de 40 heures.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q079",
+   "matiere": "Histoire-Géo",
+   "theme": "Géographie",
+   "question": "Qu'est-ce qu'une « gigafactory » ?",
+   "choix": [
+    "Un très grand centre commercial",
+    "Une ferme solaire",
+    "Une usine géante, par exemple de batteries",
+    "Un port de commerce"
+   ],
+   "reponse": 2,
+   "explication": "Les gigafactories de la « vallée de la batterie » (Hauts-de-France) fabriquent des batteries pour les voitures électriques.",
+   "source": "Inspiré du brevet 2025 (géographie)"
+  },
+  {
+   "id": "q080",
+   "matiere": "Histoire-Géo",
+   "theme": "Géographie",
+   "question": "Une zone où se concentrent usines, entrepôts et emplois industriels est :",
+   "choix": [
+    "Un espace productif",
+    "Un espace rural",
+    "Un espace de faible densité",
+    "Un espace protégé"
+   ],
+   "reponse": 0,
+   "explication": "Un espace productif est un espace aménagé pour produire des richesses (industrie, agriculture, services).",
+   "source": "Inspiré du brevet 2025 (géographie)"
+  },
+  {
+   "id": "q081",
+   "matiere": "Histoire-Géo",
+   "theme": "Géographie",
+   "question": "Qu'est-ce que la métropolisation ?",
+   "choix": [
+    "La création des régions",
+    "Le départ des habitants vers les campagnes",
+    "La construction du métro",
+    "La concentration des populations et des activités dans les grandes villes"
+   ],
+   "reponse": 3,
+   "explication": "Les grandes villes (métropoles) attirent de plus en plus d'habitants, d'emplois et de fonctions de commandement.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q082",
+   "matiere": "Histoire-Géo",
+   "theme": "Géographie",
+   "question": "Lequel de ces territoires n'est PAS un département et région d'outre-mer (DROM) ?",
+   "choix": [
+    "La Guadeloupe",
+    "La Nouvelle-Calédonie",
+    "Mayotte",
+    "La Réunion"
+   ],
+   "reponse": 1,
+   "explication": "Les 5 DROM sont la Guadeloupe, la Martinique, la Guyane, La Réunion et Mayotte. La Nouvelle-Calédonie a un statut particulier.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q083",
+   "matiere": "Histoire-Géo",
+   "theme": "Géographie",
+   "question": "Grâce à ses territoires ultramarins, la France possède :",
+   "choix": [
+    "La 2e zone économique exclusive (ZEE) du monde",
+    "La 10e ZEE du monde",
+    "Aucun espace maritime",
+    "La plus petite zone maritime d'Europe"
+   ],
+   "reponse": 0,
+   "explication": "Avec environ 10,2 millions de km², la ZEE française est la 2e du monde, après celle des États-Unis.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q084",
+   "matiere": "Histoire-Géo",
+   "theme": "Géographie",
+   "question": "Quel atout explique l'implantation d'usines de batteries dans les Hauts-de-France ?",
+   "choix": [
+    "L'absence de routes",
+    "Un climat tropical",
+    "Une situation au carrefour de l'Europe et une main-d'œuvre formée",
+    "La présence de pétrole"
+   ],
+   "reponse": 2,
+   "explication": "Proche du Royaume-Uni, de la Belgique et de l'Allemagne, la région a aussi une tradition automobile (Valenciennes).",
+   "source": "Inspiré du brevet 2025 (géographie)"
+  },
+  {
+   "id": "q085",
+   "matiere": "Histoire-Géo",
+   "theme": "EMC",
+   "question": "Quelle est la devise de la République française ?",
+   "choix": [
+    "Unité, Paix, Progrès",
+    "Travail, Famille, Patrie",
+    "Liberté, Égalité, Fraternité",
+    "Dieu et mon droit"
+   ],
+   "reponse": 2,
+   "explication": "« Liberté, Égalité, Fraternité » figure dans la Constitution de 1958. « Travail, Famille, Patrie » était celle du régime de Vichy.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q086",
+   "matiere": "Histoire-Géo",
+   "theme": "EMC",
+   "question": "Quelle loi de 1905 fonde la laïcité en France ?",
+   "choix": [
+    "Loi de séparation des Églises et de l'État",
+    "Loi Jules Ferry",
+    "Loi sur les associations",
+    "Loi Veil"
+   ],
+   "reponse": 0,
+   "explication": "La loi du 9 décembre 1905 sépare les Églises et l'État : la République garantit la liberté de conscience et ne reconnaît aucun culte.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q087",
+   "matiere": "Histoire-Géo",
+   "theme": "EMC",
+   "question": "À partir de quel âge peut-on voter en France ?",
+   "choix": [
+    "16 ans",
+    "18 ans",
+    "20 ans",
+    "21 ans"
+   ],
+   "reponse": 1,
+   "explication": "La majorité, et donc le droit de vote, est passée de 21 à 18 ans en 1974.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q088",
+   "matiere": "Histoire-Géo",
+   "theme": "EMC",
+   "question": "Quel texte de 1789 affirme que « les hommes naissent et demeurent libres et égaux en droits » ?",
+   "choix": [
+    "La Déclaration des droits de l'homme et du citoyen",
+    "Le serment du Jeu de paume",
+    "Le Code civil",
+    "La Constitution de 1958"
+   ],
+   "reponse": 0,
+   "explication": "La DDHC du 26 août 1789 fait partie du bloc de constitutionnalité.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q089",
+   "matiere": "Histoire-Géo",
+   "theme": "EMC",
+   "question": "Le préambule de la Constitution garantit à la femme, dans tous les domaines, des droits :",
+   "choix": [
+    "Inférieurs à ceux de l'homme",
+    "Réservés au travail",
+    "Égaux à ceux de l'homme",
+    "Uniquement familiaux"
+   ],
+   "reponse": 2,
+   "explication": "Le préambule de 1946, repris en 1958, affirme l'égalité entre les femmes et les hommes. C'est une valeur de la République.",
+   "source": "Inspiré du brevet 2025 (EMC, égalité femmes-hommes)"
+  },
+  {
+   "id": "q090",
+   "matiere": "Histoire-Géo",
+   "theme": "République",
+   "question": "Qui est le premier président de la Ve République ?",
+   "choix": [
+    "Georges Pompidou",
+    "François Mitterrand",
+    "Charles de Gaulle",
+    "Vincent Auriol"
+   ],
+   "reponse": 2,
+   "explication": "Charles de Gaulle est élu en décembre 1958 et prend ses fonctions en janvier 1959.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q091",
+   "matiere": "Sciences",
+   "theme": "Physique-chimie",
+   "question": "Un cycliste parcourt 150 m en 30 s. Quelle est sa vitesse moyenne ?",
+   "choix": [
+    "50 m/s",
+    "0,2 m/s",
+    "4 500 m/s",
+    "5 m/s"
+   ],
+   "reponse": 3,
+   "explication": "v = d ÷ t = 150 ÷ 30 = 5 m/s.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q092",
+   "matiere": "Sciences",
+   "theme": "Physique-chimie",
+   "question": "Quelle est la masse d'un litre d'eau ?",
+   "choix": [
+    "1 kg",
+    "100 g",
+    "10 kg",
+    "0,5 kg"
+   ],
+   "reponse": 0,
+   "explication": "La masse volumique de l'eau est 1 kg/L (ou 1 g/cm³).",
+   "source": "Inspiré du brevet 2025 (masse volumique)"
+  },
+  {
+   "id": "q093",
+   "matiere": "Sciences",
+   "theme": "Électricité",
+   "question": "Loi d'Ohm : une résistance de 100 Ω est traversée par un courant de 0,05 A. Quelle est la tension à ses bornes ?",
+   "choix": [
+    "2 000 V",
+    "5 V",
+    "0,5 V",
+    "50 V"
+   ],
+   "reponse": 1,
+   "explication": "U = R × I = 100 × 0,05 = 5 V.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q094",
+   "matiere": "Sciences",
+   "theme": "Électricité",
+   "question": "Un appareil fonctionne sous 230 V et est traversé par 2 A. Quelle est sa puissance ?",
+   "choix": [
+    "115 W",
+    "4,6 W",
+    "232 W",
+    "460 W"
+   ],
+   "reponse": 3,
+   "explication": "P = U × I = 230 × 2 = 460 W.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q095",
+   "matiere": "Sciences",
+   "theme": "Énergie",
+   "question": "Un radiateur de 1 000 W fonctionne pendant 2 heures. Quelle énergie consomme-t-il ?",
+   "choix": [
+    "500 Wh",
+    "2 kWh",
+    "2 000 kWh",
+    "1 kWh"
+   ],
+   "reponse": 1,
+   "explication": "E = P × t = 1 000 W × 2 h = 2 000 Wh = 2 kWh.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q096",
+   "matiere": "Sciences",
+   "theme": "Physique-chimie",
+   "question": "Quelle est la vitesse de la lumière dans le vide ?",
+   "choix": [
+    "300 000 km/s",
+    "340 m/s",
+    "1 000 km/s",
+    "3 000 km/h"
+   ],
+   "reponse": 0,
+   "explication": "La lumière va à environ 300 000 km/s. 340 m/s, c'est la vitesse du son dans l'air.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q097",
+   "matiere": "Sciences",
+   "theme": "Physique-chimie",
+   "question": "Le son peut-il se propager dans le vide ?",
+   "choix": [
+    "Non, il a besoin d'un milieu matériel",
+    "Seulement la nuit",
+    "Oui, mais lentement",
+    "Oui, très vite"
+   ],
+   "reponse": 0,
+   "explication": "Le son est une vibration de la matière (air, eau, solide). Dans le vide, il n'y a rien à faire vibrer.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q098",
+   "matiere": "Sciences",
+   "theme": "Chimie",
+   "question": "Une solution de pH 3 est :",
+   "choix": [
+    "Impossible",
+    "Acide",
+    "Basique",
+    "Neutre"
+   ],
+   "reponse": 1,
+   "explication": "pH < 7 : acide ; pH = 7 : neutre ; pH > 7 : basique.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q099",
+   "matiere": "Sciences",
+   "theme": "Chimie",
+   "question": "L'ion sodium Na⁺ est un atome de sodium qui a :",
+   "choix": [
+    "perdu un électron",
+    "gagné un neutron",
+    "perdu un proton",
+    "gagné un électron"
+   ],
+   "reponse": 0,
+   "explication": "Un ion positif (cation) a perdu un ou plusieurs électrons, qui sont négatifs.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q100",
+   "matiere": "Sciences",
+   "theme": "Chimie",
+   "question": "Lors d'une transformation chimique, la masse totale :",
+   "choix": [
+    "se conserve",
+    "augmente",
+    "diminue",
+    "double"
+   ],
+   "reponse": 0,
+   "explication": "Les atomes se réarrangent mais ne disparaissent pas : la masse se conserve (Lavoisier).",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q101",
+   "matiere": "Sciences",
+   "theme": "Physique-chimie",
+   "question": "Quel est le poids d'un objet de 50 kg sur Terre (g = 9,8 N/kg) ?",
+   "choix": [
+    "490 N",
+    "59,8 N",
+    "5,1 N",
+    "50 N"
+   ],
+   "reponse": 0,
+   "explication": "P = m × g = 50 × 9,8 = 490 N. Le poids s'exprime en newtons, la masse en kilogrammes.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q102",
+   "matiere": "Sciences",
+   "theme": "Électricité",
+   "question": "Dans un circuit en série, l'intensité du courant est :",
+   "choix": [
+    "la même partout",
+    "plus forte près de la pile",
+    "différente dans chaque dipôle",
+    "nulle dans les lampes"
+   ],
+   "reponse": 0,
+   "explication": "Loi d'unicité de l'intensité : dans un circuit série, l'intensité est la même en tout point.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q103",
+   "matiere": "Sciences",
+   "theme": "Énergie",
+   "question": "Si la vitesse d'une voiture double, son énergie cinétique est :",
+   "choix": [
+    "inchangée",
+    "multipliée par 4",
+    "multipliée par 2",
+    "divisée par 2"
+   ],
+   "reponse": 1,
+   "explication": "Ec = ½ × m × v². La vitesse est au carré : 2² = 4. C'est pour ça que la vitesse rend les chocs si dangereux.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q104",
+   "matiere": "Sciences",
+   "theme": "SVT",
+   "question": "Combien de chromosomes possède une cellule humaine (hors gamètes) ?",
+   "choix": [
+    "48",
+    "46",
+    "23",
+    "92"
+   ],
+   "reponse": 1,
+   "explication": "46 chromosomes, soit 23 paires.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q105",
+   "matiere": "Sciences",
+   "theme": "SVT",
+   "question": "Combien de chromosomes contient un spermatozoïde ou un ovule ?",
+   "choix": [
+    "46",
+    "12",
+    "23",
+    "92"
+   ],
+   "reponse": 2,
+   "explication": "Les gamètes n'ont qu'un chromosome de chaque paire : 23. La fécondation rétablit 46.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q106",
+   "matiere": "Sciences",
+   "theme": "SVT",
+   "question": "La fécondation, c'est :",
+   "choix": [
+    "la division d'une cellule",
+    "la rencontre d'un ovule et d'un spermatozoïde",
+    "la production d'anticorps",
+    "la digestion des aliments"
+   ],
+   "reponse": 1,
+   "explication": "La fusion des deux gamètes forme une cellule-œuf, première cellule d'un nouvel individu.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q107",
+   "matiere": "Sciences",
+   "theme": "SVT",
+   "question": "Quelles cellules produisent les anticorps ?",
+   "choix": [
+    "Les neurones",
+    "Les lymphocytes B",
+    "Les plaquettes",
+    "Les globules rouges"
+   ],
+   "reponse": 1,
+   "explication": "Les lymphocytes B produisent des anticorps spécifiques d'un antigène.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q108",
+   "matiere": "Sciences",
+   "theme": "SVT",
+   "question": "Les antibiotiques sont efficaces contre :",
+   "choix": [
+    "les bactéries",
+    "les virus",
+    "les allergies",
+    "toutes les maladies"
+   ],
+   "reponse": 0,
+   "explication": "Les antibiotiques tuent les bactéries mais n'ont aucun effet sur les virus (grippe, rhume…).",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q109",
+   "matiere": "Sciences",
+   "theme": "SVT",
+   "question": "Comment agit un vaccin ?",
+   "choix": [
+    "Il crée une mémoire immunitaire",
+    "Il tue directement les microbes",
+    "Il soigne une maladie déjà déclarée",
+    "Il remplace les globules blancs"
+   ],
+   "reponse": 0,
+   "explication": "Le vaccin présente un antigène inoffensif : l'organisme fabrique des cellules mémoire qui réagiront vite en cas de vraie infection.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q110",
+   "matiere": "Sciences",
+   "theme": "SVT",
+   "question": "Grâce à la photosynthèse, une plante verte fabrique de la matière organique à partir de :",
+   "choix": [
+    "dioxyde de carbone, eau et lumière",
+    "azote et sol",
+    "dioxygène et sucre",
+    "chaleur seulement"
+   ],
+   "reponse": 0,
+   "explication": "CO₂ + eau + énergie lumineuse → glucose + dioxygène (O₂).",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q111",
+   "matiere": "Sciences",
+   "theme": "SVT",
+   "question": "Dans une chaîne alimentaire, les producteurs primaires sont :",
+   "choix": [
+    "les végétaux chlorophylliens",
+    "les herbivores",
+    "les décomposeurs",
+    "les carnivores"
+   ],
+   "reponse": 0,
+   "explication": "Les végétaux chlorophylliens fabriquent leur propre matière organique : ils sont à la base des chaînes alimentaires.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q112",
+   "matiere": "Sciences",
+   "theme": "SVT",
+   "question": "Quel gaz est le principal responsable de l'augmentation de l'effet de serre due aux activités humaines ?",
+   "choix": [
+    "L'hélium",
+    "Le dioxyde de carbone",
+    "Le dioxygène",
+    "Le diazote"
+   ],
+   "reponse": 1,
+   "explication": "La combustion du pétrole, du charbon et du gaz rejette du CO₂, qui renforce l'effet de serre.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q113",
+   "matiere": "Sciences",
+   "theme": "SVT",
+   "question": "Laquelle de ces énergies est renouvelable ?",
+   "choix": [
+    "Le pétrole",
+    "Le charbon",
+    "L'énergie solaire",
+    "Le gaz naturel"
+   ],
+   "reponse": 2,
+   "explication": "Le soleil est une source inépuisable à notre échelle. Charbon, pétrole et gaz sont des énergies fossiles.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q114",
+   "matiere": "Sciences",
+   "theme": "SVT",
+   "question": "Un séisme est provoqué par :",
+   "choix": [
+    "la rupture brutale de roches le long d'une faille",
+    "une éruption solaire",
+    "la pluie",
+    "la marée"
+   ],
+   "reponse": 0,
+   "explication": "Les contraintes accumulées dans les roches finissent par provoquer une rupture : l'énergie libérée se propage en ondes sismiques.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q115",
+   "matiere": "Sciences",
+   "theme": "SVT",
+   "question": "Quel scientifique a proposé la théorie de l'évolution par sélection naturelle ?",
+   "choix": [
+    "Darwin",
+    "Pasteur",
+    "Mendel",
+    "Newton"
+   ],
+   "reponse": 0,
+   "explication": "Charles Darwin publie « L'Origine des espèces » en 1859.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q116",
+   "matiere": "Sciences",
+   "theme": "Technologie",
+   "question": "Dans un objet technique, un moteur électrique est :",
+   "choix": [
+    "un actionneur",
+    "un capteur",
+    "une interface",
+    "un microcontrôleur"
+   ],
+   "reponse": 0,
+   "explication": "L'actionneur agit sur le monde (mouvement, son, lumière). Le capteur prélève une information.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q117",
+   "matiere": "Sciences",
+   "theme": "Technologie",
+   "question": "Combien de bits contient un octet ?",
+   "choix": [
+    "10",
+    "8",
+    "4",
+    "16"
+   ],
+   "reponse": 1,
+   "explication": "1 octet = 8 bits. Un bit vaut 0 ou 1.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q118",
+   "matiere": "Sciences",
+   "theme": "Technologie",
+   "question": "Un détecteur de mouvement fait partie de :",
+   "choix": [
+    "la structure",
+    "la chaîne d'énergie",
+    "la chaîne d'information",
+    "l'alimentation"
+   ],
+   "reponse": 2,
+   "explication": "Un capteur acquiert une information : il appartient à la chaîne d'information (acquérir, traiter, communiquer).",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q119",
+   "matiere": "Sciences",
+   "theme": "Technologie",
+   "question": "Dans un programme, « si la température > 25 alors allumer le ventilateur » est :",
+   "choix": [
+    "une variable",
+    "une boucle",
+    "une instruction conditionnelle",
+    "un capteur"
+   ],
+   "reponse": 2,
+   "explication": "« Si… alors… » est une structure conditionnelle : l'action n'a lieu que si la condition est vraie.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q120",
+   "matiere": "Sciences",
+   "theme": "SVT",
+   "question": "Quel organe filtre le sang et produit l'urine ?",
+   "choix": [
+    "Le cœur",
+    "Les reins",
+    "Le foie",
+    "L'estomac"
+   ],
+   "reponse": 1,
+   "explication": "Les reins filtrent le sang pour en retirer les déchets, éliminés dans l'urine.",
+   "source": "Notion fréquente au brevet"
+  }
+ ]
+}
