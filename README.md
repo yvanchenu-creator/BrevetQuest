@@ -1,5 +1,7 @@
 # BrevetQuest
 
+En ligne : https://yvanchenu-creator.github.io/BrevetQuest/
+
 Appli de révision du brevet des collèges : défi du jour, quiz par matière, XP, niveaux, série de jours et répétition espacée des questions ratées.
 
 - `index.html` : l'appli (générée, ne pas modifier à la main).
