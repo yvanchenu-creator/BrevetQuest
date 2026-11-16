@@ -60,7 +60,32 @@
    ],
    "reponse": 3,
    "explication": "Il y a 3 boules vertes sur 10 boules au total : P = 3/10.",
-   "source": "Inspiré du brevet 2025 (Amérique du Nord, ex. 1)"
+   "source": "Inspiré du brevet 2025 (Amérique du Nord, ex. 1)",
+   "detail": {
+    "etapes": [
+     "On compte toutes les boules : 3 + 5 + 2 = 10 issues possibles, toutes avec la même chance.",
+     "On compte les issues favorables, ici les boules vertes : 3.",
+     "P(verte) = nombre d'issues favorables ÷ nombre total d'issues = 3/10."
+    ],
+    "retenir": "Probabilité = (cas favorables) ÷ (cas possibles), quand tous les cas ont la même chance.",
+    "schema": {
+     "type": "urne",
+     "boules": [
+      [
+       "#3DDC97",
+       3
+      ],
+      [
+       "#FF7A7A",
+       5
+      ],
+      [
+       "#5B8CFF",
+       2
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q002",
@@ -76,7 +101,49 @@
    ],
    "reponse": 1,
    "explication": "1 050 = 2 × 525 = 2 × 3 × 175 = 2 × 3 × 5 × 35 = 2 × 3 × 5² × 7. Tous les facteurs doivent être premiers (105 et 10 ne le sont pas).",
-   "source": "Inspiré du brevet 2025 (Amérique du Nord, ex. 1)"
+   "source": "Inspiré du brevet 2025 (Amérique du Nord, ex. 1)",
+   "detail": {
+    "etapes": [
+     "On divise par les plus petits nombres premiers possibles, l'un après l'autre.",
+     "1 050 ÷ 2 = 525, puis 525 ÷ 3 = 175, puis 175 ÷ 5 = 35, puis 35 ÷ 5 = 7, et 7 est premier.",
+     "On rassemble les diviseurs : 1 050 = 2 × 3 × 5 × 5 × 7 = 2 × 3 × 5² × 7.",
+     "Vérification : 2 × 3 × 25 × 7 = 6 × 175 = 1 050."
+    ],
+    "retenir": "Dans une décomposition en facteurs premiers, chaque facteur doit être premier (2, 3, 5, 7, 11, 13…).",
+    "schema": {
+     "type": "table",
+     "head": [
+      "Nombre",
+      "÷ par"
+     ],
+     "rows": [
+      [
+       "1 050",
+       "2"
+      ],
+      [
+       "525",
+       "3"
+      ],
+      [
+       "175",
+       "5"
+      ],
+      [
+       "35",
+       "5"
+      ],
+      [
+       "7",
+       "7"
+      ],
+      [
+       "1",
+       "!fini"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q003",
@@ -92,7 +159,15 @@
    ],
    "reponse": 2,
    "explication": "Augmenter de 14 %, c'est multiplier par 1,14 : 50 × 1,14 = 57 €.",
-   "source": "Inspiré du brevet 2025 (Amérique du Nord, ex. 1)"
+   "source": "Inspiré du brevet 2025 (Amérique du Nord, ex. 1)",
+   "detail": {
+    "etapes": [
+     "Augmenter de 14 %, c'est garder 100 % du prix et ajouter 14 % : on obtient 114 % du prix.",
+     "114 % = 1,14. On multiplie donc par 1,14 : 50 × 1,14 = 57.",
+     "Autre méthode : 14 % de 50 = 50 × 14 ÷ 100 = 7, puis 50 + 7 = 57 €."
+    ],
+    "retenir": "Augmenter de t % revient à multiplier par (1 + t/100). Baisser de t %, par (1 − t/100)."
+   }
   },
   {
    "id": "q004",
@@ -108,7 +183,28 @@
    ],
    "reponse": 3,
    "explication": "Dans un agrandissement de rapport k, les aires sont multipliées par k². Ici 3² = 9.",
-   "source": "Inspiré du brevet 2025 (Amérique du Nord, ex. 1)"
+   "source": "Inspiré du brevet 2025 (Amérique du Nord, ex. 1)",
+   "detail": {
+    "etapes": [
+     "Un carré de côté 1 a une aire de 1 × 1 = 1.",
+     "Agrandi 3 fois, son côté vaut 3 et son aire 3 × 3 = 9.",
+     "L'aire est donc multipliée par 9, c'est-à-dire 3²."
+    ],
+    "retenir": "Agrandissement de rapport k : longueurs × k, aires × k², volumes × k³.",
+    "schema": {
+     "type": "fraction",
+     "parts": [
+      [
+       1,
+       1
+      ],
+      [
+       1,
+       9
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q005",
@@ -124,7 +220,29 @@
    ],
    "reponse": 0,
    "explication": "La série est rangée et a 5 valeurs : la médiane est la 3e, soit 160 cm.",
-   "source": "Inspiré du brevet 2025 (Amérique du Nord, ex. 1)"
+   "source": "Inspiré du brevet 2025 (Amérique du Nord, ex. 1)",
+   "detail": {
+    "etapes": [
+     "On vérifie que la série est rangée dans l'ordre croissant : 152 ; 158 ; 160 ; 163 ; 171. C'est le cas.",
+     "Il y a 5 valeurs. La médiane est celle du milieu : la 3e, avec 2 valeurs avant et 2 après.",
+     "La médiane est 160 cm."
+    ],
+    "retenir": "La médiane partage la série rangée en deux groupes de même effectif. Avec un nombre pair de valeurs, on prend la moyenne des deux valeurs du milieu.",
+    "schema": {
+     "type": "barres",
+     "vals": [
+      152,
+      158,
+      160,
+      163,
+      171
+     ],
+     "hl": [
+      2
+     ],
+     "legende": "Valeurs rangées : la 3e est au milieu"
+    }
+   }
   },
   {
    "id": "q006",
@@ -140,7 +258,24 @@
    ],
    "reponse": 1,
    "explication": "(12 + 15 + 9 + 14) ÷ 4 = 50 ÷ 4 = 12,5.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On additionne toutes les notes : 12 + 15 + 9 + 14 = 50.",
+     "On divise par le nombre de notes, ici 4 : 50 ÷ 4 = 12,5."
+    ],
+    "retenir": "Moyenne = somme des valeurs ÷ nombre de valeurs.",
+    "schema": {
+     "type": "barres",
+     "vals": [
+      12,
+      15,
+      9,
+      14
+     ],
+     "legende": "Moyenne : 50 ÷ 4 = 12,5"
+    }
+   }
   },
   {
    "id": "q007",
@@ -156,7 +291,28 @@
    ],
    "reponse": 3,
    "explication": "Pythagore : 6² + 8² = 36 + 64 = 100, donc l'hypoténuse mesure √100 = 10 cm.",
-   "source": "Inspiré du brevet 2025 (France, ex. 2)"
+   "source": "Inspiré du brevet 2025 (France, ex. 2)",
+   "detail": {
+    "etapes": [
+     "L'hypoténuse est le côté opposé à l'angle droit, ici BC.",
+     "Pythagore : BC² = AB² + AC² = 6² + 8² = 36 + 64 = 100.",
+     "BC = √100 = 10 cm."
+    ],
+    "retenir": "Dans un triangle rectangle : (hypoténuse)² = somme des carrés des deux autres côtés.",
+    "schema": {
+     "type": "tri_rect",
+     "pts": [
+      "A",
+      "B",
+      "C"
+     ],
+     "cotes": {
+      "AB": "6 cm",
+      "AC": "8 cm",
+      "BC": "?"
+     }
+    }
+   }
   },
   {
    "id": "q008",
@@ -172,7 +328,28 @@
    ],
    "reponse": 3,
    "explication": "5² + 12² = 25 + 144 = 169 = 13². D'après la réciproque du théorème de Pythagore, le triangle est rectangle.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Le plus grand côté est 13 cm : s'il y a un angle droit, il est en face de ce côté.",
+     "On calcule séparément : 13² = 169, et 5² + 12² = 25 + 144 = 169.",
+     "Les deux résultats sont égaux, donc d'après la réciproque du théorème de Pythagore, le triangle est rectangle."
+    ],
+    "retenir": "Réciproque de Pythagore : si (plus grand côté)² = somme des carrés des deux autres, le triangle est rectangle.",
+    "schema": {
+     "type": "tri_rect",
+     "pts": [
+      "A",
+      "B",
+      "C"
+     ],
+     "cotes": {
+      "AB": "5 cm",
+      "AC": "12 cm",
+      "BC": "13 cm"
+     }
+    }
+   }
   },
   {
    "id": "q009",
@@ -188,7 +365,25 @@
    ],
    "reponse": 0,
    "explication": "Thalès : AM/AB = AN/AC, donc 3/5 = AN/10 et AN = 10 × 3 ÷ 5 = 6.",
-   "source": "Inspiré du brevet 2025 (Centres étrangers, ex. 4)"
+   "source": "Inspiré du brevet 2025 (Centres étrangers, ex. 4)",
+   "detail": {
+    "etapes": [
+     "Les droites (MN) et (BC) sont parallèles : on peut utiliser le théorème de Thalès.",
+     "On écrit les rapports égaux : AM/AB = AN/AC = MN/BC.",
+     "On remplace : 3/5 = AN/10.",
+     "Produit en croix : AN = 10 × 3 ÷ 5 = 6."
+    ],
+    "retenir": "Thalès : avec deux droites parallèles, les longueurs du petit triangle sont proportionnelles à celles du grand.",
+    "schema": {
+     "type": "thales",
+     "cotes": {
+      "AM": "3",
+      "AB": "5",
+      "AC": "10",
+      "AN": "?"
+     }
+    }
+   }
   },
   {
    "id": "q010",
@@ -204,7 +399,29 @@
    ],
    "reponse": 1,
    "explication": "Moyen mnémotechnique CAH-SOH-TOA : Cosinus = Adjacent / Hypoténuse.",
-   "source": "Inspiré du brevet 2025 (France, ex. 2)"
+   "source": "Inspiré du brevet 2025 (France, ex. 2)",
+   "detail": {
+    "etapes": [
+     "On repère l'hypoténuse : le côté en face de l'angle droit.",
+     "Le côté adjacent touche l'angle étudié, sans être l'hypoténuse.",
+     "cos = adjacent ÷ hypoténuse."
+    ],
+    "retenir": "CAH SOH TOA : Cos = Adj/Hyp, Sin = Opp/Hyp, Tan = Opp/Adj.",
+    "schema": {
+     "type": "tri_rect",
+     "pts": [
+      "A",
+      "B",
+      "C"
+     ],
+     "cotes": {
+      "AB": "adjacent",
+      "BC": "hypoténuse",
+      "AC": "opposé"
+     },
+     "angle": "B"
+    }
+   }
   },
   {
    "id": "q011",
@@ -220,7 +437,36 @@
    ],
    "reponse": 2,
    "explication": "45 min = 0,75 h. v = d ÷ t = 12 ÷ 0,75 = 16 km/h.",
-   "source": "Inspiré du brevet 2025 (Amérique du Nord, ex. 4)"
+   "source": "Inspiré du brevet 2025 (Amérique du Nord, ex. 4)",
+   "detail": {
+    "etapes": [
+     "Pour une vitesse en km/h, la durée doit être en heures : 45 min = 45/60 h = 0,75 h.",
+     "v = d ÷ t = 12 ÷ 0,75 = 16 km/h.",
+     "Vérification : en 15 min (un quart d'heure), Malo fait 4 km, donc 16 km en une heure."
+    ],
+    "retenir": "v = d ÷ t, avec des unités cohérentes : km et h donnent des km/h.",
+    "schema": {
+     "type": "table",
+     "head": [
+      "Distance",
+      "Durée"
+     ],
+     "rows": [
+      [
+       "4 km",
+       "15 min"
+      ],
+      [
+       "12 km",
+       "45 min"
+      ],
+      [
+       "!16 km",
+       "!60 min"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q012",
@@ -236,7 +482,47 @@
    ],
    "reponse": 1,
    "explication": "5 + 3 = 8 ; 8 × 2 = 16 ; 16 − 6 = 10. En fait, ce programme donne toujours le double du nombre choisi : 2(x + 3) − 6 = 2x.",
-   "source": "Inspiré du brevet 2025 (France, ex. 4)"
+   "source": "Inspiré du brevet 2025 (France, ex. 4)",
+   "detail": {
+    "etapes": [
+     "On choisit 5.",
+     "Ajouter 3 : 5 + 3 = 8.",
+     "Multiplier par 2 : 8 × 2 = 16.",
+     "Soustraire 6 : 16 − 6 = 10.",
+     "Avec x au départ : 2(x + 3) − 6 = 2x + 6 − 6 = 2x. Le programme donne toujours le double."
+    ],
+    "retenir": "Pour étudier un programme de calcul, on remplace le nombre de départ par x et on développe.",
+    "schema": {
+     "type": "table",
+     "head": [
+      "Étape",
+      "Avec 5",
+      "Avec x"
+     ],
+     "rows": [
+      [
+       "Départ",
+       "5",
+       "x"
+      ],
+      [
+       "+ 3",
+       "8",
+       "x + 3"
+      ],
+      [
+       "× 2",
+       "16",
+       "2x + 6"
+      ],
+      [
+       "− 6",
+       "!10",
+       "!2x"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q013",
@@ -252,7 +538,35 @@
    ],
    "reponse": 0,
    "explication": "(x + 3)(x − 2) = x² − 2x + 3x − 6 = x² + x − 6.",
-   "source": "Inspiré du brevet 2025 (France, ex. 3)"
+   "source": "Inspiré du brevet 2025 (France, ex. 3)",
+   "detail": {
+    "etapes": [
+     "On utilise la double distributivité : chaque terme de la 1re parenthèse multiplie chaque terme de la 2e.",
+     "x × x = x², x × (−2) = −2x, 3 × x = 3x, 3 × (−2) = −6.",
+     "On regroupe : x² − 2x + 3x − 6 = x² + x − 6."
+    ],
+    "retenir": "(a + b)(c + d) = ac + ad + bc + bd.",
+    "schema": {
+     "type": "table",
+     "head": [
+      "×",
+      "x",
+      "−2"
+     ],
+     "rows": [
+      [
+       "x",
+       "x²",
+       "−2x"
+      ],
+      [
+       "3",
+       "3x",
+       "−6"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q014",
@@ -268,7 +582,15 @@
    ],
    "reponse": 3,
    "explication": "Identité remarquable a² − b² = (a − b)(a + b), avec a = x et b = 3.",
-   "source": "Inspiré du brevet 2025 (Centres étrangers, ex. 1)"
+   "source": "Inspiré du brevet 2025 (Centres étrangers, ex. 1)",
+   "detail": {
+    "etapes": [
+     "On reconnaît la forme a² − b² : x² − 9 = x² − 3².",
+     "On applique l'identité remarquable : a² − b² = (a − b)(a + b).",
+     "x² − 9 = (x − 3)(x + 3). Vérification en développant : x² + 3x − 3x − 9 = x² − 9."
+    ],
+    "retenir": "Les 3 identités remarquables : (a+b)² = a²+2ab+b² ; (a−b)² = a²−2ab+b² ; (a−b)(a+b) = a²−b²."
+   }
   },
   {
    "id": "q015",
@@ -284,7 +606,15 @@
    ],
    "reponse": 3,
    "explication": "3x = 20 − 5 = 15, donc x = 15 ÷ 3 = 5.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On isole le terme en x : on enlève 5 des deux côtés. 3x = 20 − 5 = 15.",
+     "On divise les deux côtés par 3 : x = 15 ÷ 3 = 5.",
+     "Vérification : 3 × 5 + 5 = 20. C'est juste."
+    ],
+    "retenir": "Pour résoudre une équation, on fait la même opération des deux côtés du signe égal."
+   }
   },
   {
    "id": "q016",
@@ -300,7 +630,25 @@
    ],
    "reponse": 0,
    "explication": "f(4) = 2 × 4 − 3 = 8 − 3 = 5.",
-   "source": "Inspiré du brevet 2025 (Asie, ex. 1)"
+   "source": "Inspiré du brevet 2025 (Asie, ex. 1)",
+   "detail": {
+    "etapes": [
+     "f(4) signifie : on remplace x par 4 dans l'expression.",
+     "f(4) = 2 × 4 − 3 = 8 − 3 = 5.",
+     "Sur le graphique, le point (4 ; 5) est sur la droite."
+    ],
+    "retenir": "L'image de a par f est f(a) : on remplace x par a.",
+    "schema": {
+     "type": "droite",
+     "a": 2,
+     "b": -3,
+     "point": [
+      4,
+      5
+     ],
+     "label": "f(x) = 2x − 3"
+    }
+   }
   },
   {
    "id": "q017",
@@ -316,7 +664,36 @@
    ],
    "reponse": 3,
    "explication": "On cherche x tel que 3x = 12, donc x = 4. L'antécédent est le nombre de départ, l'image est le résultat.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Un antécédent de 12, c'est un nombre x tel que f(x) = 12.",
+     "On résout 3x = 12, donc x = 12 ÷ 3 = 4.",
+     "Vérification : f(4) = 3 × 4 = 12."
+    ],
+    "retenir": "Image : on part de x et on calcule f(x). Antécédent : on connaît le résultat et on cherche x.",
+    "schema": {
+     "type": "table",
+     "head": [
+      "x (antécédent)",
+      "f(x) (image)"
+     ],
+     "rows": [
+      [
+       "1",
+       "3"
+      ],
+      [
+       "2",
+       "6"
+      ],
+      [
+       "!4",
+       "!12"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q018",
@@ -332,7 +709,16 @@
    ],
    "reponse": 2,
    "explication": "On cherche le PGCD : 84 = 2² × 3 × 7 et 60 = 2² × 3 × 5. PGCD = 2² × 3 = 12 lots.",
-   "source": "Inspiré du brevet 2025 (Asie, ex. 5)"
+   "source": "Inspiré du brevet 2025 (Asie, ex. 5)",
+   "detail": {
+    "etapes": [
+     "Chaque lot doit avoir le même nombre de rouges et de noirs : le nombre de lots divise 84 et 60.",
+     "On cherche le plus grand diviseur commun (PGCD). 84 = 2² × 3 × 7 et 60 = 2² × 3 × 5.",
+     "Facteurs communs : 2² × 3 = 12. On peut faire 12 lots.",
+     "Chaque lot contient 84 ÷ 12 = 7 rouges et 60 ÷ 12 = 5 noirs."
+    ],
+    "retenir": "« Le plus grand nombre de lots identiques » : c'est le PGCD des quantités."
+   }
   },
   {
    "id": "q019",
@@ -348,7 +734,15 @@
    ],
    "reponse": 1,
    "explication": "91 = 7 × 13, 87 = 3 × 29, 51 = 3 × 17. 97 n'a que deux diviseurs : 1 et 97.",
-   "source": "Inspiré du brevet 2025 (Centres étrangers, ex. 5)"
+   "source": "Inspiré du brevet 2025 (Centres étrangers, ex. 5)",
+   "detail": {
+    "etapes": [
+     "Un nombre premier n'a que deux diviseurs : 1 et lui-même.",
+     "91 = 7 × 13, 87 = 3 × 29 (8 + 7 = 15, divisible par 3), 51 = 3 × 17.",
+     "97 n'est divisible ni par 2, ni 3, ni 5, ni 7. Comme 10 × 10 = 100 > 97, inutile d'aller plus loin : 97 est premier."
+    ],
+    "retenir": "Pour tester si n est premier, on essaie les nombres premiers jusqu'à √n."
+   }
   },
   {
    "id": "q020",
@@ -364,7 +758,23 @@
    ],
    "reponse": 3,
    "explication": "V = π × r² × h = π × 9 × 10 = 90π cm³, soit environ 283 cm³.",
-   "source": "Inspiré du brevet 2025 (Asie, ex. 5)"
+   "source": "Inspiré du brevet 2025 (Asie, ex. 5)",
+   "detail": {
+    "etapes": [
+     "Le volume d'un cylindre = aire de la base × hauteur.",
+     "La base est un disque : π × r² = π × 3² = 9π cm².",
+     "V = 9π × 10 = 90π cm³ ≈ 282,7 cm³."
+    ],
+    "retenir": "Cylindre : V = π × r² × h. Pense à mettre le rayon au carré, pas le diamètre.",
+    "schema": {
+     "type": "solide",
+     "k": "cylindre",
+     "labels": {
+      "r": "r = 3 cm",
+      "h": "h = 10 cm"
+     }
+    }
+   }
   },
   {
    "id": "q021",
@@ -380,7 +790,24 @@
    ],
    "reponse": 3,
    "explication": "20 × 10 × 5 = 1 000 cm³, et 1 000 cm³ = 1 dm³ = 1 L.",
-   "source": "Inspiré du brevet 2025 (Asie, ex. 5)"
+   "source": "Inspiré du brevet 2025 (Asie, ex. 5)",
+   "detail": {
+    "etapes": [
+     "Volume d'un pavé droit = longueur × largeur × hauteur.",
+     "20 × 10 × 5 = 1 000 cm³.",
+     "1 L = 1 dm³ = 1 000 cm³, donc l'aquarium contient 1 L."
+    ],
+    "retenir": "1 dm³ = 1 L et 1 cm³ = 1 mL.",
+    "schema": {
+     "type": "solide",
+     "k": "pave",
+     "labels": {
+      "L": "20 cm",
+      "l": "10 cm",
+      "h": "5 cm"
+     }
+    }
+   }
   },
   {
    "id": "q022",
@@ -396,7 +823,15 @@
    ],
    "reponse": 2,
    "explication": "0,5 h = la moitié d'une heure = 30 minutes.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "2,5 h = 2 h + 0,5 h.",
+     "0,5 h = la moitié de 60 min = 30 min.",
+     "Donc 2,5 h = 2 h 30 min (et pas 2 h 50 !)."
+    ],
+    "retenir": "Une heure compte 60 minutes : 0,25 h = 15 min, 0,5 h = 30 min, 0,75 h = 45 min."
+   }
   },
   {
    "id": "q023",
@@ -412,7 +847,15 @@
    ],
    "reponse": 3,
    "explication": "Baisser de 25 %, c'est multiplier par 0,75 : 80 × 0,75 = 60 €.",
-   "source": "Inspiré du brevet 2025 (Asie, ex. 5)"
+   "source": "Inspiré du brevet 2025 (Asie, ex. 5)",
+   "detail": {
+    "etapes": [
+     "Baisser de 25 %, c'est garder 75 % du prix : on multiplie par 0,75.",
+     "80 × 0,75 = 60 €.",
+     "Autre méthode : 25 % de 80 = 80 ÷ 4 = 20, puis 80 − 20 = 60 €."
+    ],
+    "retenir": "Baisser de t % revient à multiplier par (1 − t/100)."
+   }
   },
   {
    "id": "q024",
@@ -428,7 +871,31 @@
    ],
    "reponse": 3,
    "explication": "1 kg coûte 7,50 ÷ 3 = 2,50 €, donc 5 kg coûtent 5 × 2,50 = 12,50 €.",
-   "source": "Inspiré du brevet 2025 (France, ex. 3)"
+   "source": "Inspiré du brevet 2025 (France, ex. 3)",
+   "detail": {
+    "etapes": [
+     "Le prix est proportionnel à la masse. On cherche d'abord le prix d'un kilo : 7,50 ÷ 3 = 2,50 €.",
+     "Pour 5 kg : 5 × 2,50 = 12,50 €."
+    ],
+    "retenir": "Dans une situation de proportionnalité, on peut passer par l'unité (règle de trois) ou faire un produit en croix.",
+    "schema": {
+     "type": "table",
+     "head": [
+      "Masse (kg)",
+      "1",
+      "3",
+      "5"
+     ],
+     "rows": [
+      [
+       "Prix (€)",
+       "2,50",
+       "7,50",
+       "!12,50"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q025",
@@ -444,7 +911,20 @@
    ],
    "reponse": 1,
    "explication": "Rapport négatif : l'image est de l'autre côté du centre. |−2| = 2 > 1 : c'est un agrandissement.",
-   "source": "Inspiré du brevet 2025 (Centres étrangers, ex. 1)"
+   "source": "Inspiré du brevet 2025 (Centres étrangers, ex. 1)",
+   "detail": {
+    "etapes": [
+     "Le signe du rapport indique le côté : négatif, l'image est de l'autre côté du centre O.",
+     "La valeur sans le signe (2) indique la taille : plus grand que 1, c'est un agrandissement.",
+     "L'image est donc 2 fois plus grande et retournée de l'autre côté de O."
+    ],
+    "retenir": "Homothétie de rapport k : |k| > 1 agrandit, |k| < 1 réduit ; k < 0 place l'image de l'autre côté du centre.",
+    "schema": {
+     "type": "transfo",
+     "k": "homothetie_neg",
+     "legende": "Rapport −2 : 2 fois plus grand, de l'autre côté de O"
+    }
+   }
   },
   {
    "id": "q026",
@@ -460,7 +940,20 @@
    ],
    "reponse": 3,
    "explication": "3 côtés égaux et 3 rotations de 120° (360 ÷ 3) : c'est un triangle équilatéral.",
-   "source": "Inspiré du brevet 2025 (Asie, ex. 4)"
+   "source": "Inspiré du brevet 2025 (Asie, ex. 4)",
+   "detail": {
+    "etapes": [
+     "Le lutin trace 3 côtés de même longueur (50).",
+     "À chaque coin il tourne de 120°. En 3 virages, il fait 3 × 120° = 360°, un tour complet : la figure se referme.",
+     "3 côtés égaux : c'est un triangle équilatéral."
+    ],
+    "retenir": "Pour un polygone régulier à n côtés, le lutin tourne de 360° ÷ n à chaque sommet.",
+    "schema": {
+     "type": "polygone",
+     "n": 3,
+     "angle": "120°"
+    }
+   }
   },
   {
    "id": "q027",
@@ -476,7 +969,20 @@
    ],
    "reponse": 3,
    "explication": "Un hexagone a 6 côtés et le lutin fait un tour complet : 360° ÷ 6 = 60°.",
-   "source": "Inspiré du brevet 2025 (Asie, ex. 4)"
+   "source": "Inspiré du brevet 2025 (Asie, ex. 4)",
+   "detail": {
+    "etapes": [
+     "Un hexagone a 6 côtés, donc 6 virages.",
+     "Les 6 virages doivent faire un tour complet : 360°.",
+     "360 ÷ 6 = 60°."
+    ],
+    "retenir": "Angle à tourner pour un polygone régulier = 360° ÷ nombre de côtés.",
+    "schema": {
+     "type": "polygone",
+     "n": 6,
+     "angle": "60°"
+    }
+   }
   },
   {
    "id": "q028",
@@ -492,7 +998,30 @@
    ],
    "reponse": 1,
    "explication": "Une formule commence toujours par « = » et la multiplication s'écrit avec « * ».",
-   "source": "Inspiré du brevet 2025 (Asie, ex. 3)"
+   "source": "Inspiré du brevet 2025 (Asie, ex. 3)",
+   "detail": {
+    "etapes": [
+     "Une formule de tableur commence toujours par le signe =.",
+     "La multiplication s'écrit avec * : 3 fois A1 s'écrit 3*A1.",
+     "On ajoute 2 : =3*A1+2."
+    ],
+    "retenir": "Tableur : = pour commencer, * pour multiplier, / pour diviser, : pour une plage (A1:A5).",
+    "schema": {
+     "type": "table",
+     "head": [
+      "",
+      "A",
+      "B"
+     ],
+     "rows": [
+      [
+       "1",
+       "4",
+       "!=3*A1+2 → 14"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q029",
@@ -508,7 +1037,28 @@
    ],
    "reponse": 1,
    "explication": "Les multiples de 3 sont 3 et 6 : 2 issues sur 6, donc 2/6 = 1/3.",
-   "source": "Inspiré du brevet 2025 (France, ex. 1)"
+   "source": "Inspiré du brevet 2025 (France, ex. 1)",
+   "detail": {
+    "etapes": [
+     "Issues possibles : 1, 2, 3, 4, 5, 6, soit 6 issues.",
+     "Multiples de 3 : 3 et 6, soit 2 issues favorables.",
+     "P = 2/6 = 1/3."
+    ],
+    "retenir": "Pense à simplifier la fraction obtenue.",
+    "schema": {
+     "type": "table",
+     "rows": [
+      [
+       "1",
+       "2",
+       "!3",
+       "4",
+       "5",
+       "!6"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q030",
@@ -524,7 +1074,15 @@
    ],
    "reponse": 2,
    "explication": "On additionne les exposants : 3 + (−5) = −2.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Pour multiplier deux puissances de 10, on additionne les exposants.",
+     "3 + (−5) = −2.",
+     "10³ × 10⁻⁵ = 10⁻² = 0,01."
+    ],
+    "retenir": "10ᵃ × 10ᵇ = 10ᵃ⁺ᵇ et 10ᵃ ÷ 10ᵇ = 10ᵃ⁻ᵇ."
+   }
   },
   {
    "id": "q031",
@@ -1980,7 +2538,15 @@
    ],
    "reponse": 1,
    "explication": "La multiplication passe avant l'addition : 4 × 5 = 20, puis 3 + 20 = 23.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Priorités : d'abord la multiplication, ensuite l'addition.",
+     "4 × 5 = 20.",
+     "3 + 20 = 23. (Calculer 3 + 4 = 7 puis 7 × 5 = 35 est l'erreur classique.)"
+    ],
+    "retenir": "Ordre des calculs : parenthèses, puis puissances, puis × et ÷, puis + et −."
+   }
   },
   {
    "id": "q122",
@@ -1996,7 +2562,15 @@
    ],
    "reponse": 1,
    "explication": "D'abord les parenthèses : 3 + 4 = 7. Puis la multiplication : 2 × 7 = 14. Enfin 20 − 14 = 6.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "D'abord les parenthèses : 3 + 4 = 7.",
+     "Puis la multiplication : 2 × 7 = 14.",
+     "Enfin la soustraction : 20 − 14 = 6."
+    ],
+    "retenir": "Ordre des calculs : parenthèses, puis puissances, puis × et ÷, puis + et −."
+   }
   },
   {
    "id": "q123",
@@ -2012,7 +2586,15 @@
    ],
    "reponse": 2,
    "explication": "Le produit de deux nombres négatifs est positif : (−3) × (−4) = 12.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On multiplie les nombres sans les signes : 3 × 4 = 12.",
+     "On compte les signes − : il y en a 2, un nombre pair.",
+     "Le résultat est positif : 12."
+    ],
+    "retenir": "Règle des signes : un nombre pair de facteurs négatifs donne un produit positif, un nombre impair un produit négatif."
+   }
   },
   {
    "id": "q124",
@@ -2028,7 +2610,22 @@
    ],
    "reponse": 0,
    "explication": "On part de −5 et on avance de 8 : on arrive à 3.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On place −5 sur la droite graduée.",
+     "Ajouter 8, c'est avancer de 8 graduations vers la droite.",
+     "On arrive à 3."
+    ],
+    "retenir": "Ajouter un nombre positif fait avancer vers la droite sur la droite graduée.",
+    "schema": {
+     "type": "axe",
+     "de": -6,
+     "a": 6,
+     "depart": -5,
+     "pas": 8
+    }
+   }
   },
   {
    "id": "q125",
@@ -2044,7 +2641,15 @@
    ],
    "reponse": 2,
    "explication": "On multiplie les numérateurs et les dénominateurs : 18/12, qui se simplifie par 6 en 3/2.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On multiplie les numérateurs entre eux : 2 × 9 = 18.",
+     "On multiplie les dénominateurs entre eux : 3 × 4 = 12.",
+     "18/12 se simplifie par 6 : 3/2."
+    ],
+    "retenir": "a/b × c/d = (a × c)/(b × d). Simplifier avant de multiplier rend les calculs plus faciles."
+   }
   },
   {
    "id": "q126",
@@ -2060,7 +2665,28 @@
    ],
    "reponse": 2,
    "explication": "18 et 24 sont tous deux divisibles par 6 : 18/24 = 3/4.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On cherche un diviseur commun à 18 et 24 : 6 marche (18 = 6 × 3 et 24 = 6 × 4).",
+     "On divise le haut et le bas par 6 : 18/24 = 3/4.",
+     "3 et 4 n'ont plus de diviseur commun : la fraction est irréductible."
+    ],
+    "retenir": "Simplifier une fraction, c'est diviser le numérateur et le dénominateur par le même nombre.",
+    "schema": {
+     "type": "fraction",
+     "parts": [
+      [
+       18,
+       24
+      ],
+      [
+       3,
+       4
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q127",
@@ -2076,7 +2702,14 @@
    ],
    "reponse": 1,
    "explication": "2⁵ = 2 × 2 × 2 × 2 × 2 = 32. Attention, ce n'est pas 2 × 5.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "2⁵ signifie 2 multiplié 5 fois par lui-même.",
+     "2 × 2 = 4, × 2 = 8, × 2 = 16, × 2 = 32."
+    ],
+    "retenir": "aⁿ = a × a × … × a (n facteurs). Ne pas confondre avec a × n."
+   }
   },
   {
    "id": "q128",
@@ -2092,7 +2725,15 @@
    ],
    "reponse": 1,
    "explication": "En notation scientifique, le premier nombre est entre 1 et 10 : 45 000 = 4,5 × 10 000 = 4,5 × 10⁴.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "L'écriture scientifique est a × 10ⁿ avec a entre 1 et 10 (10 exclu).",
+     "On déplace la virgule de 45 000 pour obtenir 4,5 : elle recule de 4 rangs.",
+     "45 000 = 4,5 × 10⁴."
+    ],
+    "retenir": "Grand nombre : exposant positif. Petit nombre (moins de 1) : exposant négatif."
+   }
   },
   {
    "id": "q129",
@@ -2108,7 +2749,15 @@
    ],
    "reponse": 1,
    "explication": "0,003 = 3 millièmes = 3 × 10⁻³.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On veut a entre 1 et 10 : ici a = 3.",
+     "Pour passer de 0,003 à 3, la virgule avance de 3 rangs vers la droite.",
+     "0,003 = 3 × 10⁻³."
+    ],
+    "retenir": "10⁻¹ = 0,1 ; 10⁻² = 0,01 ; 10⁻³ = 0,001."
+   }
   },
   {
    "id": "q130",
@@ -2124,7 +2773,15 @@
    ],
    "reponse": 0,
    "explication": "(−2) × (−2) × (−2) × (−2) = 16 : un nombre pair de facteurs négatifs donne un résultat positif.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "(−2)⁴ = (−2) × (−2) × (−2) × (−2).",
+     "(−2) × (−2) = 4, puis 4 × 4 = 16.",
+     "4 facteurs négatifs, un nombre pair : le résultat est positif."
+    ],
+    "retenir": "Attention : (−2)⁴ = 16 mais −2⁴ = −16, car sans parenthèses la puissance ne porte que sur 2."
+   }
   },
   {
    "id": "q131",
@@ -2140,7 +2797,15 @@
    ],
    "reponse": 0,
    "explication": "Pour diviser des puissances de 10, on soustrait les exposants : 6 − 2 = 4.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Pour diviser des puissances de 10, on soustrait les exposants.",
+     "6 − 2 = 4, donc 10⁶ ÷ 10² = 10⁴ = 10 000.",
+     "Vérification : 1 000 000 ÷ 100 = 10 000."
+    ],
+    "retenir": "10ᵃ ÷ 10ᵇ = 10ᵃ⁻ᵇ."
+   }
   },
   {
    "id": "q132",
@@ -2156,7 +2821,31 @@
    ],
    "reponse": 2,
    "explication": "kilo = 10³, méga = 10⁶, giga = 10⁹, téra = 10¹².",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Les préfixes vont de 1 000 en 1 000.",
+     "kilo = 10³ (mille), méga = 10⁶ (million), giga = 10⁹ (milliard), téra = 10¹²."
+    ],
+    "retenir": "Petits préfixes : milli = 10⁻³, micro = 10⁻⁶, nano = 10⁻⁹.",
+    "schema": {
+     "type": "table",
+     "head": [
+      "kilo",
+      "méga",
+      "giga",
+      "téra"
+     ],
+     "rows": [
+      [
+       "10³",
+       "10⁶",
+       "!10⁹",
+       "10¹²"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q133",
@@ -2172,7 +2861,15 @@
    ],
    "reponse": 2,
    "explication": "Les diviseurs de 12 sont 1, 2, 3, 4, 6 et 12 : il y en a 6.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On cherche les paires de nombres dont le produit fait 12.",
+     "1 × 12, 2 × 6, 3 × 4.",
+     "Diviseurs : 1, 2, 3, 4, 6, 12, soit 6 diviseurs."
+    ],
+    "retenir": "On trouve les diviseurs par paires, en s'arrêtant quand les deux nombres se croisent."
+   }
   },
   {
    "id": "q134",
@@ -2188,7 +2885,15 @@
    ],
    "reponse": 2,
    "explication": "Un nombre est divisible par 9 si la somme de ses chiffres l'est : 7 + 3 + 8 = 18.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Critère : un nombre est divisible par 9 si la somme de ses chiffres est divisible par 9.",
+     "728 : 17 ; 738 : 18 ; 745 : 16 ; 812 : 11.",
+     "Seul 738 convient : 738 = 9 × 82."
+    ],
+    "retenir": "Divisible par 3 ou 9 : somme des chiffres divisible par 3 ou 9. Par 5 : se termine par 0 ou 5."
+   }
   },
   {
    "id": "q135",
@@ -2204,7 +2909,15 @@
    ],
    "reponse": 2,
    "explication": "35 = 5 × 7 et 24 = 2³ × 3 n'ont aucun facteur premier commun : leur PGCD est 1, la fraction 35/24 est irréductible.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "35 = 5 × 7.",
+     "24 = 2 × 2 × 2 × 3.",
+     "Aucun facteur premier en commun : PGCD = 1. On dit que 35 et 24 sont premiers entre eux."
+    ],
+    "retenir": "Si le PGCD du numérateur et du dénominateur vaut 1, la fraction est irréductible."
+   }
   },
   {
    "id": "q136",
@@ -2220,7 +2933,15 @@
    ],
    "reponse": 3,
    "explication": "On regroupe les x d'un côté : −7 − 1 = 3x − 2x, donc x = −8.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On veut les x d'un seul côté : on enlève 2x des deux côtés. −7 = x + 1.",
+     "On enlève 1 des deux côtés : −8 = x.",
+     "Vérification : 2 × (−8) − 7 = −23 et 3 × (−8) + 1 = −23."
+    ],
+    "retenir": "On regroupe les x d'un côté et les nombres de l'autre, en faisant la même opération des deux côtés."
+   }
   },
   {
    "id": "q137",
@@ -2236,7 +2957,35 @@
    ],
    "reponse": 3,
    "explication": "(a + b)² = a² + 2ab + b², avec a = 2x et b = 1 : 4x² + 4x + 1.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On applique (a + b)² = a² + 2ab + b² avec a = 2x et b = 1.",
+     "a² = (2x)² = 4x² ; 2ab = 2 × 2x × 1 = 4x ; b² = 1.",
+     "(2x + 1)² = 4x² + 4x + 1."
+    ],
+    "retenir": "Erreur à éviter : (a + b)² n'est pas a² + b², il manque le double produit 2ab.",
+    "schema": {
+     "type": "table",
+     "head": [
+      "×",
+      "2x",
+      "1"
+     ],
+     "rows": [
+      [
+       "2x",
+       "4x²",
+       "2x"
+      ],
+      [
+       "1",
+       "2x",
+       "1"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q138",
@@ -2252,7 +3001,21 @@
    ],
    "reponse": 1,
    "explication": "Une fonction linéaire est de la forme f(x) = ax. Elle traduit une situation de proportionnalité.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Une fonction linéaire est de la forme f(x) = ax, sans nombre ajouté.",
+     "Exemple : f(x) = 3x.",
+     "Elle traduit une situation de proportionnalité, et sa droite passe par l'origine."
+    ],
+    "retenir": "Linéaire : f(x) = ax. Affine : f(x) = ax + b. Une fonction linéaire est une fonction affine avec b = 0.",
+    "schema": {
+     "type": "droite",
+     "a": 1.5,
+     "b": 0,
+     "label": "f(x) = 1,5x passe par (0 ; 0)"
+    }
+   }
   },
   {
    "id": "q139",
@@ -2268,7 +3031,21 @@
    ],
    "reponse": 2,
    "explication": "Toute fonction affine f(x) = ax + b est représentée par une droite.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Une fonction affine s'écrit f(x) = ax + b.",
+     "Quand x augmente de 1, f(x) augmente toujours de a : la « pente » est constante.",
+     "Sa représentation graphique est donc une droite."
+    ],
+    "retenir": "a est le coefficient directeur (la pente), b l'ordonnée à l'origine (où la droite coupe l'axe vertical).",
+    "schema": {
+     "type": "droite",
+     "a": 0.5,
+     "b": 2,
+     "label": "f(x) = 0,5x + 2"
+    }
+   }
   },
   {
    "id": "q140",
@@ -2284,7 +3061,25 @@
    ],
    "reponse": 2,
    "explication": "Dans f(x) = ax + b, a est le coefficient directeur (ici −2) et b l'ordonnée à l'origine (ici 5).",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On écrit f(x) sous la forme ax + b : f(x) = −2x + 5.",
+     "a = −2 est le coefficient directeur, b = 5 l'ordonnée à l'origine.",
+     "a est négatif : la droite descend."
+    ],
+    "retenir": "a > 0 : la droite monte. a < 0 : elle descend. b : la droite coupe l'axe des ordonnées en (0 ; b).",
+    "schema": {
+     "type": "droite",
+     "a": -2,
+     "b": 5,
+     "point": [
+      0,
+      5
+     ],
+     "label": "f(x) = −2x + 5"
+    }
+   }
   },
   {
    "id": "q141",
@@ -2300,7 +3095,15 @@
    ],
    "reponse": 2,
    "explication": "(−3)² = 9, donc g(−3) = 9 − 1 = 8.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On remplace x par −3 avec des parenthèses : g(−3) = (−3)² − 1.",
+     "(−3)² = (−3) × (−3) = 9.",
+     "g(−3) = 9 − 1 = 8."
+    ],
+    "retenir": "Toujours mettre des parenthèses autour d'un nombre négatif qu'on remplace dans une expression."
+   }
   },
   {
    "id": "q142",
@@ -2316,7 +3119,32 @@
    ],
    "reponse": 2,
    "explication": "4 × 25 000 = 100 000 cm = 1 000 m = 1 km.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Échelle 1/25 000 : 1 cm sur la carte représente 25 000 cm en vrai.",
+     "4 cm représentent 4 × 25 000 = 100 000 cm.",
+     "100 000 cm = 1 000 m = 1 km."
+    ],
+    "retenir": "Distance réelle = distance sur la carte × dénominateur de l'échelle, puis on convertit.",
+    "schema": {
+     "type": "table",
+     "head": [
+      "Carte",
+      "Réalité"
+     ],
+     "rows": [
+      [
+       "1 cm",
+       "25 000 cm"
+      ],
+      [
+       "4 cm",
+       "!100 000 cm = 1 km"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q143",
@@ -2332,7 +3160,15 @@
    ],
    "reponse": 2,
    "explication": "Hausse de 10 € sur 40 € : 10 ÷ 40 = 0,25 = 25 %.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Hausse = 50 − 40 = 10 €.",
+     "On compare la hausse au prix de départ : 10 ÷ 40 = 0,25.",
+     "0,25 = 25 %."
+    ],
+    "retenir": "Taux d'évolution = (valeur d'arrivée − valeur de départ) ÷ valeur de départ."
+   }
   },
   {
    "id": "q144",
@@ -2348,7 +3184,27 @@
    ],
    "reponse": 3,
    "explication": "Le coefficient de proportionnalité est 6 ÷ 2 = 3, donc 5 × 3 = 15.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On cherche le coefficient de proportionnalité : 6 ÷ 2 = 3.",
+     "On multiplie : 5 × 3 = 15."
+    ],
+    "retenir": "Dans un tableau de proportionnalité, on passe d'une ligne à l'autre en multipliant toujours par le même nombre.",
+    "schema": {
+     "type": "table",
+     "rows": [
+      [
+       "2",
+       "5"
+      ],
+      [
+       "6",
+       "!15"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q145",
@@ -2364,7 +3220,29 @@
    ],
    "reponse": 2,
    "explication": "Étendue = plus grande valeur − plus petite valeur = 15 − 4 = 11.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Plus grande valeur : 15. Plus petite valeur : 4.",
+     "Étendue = 15 − 4 = 11."
+    ],
+    "retenir": "L'étendue mesure la dispersion : l'écart entre la plus grande et la plus petite valeur.",
+    "schema": {
+     "type": "barres",
+     "vals": [
+      4,
+      9,
+      12,
+      7,
+      15
+     ],
+     "hl": [
+      0,
+      4
+     ],
+     "legende": "Étendue = 15 − 4"
+    }
+   }
   },
   {
    "id": "q146",
@@ -2380,7 +3258,15 @@
    ],
    "reponse": 0,
    "explication": "Une probabilité est toujours entre 0 (impossible) et 1 (certain).",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Un événement certain se produit à coup sûr, par exemple « obtenir un nombre entre 1 et 6 » avec un dé.",
+     "Sa probabilité vaut 1.",
+     "Un événement impossible a une probabilité de 0."
+    ],
+    "retenir": "Une probabilité est toujours comprise entre 0 et 1."
+   }
   },
   {
    "id": "q147",
@@ -2396,7 +3282,20 @@
    ],
    "reponse": 3,
    "explication": "A = π × r² = π × 5² = 25π cm², soit environ 78,5 cm².",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Aire d'un disque = π × r².",
+     "r² = 5 × 5 = 25.",
+     "A = 25π cm² ≈ 78,5 cm²."
+    ],
+    "retenir": "Aire du disque : π × r². Périmètre du cercle : 2 × π × r (ou π × d).",
+    "schema": {
+     "type": "cercle",
+     "r": "5 cm",
+     "disque": true
+    }
+   }
   },
   {
    "id": "q148",
@@ -2412,7 +3311,18 @@
    ],
    "reponse": 2,
    "explication": "P = π × diamètre = 10π cm, soit environ 31,4 cm.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Périmètre d'un cercle = π × diamètre.",
+     "P = π × 10 = 10π cm ≈ 31,4 cm."
+    ],
+    "retenir": "Périmètre = π × d = 2 × π × r. Le diamètre est le double du rayon.",
+    "schema": {
+     "type": "cercle",
+     "d": "10 cm"
+    }
+   }
   },
   {
    "id": "q149",
@@ -2428,7 +3338,20 @@
    ],
    "reponse": 0,
    "explication": "A = base × hauteur ÷ 2 = 8 × 5 ÷ 2 = 20 cm².",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Aire d'un triangle = base × hauteur ÷ 2.",
+     "8 × 5 = 40.",
+     "40 ÷ 2 = 20 cm²."
+    ],
+    "retenir": "La hauteur est perpendiculaire à la base et passe par le sommet opposé.",
+    "schema": {
+     "type": "tri_hauteur",
+     "b": "8 cm",
+     "h": "5 cm"
+    }
+   }
   },
   {
    "id": "q150",
@@ -2444,7 +3367,20 @@
    ],
    "reponse": 3,
    "explication": "P = 2 × (longueur + largeur) = 2 × (7 + 3) = 20 cm. 21 cm², c'est son aire.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Le périmètre est la longueur du tour : 7 + 3 + 7 + 3.",
+     "= 2 × (7 + 3) = 20 cm.",
+     "Ne pas confondre avec l'aire : 7 × 3 = 21 cm²."
+    ],
+    "retenir": "Périmètre : une longueur (cm). Aire : une surface (cm²).",
+    "schema": {
+     "type": "rect",
+     "w": "7 cm",
+     "h": "3 cm"
+    }
+   }
   },
   {
    "id": "q151",
@@ -2460,7 +3396,20 @@
    ],
    "reponse": 1,
    "explication": "1 m = 100 cm, donc 1 m² = 100 cm × 100 cm = 10 000 cm².",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "1 m = 100 cm.",
+     "Un carré de 1 m de côté mesure 100 cm × 100 cm.",
+     "Son aire vaut 10 000 cm²."
+    ],
+    "retenir": "Pour les aires, on multiplie par 100 à chaque unité : 1 m² = 100 dm² = 10 000 cm².",
+    "schema": {
+     "type": "rect",
+     "w": "100 cm",
+     "h": "100 cm"
+    }
+   }
   },
   {
    "id": "q152",
@@ -2476,7 +3425,23 @@
    ],
    "reponse": 0,
    "explication": "V = arête³ = 4 × 4 × 4 = 64 cm³.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Volume d'un cube = arête × arête × arête.",
+     "4 × 4 × 4 = 64 cm³."
+    ],
+    "retenir": "Pour les volumes, on multiplie par 1 000 à chaque unité : 1 dm³ = 1 000 cm³.",
+    "schema": {
+     "type": "solide",
+     "k": "cube",
+     "labels": {
+      "L": "4 cm",
+      "l": "4 cm",
+      "h": "4 cm"
+     }
+    }
+   }
   },
   {
    "id": "q153",
@@ -2492,7 +3457,23 @@
    ],
    "reponse": 2,
    "explication": "V = aire de la base × hauteur ÷ 3 = 30 × 10 ÷ 3 = 100 cm³.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Volume d'une pyramide = aire de la base × hauteur ÷ 3.",
+     "30 × 10 = 300.",
+     "300 ÷ 3 = 100 cm³."
+    ],
+    "retenir": "Pyramide et cône : on divise par 3. Prisme et cylindre : on ne divise pas.",
+    "schema": {
+     "type": "solide",
+     "k": "pyramide",
+     "labels": {
+      "h": "10 cm",
+      "base": "aire de base : 30 cm²"
+     }
+    }
+   }
   },
   {
    "id": "q154",
@@ -2508,7 +3489,23 @@
    ],
    "reponse": 0,
    "explication": "Comme une pyramide, un cône a pour volume aire de la base × hauteur ÷ 3, avec une base de π × r².",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "La base d'un cône est un disque d'aire π × r².",
+     "Comme pour une pyramide, on multiplie par la hauteur et on divise par 3.",
+     "V = π × r² × h ÷ 3."
+    ],
+    "retenir": "Un cône « remplit » un tiers du cylindre de même base et même hauteur.",
+    "schema": {
+     "type": "solide",
+     "k": "cone",
+     "labels": {
+      "r": "r",
+      "h": "h"
+     }
+    }
+   }
   },
   {
    "id": "q155",
@@ -2524,7 +3521,22 @@
    ],
    "reponse": 0,
    "explication": "V = 4/3 × π × r³ = 4/3 × π × 27 = 36π cm³.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Volume d'une boule = 4/3 × π × r³.",
+     "r³ = 3 × 3 × 3 = 27.",
+     "V = 4/3 × 27 × π = 36π cm³ ≈ 113 cm³."
+    ],
+    "retenir": "Boule : V = 4/3 × π × r³. Sphère : aire = 4 × π × r².",
+    "schema": {
+     "type": "solide",
+     "k": "boule",
+     "labels": {
+      "r": "r = 3 cm"
+     }
+    }
+   }
   },
   {
    "id": "q156",
@@ -2540,7 +3552,15 @@
    ],
    "reponse": 1,
    "explication": "1 m³ = 1 000 dm³, et 1 dm³ = 1 L, donc 1 m³ = 1 000 L.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "1 m³ = 1 000 dm³ (car 10 × 10 × 10).",
+     "1 dm³ = 1 L.",
+     "Donc 1 m³ = 1 000 L."
+    ],
+    "retenir": "1 m³ = 1 000 L ; 1 dm³ = 1 L ; 1 cm³ = 1 mL."
+   }
   },
   {
    "id": "q157",
@@ -2556,7 +3576,14 @@
    ],
    "reponse": 1,
    "explication": "90 km/h = 90 000 m en 3 600 s, soit 90 000 ÷ 3 600 = 25 m/s.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "90 km/h : 90 km en 1 heure, soit 90 000 m en 3 600 s.",
+     "90 000 ÷ 3 600 = 25 m/s."
+    ],
+    "retenir": "Astuce : pour passer de km/h à m/s, on divise par 3,6. Pour l'inverse, on multiplie par 3,6."
+   }
   },
   {
    "id": "q158",
@@ -2572,7 +3599,14 @@
    ],
    "reponse": 1,
    "explication": "2 h 30 min = 2,5 h, et d = v × t = 60 × 2,5 = 150 km.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On convertit la durée en heures : 2 h 30 min = 2,5 h.",
+     "d = v × t = 60 × 2,5 = 150 km."
+    ],
+    "retenir": "Les trois formules : v = d ÷ t ; d = v × t ; t = d ÷ v."
+   }
   },
   {
    "id": "q159",
@@ -2588,7 +3622,14 @@
    ],
    "reponse": 1,
    "explication": "Débit = volume ÷ durée = 60 ÷ 5 = 12 L/min.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Le débit est un volume par unité de temps.",
+     "60 L ÷ 5 min = 12 L/min."
+    ],
+    "retenir": "Débit = volume ÷ durée. Unité : L/min, m³/h…"
+   }
   },
   {
    "id": "q160",
@@ -2604,7 +3645,15 @@
    ],
    "reponse": 0,
    "explication": "ρ = masse ÷ volume = 200 ÷ 250 = 0,8 g/cm³. Il flotte sur l'eau (1 g/cm³).",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "La masse volumique est la masse d'une unité de volume : ρ = m ÷ V.",
+     "200 g ÷ 250 cm³ = 0,8 g/cm³.",
+     "C'est moins que l'eau (1 g/cm³) : l'objet flotte."
+    ],
+    "retenir": "ρ = m ÷ V. Un objet flotte sur l'eau si sa masse volumique est inférieure à 1 g/cm³."
+   }
   },
   {
    "id": "q161",
@@ -2620,7 +3669,28 @@
    ],
    "reponse": 2,
    "explication": "sinus = côté opposé ÷ hypoténuse. Le côté opposé à B est AC, l'hypoténuse est BC.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "L'angle étudié est B.",
+     "Le côté opposé à B est celui qui ne touche pas B : AC.",
+     "L'hypoténuse est BC. Donc sin(B) = AC / BC."
+    ],
+    "retenir": "SOH : Sinus = Opposé / Hypoténuse.",
+    "schema": {
+     "type": "tri_rect",
+     "pts": [
+      "A",
+      "B",
+      "C"
+     ],
+     "cotes": {
+      "AC": "opposé à B",
+      "BC": "hypoténuse"
+     },
+     "angle": "B"
+    }
+   }
   },
   {
    "id": "q162",
@@ -2636,7 +3706,15 @@
    ],
    "reponse": 3,
    "explication": "Dans n'importe quel triangle, la somme des trois angles vaut 180°.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Dans tout triangle, la somme des 3 angles fait 180°.",
+     "Exemple : un triangle équilatéral a 3 angles de 60°, et 3 × 60 = 180.",
+     "Dans un triangle rectangle, les deux angles aigus font donc 90° à eux deux."
+    ],
+    "retenir": "Somme des angles d'un triangle = 180°."
+   }
   },
   {
    "id": "q163",
@@ -2652,7 +3730,18 @@
    ],
    "reponse": 1,
    "explication": "La translation déplace la figure dans une direction, un sens et sur une longueur donnés.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "La translation fait glisser la figure : même direction, même sens, même longueur pour tous les points.",
+     "La figure ne tourne pas et n'est pas retournée."
+    ],
+    "retenir": "Translation : glisser. Rotation : tourner. Symétrie axiale : retourner comme dans un miroir. Homothétie : agrandir ou réduire.",
+    "schema": {
+     "type": "transfo",
+     "k": "translation"
+    }
+   }
   },
   {
    "id": "q164",
@@ -2668,7 +3757,21 @@
    ],
    "reponse": 2,
    "explication": "Un rapport entre 0 et 1 donne une réduction : ici les longueurs sont divisées par 2.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Rapport 0,5 : toutes les longueurs sont multipliées par 0,5, donc divisées par 2.",
+     "0,5 est entre 0 et 1 : c'est une réduction.",
+     "Les aires sont multipliées par 0,5² = 0,25."
+    ],
+    "retenir": "Homothétie de rapport k : longueurs × k. Si 0 < k < 1, c'est une réduction.",
+    "schema": {
+     "type": "transfo",
+     "k": "homothetie",
+     "r": 0.5,
+     "legende": "Rapport 0,5 : 2 fois plus petit"
+    }
+   }
   },
   {
    "id": "q165",
@@ -2684,7 +3787,19 @@
    ],
    "reponse": 1,
    "explication": "Rotation, translation et symétries conservent les longueurs, les angles et les aires.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Une rotation fait tourner la figure autour d'un point, sans la déformer.",
+     "Les longueurs, les angles et les aires sont conservés."
+    ],
+    "retenir": "Translation, rotation et symétries conservent les longueurs, les angles et les aires. L'homothétie conserve seulement les angles.",
+    "schema": {
+     "type": "transfo",
+     "k": "rotation",
+     "legende": "Rotation de 90° autour de O"
+    }
+   }
   },
   {
    "id": "q166",
@@ -2700,7 +3815,19 @@
    ],
    "reponse": 2,
    "explication": "Le symétrique d'un point par rapport à O est son image par la rotation de centre O et d'angle 180°.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "La symétrie centrale de centre O envoie chaque point de l'autre côté de O, à la même distance.",
+     "C'est exactement un demi-tour autour de O, soit une rotation de 180°."
+    ],
+    "retenir": "Symétrie centrale = rotation de 180° (demi-tour).",
+    "schema": {
+     "type": "transfo",
+     "k": "symetrie",
+     "legende": "Symétrie de centre O = demi-tour"
+    }
+   }
   },
   {
    "id": "q167",
@@ -2716,7 +3843,15 @@
    ],
    "reponse": 0,
    "explication": "Un carré a 4 axes : ses 2 diagonales et les 2 médiatrices de ses côtés.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Un carré a 2 axes qui passent par les milieux des côtés opposés.",
+     "Et 2 axes qui sont ses diagonales.",
+     "Total : 4 axes de symétrie."
+    ],
+    "retenir": "Un rectangle (non carré) n'a que 2 axes, un losange aussi : ses diagonales."
+   }
   },
   {
    "id": "q168",
@@ -2732,7 +3867,15 @@
    ],
    "reponse": 3,
    "explication": "Une variable est une « boîte » nommée qui garde une valeur (un score, un compteur…).",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Une variable est une « boîte » avec un nom, qui garde une valeur.",
+     "Exemple : la variable score vaut 0 au départ, puis augmente de 1 à chaque bonne réponse.",
+     "Sa valeur peut changer pendant que le programme tourne."
+    ],
+    "retenir": "Variable : stocke une valeur. Boucle : répète. Condition (si… alors) : choisit."
+   }
   },
   {
    "id": "q169",
@@ -2748,7 +3891,14 @@
    ],
    "reponse": 3,
    "explication": "10 répétitions de 20 pas : 10 × 20 = 200 pas.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Le bloc « avancer de 20 pas » est répété 10 fois.",
+     "Distance totale = 10 × 20 = 200 pas."
+    ],
+    "retenir": "Dans une boucle « répéter n fois », les instructions à l'intérieur s'exécutent n fois."
+   }
   },
   {
    "id": "q170",
@@ -2764,7 +3914,48 @@
    ],
    "reponse": 3,
    "explication": "Le « : » désigne une plage de cellules (A1 jusqu'à A5). « ; » n'additionnerait que A1 et A5.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Une formule commence par =.",
+     "La fonction SOMME additionne une plage de cellules.",
+     "A1:A5 signifie « de A1 jusqu'à A5 ». Avec A1;A5, on n'additionnerait que A1 et A5."
+    ],
+    "retenir": "Plage de cellules : deux-points (A1:A5). Liste de cellules : point-virgule (A1;A5).",
+    "schema": {
+     "type": "table",
+     "head": [
+      "",
+      "A"
+     ],
+     "rows": [
+      [
+       "1",
+       "4"
+      ],
+      [
+       "2",
+       "7"
+      ],
+      [
+       "3",
+       "2"
+      ],
+      [
+       "4",
+       "5"
+      ],
+      [
+       "5",
+       "1"
+      ],
+      [
+       "6",
+       "!=SOMME(A1:A5) → 19"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q171",

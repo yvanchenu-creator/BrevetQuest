@@ -57,6 +57,18 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-off
 .feedback.bad{background:var(--kobg);color:var(--kotext)}
 .feedback p{margin:0;color:var(--soft);font-size:14px}
 .feedback .src{font-size:12px;color:var(--muted)}
+.detail{background:var(--panel);border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:12px}
+.detail h3{font-family:var(--display);font-size:16px;margin:0}
+.detail ol{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px;font-size:15px;color:var(--soft)}
+.detail li::marker{color:var(--accent);font-weight:700}
+.retenir{background:var(--panel2);border:1px solid var(--accent);border-radius:14px;padding:12px 14px;font-size:14px;color:var(--soft);display:flex;flex-direction:column;gap:4px}
+.retenir b{color:var(--accent);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.schema{width:100%;max-width:380px;height:auto;align-self:center;display:block}
+.stable{border-collapse:collapse;align-self:center;font-variant-numeric:tabular-nums}
+.stable td,.stable th{border:1px solid var(--line);padding:8px 12px;text-align:center;font-size:15px}
+.stable th{color:var(--muted);font-weight:600}
+.stable .hl{color:var(--accent);font-weight:700}
+.linkbtn{background:none;border:none;color:var(--accent);font-weight:700;font-size:15px;cursor:pointer;padding:8px 0;align-self:flex-start;min-height:44px}
 .big{font-family:var(--display);font-size:44px;font-weight:700;color:var(--accent);line-height:1}
 .center{text-align:center;align-items:center}
 .save{font-size:12px;color:var(--muted);text-align:center}
@@ -338,14 +350,170 @@ function renderQuiz(){
     ${answered ? `<div class="feedback ${good ? "good" : "bad"} pop">
         <strong class="display" style="font-size:18px">${good ? "Bien joué ! +" + gain(true) + " XP" : "Pas tout à fait… +" + gain(false) + " XP pour l'effort"}</strong>
         <p>${esc(q.explication)}</p><span class="src">${esc(q.source)}</span></div>
+      ${detailBlock(q, !good || S.showDetail)}
       <button class="btn main" id="next">${last ? "Voir mon bilan" : "Question suivante"}</button>` : ""}`;
   app.querySelectorAll("[data-k]").forEach(b => b.onclick = () => answer(+b.dataset.k));
   document.getElementById("quit").onclick = () => { S = {screen:"home"}; render(); };
+  const sd = document.getElementById("showDetail"); if (sd) sd.onclick = () => { S.showDetail = true; render(); };
   const nx = document.getElementById("next"); if (nx) nx.onclick = () => {
-    if (last) finish(); else { S.i++; S.picked = null; render(); window.scrollTo(0,0); }
+    if (last) finish(); else { S.i++; S.picked = null; S.showDetail = false; render(); window.scrollTo(0,0); }
   };
 }
 function gain(good){ return (good ? 10 : 2) * (S.daily ? 2 : 1); }
+
+/* ---------- correction détaillée et schémas ---------- */
+function detailBlock(q, open){
+  const d = q.detail;
+  if (!d) return "";
+  if (!open) return `<button class="linkbtn" id="showDetail">Voir la correction détaillée</button>`;
+  return `<div class="detail pop">
+    ${d.schema ? schema(d.schema) : ""}
+    ${d.etapes && d.etapes.length ? `<h3>Correction pas à pas</h3><ol>${d.etapes.map(e => `<li>${esc(e)}</li>`).join("")}</ol>` : ""}
+    ${d.retenir ? `<div class="retenir"><b>À retenir</b><span>${esc(d.retenir)}</span></div>` : ""}
+  </div>`;
+}
+
+const K = {line:"#DDE2F7", mut:"#A9B1D6", acc:"#D4FF3A", fill:"#2B3360", ok:"#3DDC97", blue:"#5B8CFF", pink:"#FF6B9A", orange:"#FFA94D"};
+const tx = (x, y, t, o = {}) => `<text x="${x}" y="${y}" fill="${o.c || K.line}" font-size="${o.s || 14}" font-weight="${o.w || 600}" text-anchor="${o.a || "middle"}" dominant-baseline="middle" font-family="Inter,system-ui,sans-serif">${esc(t)}</text>`;
+const ln = (x1, y1, x2, y2, o = {}) => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${o.c || K.line}" stroke-width="${o.w || 2.5}" stroke-linecap="round"${o.d ? ` stroke-dasharray="${o.d}"` : ""}/>`;
+const lc = v => v && String(v).includes("?") ? K.acc : K.line;
+const svg = (inner, h = 200, w = 300) => `<svg class="schema" viewBox="0 0 ${w} ${h}" role="img" aria-label="Schéma de la correction">${inner}</svg>`;
+
+function schema(s){
+  try { return (SCHEMAS[s.type] || (() => ""))(s); } catch(e) { return ""; }
+}
+const SCHEMAS = {
+  tri_rect(s){ // angle droit en A (bas gauche), B en haut, C à droite
+    const [a, b, c] = s.pts || ["A","B","C"], k = s.cotes || {};
+    const ab = k[a+b] || k[b+a], ac = k[a+c] || k[c+a], bc = k[b+c] || k[c+b];
+    let arc = "";
+    if (s.angle === b) arc = `<path d="M100,65 A30,30 0 0 0 119,58" fill="none" stroke="${K.acc}" stroke-width="2.5"/>`;
+    if (s.angle === c) arc = `<path d="M235,165 A35,35 0 0 1 241,143" fill="none" stroke="${K.acc}" stroke-width="2.5"/>`;
+    return svg(`<polygon points="100,165 100,35 270,165" fill="${K.fill}" stroke="${K.line}" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="M100,150 h15 v15" fill="none" stroke="${K.line}" stroke-width="2"/>${arc}
+      ${tx(88,175,a)}${tx(88,28,b)}${tx(282,175,c)}
+      ${ab ? tx(88,100,ab,{c:lc(ab),a:"end"}) : ""}${ac ? tx(185,186,ac,{c:lc(ac)}) : ""}${bc ? tx(192,88,bc,{c:lc(bc),a:"start"}) : ""}`, 200);
+  },
+  thales(s){
+    const k = s.cotes || {};
+    return svg(`<polygon points="150,25 40,175 260,175" fill="${K.fill}" stroke="${K.line}" stroke-width="2.5" stroke-linejoin="round"/>
+      ${ln(84,115,216,115,{c:K.acc})}${ln(40,175,260,175,{c:K.acc})}
+      ${tx(150,14,"A")}${tx(70,115,"M")}${tx(230,115,"N")}${tx(30,182,"B")}${tx(270,182,"C")}
+      ${tx(150,105,"(MN) // (BC)",{c:K.acc,s:12})}
+      ${tx(150,205,Object.entries(k).map(([n,v]) => n + " = " + v).join("  ·  "),{s:13,c:K.line})}`, 215);
+  },
+  cercle(s){
+    const r = s.r ? `${ln(150,100,220,100,{c:K.acc})}${tx(185,88,"r = " + s.r,{c:K.acc})}` : "";
+    const d = s.d ? `${ln(80,100,220,100,{c:K.acc})}${tx(150,88,"d = " + s.d,{c:K.acc})}` : "";
+    return svg(`<circle cx="150" cy="100" r="70" fill="${s.disque ? K.fill : "none"}" stroke="${K.line}" stroke-width="2.5"/><circle cx="150" cy="100" r="3" fill="${K.line}"/>${tx(140,112,"O",{s:12})}${r}${d}`);
+  },
+  rect(s){
+    return svg(`<rect x="60" y="45" width="180" height="100" rx="2" fill="${K.fill}" stroke="${K.line}" stroke-width="2.5"/>${tx(150,165,s.w,{c:lc(s.w)})}${tx(48,95,s.h,{c:lc(s.h),a:"end"})}`, 180);
+  },
+  tri_hauteur(s){
+    return svg(`<polygon points="40,165 260,165 110,40" fill="${K.fill}" stroke="${K.line}" stroke-width="2.5" stroke-linejoin="round"/>
+      ${ln(110,40,110,165,{c:K.acc,d:"6 5"})}<path d="M110,152 h13 v13" fill="none" stroke="${K.acc}" stroke-width="2"/>
+      ${tx(150,185,"base = " + s.b)}${tx(118,105,"hauteur = " + s.h,{c:K.acc,a:"start"})}`, 200);
+  },
+  solide(s){
+    const L = s.labels || {};
+    if (s.k === "cube" || s.k === "pave"){
+      const w = s.k === "cube" ? 110 : 160, x = s.k === "cube" ? 80 : 55;
+      return svg(`<polygon points="${x},60 ${x+w},60 ${x+w+45},25 ${x+45},25" fill="#232B52" stroke="${K.line}" stroke-width="2"/>
+        <polygon points="${x+w},60 ${x+w+45},25 ${x+w+45},135 ${x+w},170" fill="#1F2750" stroke="${K.line}" stroke-width="2"/>
+        <rect x="${x}" y="60" width="${w}" height="110" fill="${K.fill}" stroke="${K.line}" stroke-width="2"/>
+        ${ln(x,170,x+45,135,{c:K.mut,w:1.5,d:"5 4"})}${ln(x+45,135,x+w+45,135,{c:K.mut,w:1.5,d:"5 4"})}${ln(x+45,25,x+45,135,{c:K.mut,w:1.5,d:"5 4"})}
+        ${L.L ? tx(x+w/2,186,L.L) : ""}${L.l ? tx(x+w+38,160,L.l,{a:"start"}) : ""}${L.h ? tx(x-10,115,L.h,{a:"end"}) : ""}`, 200);
+    }
+    if (s.k === "cylindre") return svg(`<path d="M50,50 v110 A70,18 0 0 0 190,160 v-110" fill="${K.fill}" stroke="${K.line}" stroke-width="2"/>
+      <ellipse cx="120" cy="50" rx="70" ry="18" fill="#232B52" stroke="${K.line}" stroke-width="2"/>
+      <path d="M50,160 A70,18 0 0 1 190,160" fill="none" stroke="${K.mut}" stroke-width="1.5" stroke-dasharray="5 4"/>
+      ${ln(120,160,190,160,{c:K.acc})}${tx(155,148,L.r || "r",{c:K.acc})}${ln(208,50,208,160,{c:K.mut,w:1.5})}${tx(216,105,L.h || "h",{a:"start"})}`, 190);
+    if (s.k === "cone") return svg(`<path d="M80,160 L150,30 L220,160 A70,18 0 0 1 80,160" fill="${K.fill}" stroke="${K.line}" stroke-width="2"/>
+      <path d="M80,160 A70,18 0 0 1 220,160" fill="none" stroke="${K.mut}" stroke-width="1.5" stroke-dasharray="5 4"/>
+      ${ln(150,30,150,160,{c:K.mut,w:1.5,d:"5 4"})}${ln(150,160,220,160,{c:K.acc})}${tx(185,148,L.r || "r",{c:K.acc})}${tx(158,100,L.h || "h",{a:"start"})}`, 190);
+    if (s.k === "pyramide") return svg(`<polygon points="60,160 200,160 250,120 110,120" fill="#232B52" stroke="${K.line}" stroke-width="2"/>
+      <polygon points="60,160 200,160 155,30" fill="${K.fill}" stroke="${K.line}" stroke-width="2"/><polygon points="200,160 250,120 155,30" fill="#1F2750" stroke="${K.line}" stroke-width="2"/>
+      ${ln(155,30,155,140,{c:K.acc,d:"5 4"})}${tx(147,92,L.h || "h",{c:K.acc,a:"end"})}${tx(130,180,L.base || "base")}`, 195);
+    if (s.k === "boule") return svg(`<circle cx="150" cy="100" r="75" fill="${K.fill}" stroke="${K.line}" stroke-width="2"/>
+      <ellipse cx="150" cy="100" rx="75" ry="18" fill="none" stroke="${K.mut}" stroke-width="1.5" stroke-dasharray="5 4"/>
+      ${ln(150,100,225,100,{c:K.acc})}<circle cx="150" cy="100" r="3" fill="${K.line}"/>${tx(188,88,L.r || "r",{c:K.acc})}`, 200);
+    return "";
+  },
+  urne(s){
+    let out = `<path d="M70,40 v120 a20,20 0 0 0 20,20 h120 a20,20 0 0 0 20,-20 v-120" fill="${K.fill}" stroke="${K.line}" stroke-width="2.5"/>`, i = 0;
+    (s.boules || []).forEach(([col, n]) => { for (let j = 0; j < n; j++, i++) out += `<circle cx="${95 + (i % 5) * 27}" cy="${160 - Math.floor(i / 5) * 27}" r="11" fill="${col}"/>`; });
+    return svg(out, 195);
+  },
+  polygone(s){
+    const n = s.n, R = 70, cx = 150, cy = 100, pts = [];
+    for (let i = 0; i < n; i++){ const a = -Math.PI/2 + i * 2*Math.PI/n; pts.push([cx + R*Math.cos(a), cy + R*Math.sin(a)]); }
+    const [p0, p1] = [pts[0], pts[1]], ex = [p1[0] + (p1[0]-p0[0])*0.6, p1[1] + (p1[1]-p0[1])*0.6];
+    return svg(`<polygon points="${pts.map(p => p.map(v => v.toFixed(1)).join(",")).join(" ")}" fill="${K.fill}" stroke="${K.line}" stroke-width="2.5" stroke-linejoin="round"/>
+      ${ln(p1[0],p1[1],ex[0],ex[1],{c:K.acc,d:"5 4"})}${tx(Math.min(ex[0]+8,290),Math.min(ex[1]-10,188),"tourne de " + s.angle,{c:K.acc,a:"end",s:13})}`, 200);
+  },
+  droite(s){ // repère -5..5
+    const X = x => 150 + x*25, Y = y => 100 - y*16;
+    let g = "";
+    for (let i = -5; i <= 5; i++) g += ln(X(i),Y(-6),X(i),Y(6),{c:"#232B52",w:1}) + ln(X(-5.5),Y(i),X(5.5),Y(i),{c:"#232B52",w:1});
+    g += ln(X(-5.5),Y(0),X(5.5),Y(0),{c:K.mut,w:1.5}) + ln(X(0),Y(-6),X(0),Y(6),{c:K.mut,w:1.5}) + tx(X(5.3),Y(0)+10,"x",{c:K.mut,s:11}) + tx(X(0)+10,Y(5.7),"y",{c:K.mut,s:11});
+    const xs = [-5.5, 5.5].map(x => [x, s.a*x + s.b]);
+    g += `<clipPath id="cl"><rect x="${X(-5.5)}" y="${Y(6)}" width="${X(5.5)-X(-5.5)}" height="${Y(-6)-Y(6)}"/></clipPath>` + `<g clip-path="url(#cl)">${ln(X(xs[0][0]),Y(xs[0][1]),X(xs[1][0]),Y(xs[1][1]),{c:K.acc,w:3})}</g>`;
+    if (s.point) g += `<circle cx="${X(s.point[0])}" cy="${Y(s.point[1])}" r="5" fill="${K.pink}"/>` + tx(X(s.point[0]) + (X(s.point[0]) > 210 ? -10 : 8), Y(s.point[1]) + (Y(s.point[1]) < 30 ? 14 : -12), "(" + s.point[0] + " ; " + s.point[1] + ")", {c:K.pink,a:X(s.point[0]) > 210 ? "end" : "start",s:12});
+    if (s.label) g += tx(X(-5.2), Y(5.4), s.label, {c:K.acc,a:"start",s:13});
+    return svg(g, 200);
+  },
+  barres(s){
+    const v = s.vals, max = Math.max(...v), w = 220 / v.length;
+    return svg(v.map((x,i) => { const h = x/max*120, hl = (s.hl || []).includes(i);
+      return `<rect x="${40 + i*w + 6}" y="${150-h}" width="${w-12}" height="${h}" rx="4" fill="${hl ? K.acc : K.blue}"/>` + tx(40 + i*w + w/2, 140-h, x, {s:12}); }).join("")
+      + ln(36,150,264,150,{c:K.mut,w:1.5}) + (s.legende ? tx(150,175,s.legende,{c:K.mut,s:12}) : ""), 185);
+  },
+  axe(s){ // droite graduée de s.de à s.a, flèche de s.depart, déplacement s.pas
+    const n = s.a - s.de, X = v => 25 + (v - s.de) * 250 / n;
+    let g = ln(15,100,285,100,{c:K.line,w:2});
+    for (let v = s.de; v <= s.a; v++) g += ln(X(v),94,X(v),106,{c:K.line,w:1.5}) + (v % (s.tous ? 1 : 2) === 0 || v === s.depart || v === s.depart + s.pas ? tx(X(v),122,v,{s:12,c:K.mut}) : "");
+    const e = s.depart + s.pas;
+    g += `<path d="M${X(s.depart)},90 Q${(X(s.depart)+X(e))/2},40 ${X(e)},90" fill="none" stroke="${K.acc}" stroke-width="2.5"/>` + tx((X(s.depart)+X(e))/2, 52, (s.pas > 0 ? "+" : "") + s.pas, {c:K.acc})
+      + `<circle cx="${X(s.depart)}" cy="100" r="5" fill="${K.pink}"/><circle cx="${X(e)}" cy="100" r="6" fill="${K.acc}"/>`;
+    return svg(g, 140);
+  },
+  fraction(s){ // s.parts = [[num, den], ...] barres alignées
+    return svg(s.parts.map(([num, den], r) => { const w = 240/den; let g = "";
+      for (let i = 0; i < den; i++) g += `<rect x="${30 + i*w}" y="${25 + r*60}" width="${w}" height="34" fill="${i < num ? K.acc : K.fill}" stroke="${K.bg || "#0F1426"}" stroke-width="1.5"/>`;
+      return g + tx(30, 72 + r*60, num + "/" + den, {a:"start", s:13}); }).join(""), 30 + s.parts.length*60);
+  },
+  transfo(s){ // drapeau et son image
+    const flag = (dx, dy, k = 1, rot = 0, c = K.blue, flip = 1) => `<g transform="translate(${dx},${dy}) rotate(${rot}) scale(${k*flip},${k})"><path d="M0,0 v-50 h30 l-10,10 l10,10 h-30" fill="${c}" stroke="${K.line}" stroke-width="${1.5/k}" stroke-linejoin="round"/></g>`;
+    let g = "";
+    if (s.k === "translation") g = flag(70,140) + flag(200,100,1,0,K.acc) + `<path d="M85,125 L200,85" stroke="${K.mut}" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ar)"/>`;
+    if (s.k === "rotation") g = flag(150,110,1,0) + flag(150,110,1,90,K.acc) + `<circle cx="150" cy="110" r="4" fill="${K.pink}"/>` + tx(140,128,"O",{s:12});
+    if (s.k === "symetrie") g = flag(150,110,1,0) + flag(150,110,1,180,K.acc) + `<circle cx="150" cy="110" r="4" fill="${K.pink}"/>` + tx(162,128,"O",{s:12});
+    if (s.k === "axiale") g = ln(150,20,150,180,{c:K.pink,d:"6 5"}) + flag(165,130) + flag(135,130,1,0,K.acc,-1);
+    const hom = (ox, oy, r, px, py) => `<g transform="translate(${ox},${oy}) scale(${r}) translate(${-ox},${-oy})">${flag(px,py,1,0,K.acc)}</g>`;
+    if (s.k === "homothetie") { const r = s.r || 2; g = ln(40,165,40 + 200,165 - 130,{c:K.mut,w:1,d:"4 4"}) + flag(130,150) + hom(40,165,r,130,150) + `<circle cx="40" cy="165" r="4" fill="${K.pink}"/>` + tx(40,180,"O",{s:12}); }
+    if (s.k === "homothetie_neg") g = ln(30,170,215,60,{c:K.mut,w:1,d:"4 4"}) + flag(180,115) + hom(150,100,-2,180,115) + `<circle cx="150" cy="100" r="4" fill="${K.pink}"/>` + tx(160,112,"O",{s:12});
+    return svg(`<defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="${K.mut}"/></marker></defs>` + g + (s.legende ? tx(150,192,s.legende,{c:K.mut,s:12}) : ""), 200);
+  },
+  table(s){
+    return `<table class="stable">${s.head ? `<tr>${s.head.map(h => `<th>${esc(h)}</th>`).join("")}</tr>` : ""}${s.rows.map(r => `<tr>${r.map(c => { const hl = String(c).startsWith("!"); return `<td class="${hl ? "hl" : ""}">${esc(hl ? String(c).slice(1) : c)}</td>`; }).join("")}</tr>`).join("")}</table>`;
+  },
+  circuit(s){
+    const lamp = (x, y) => `<circle cx="${x}" cy="${y}" r="13" fill="${K.fill}" stroke="${K.line}" stroke-width="2"/>${ln(x-9,y-9,x+9,y+9,{w:2})}${ln(x-9,y+9,x+9,y-9,{w:2})}`;
+    const pile = `${ln(40,85,40,115,{c:K.fill,w:1})}${ln(30,92,50,92,{w:3})}${ln(34,108,46,108,{w:5})}${tx(22,100,"+",{s:12,c:K.mut})}`;
+    if (s.k === "serie") return svg(`${ln(40,40,40,92)}${ln(40,108,40,160)}${ln(40,40,260,40)}${ln(40,160,260,160)}${ln(260,40,260,160)}<rect x="0" y="0" width="0" height="0"/>${pile}<rect x="125" y="27" width="50" height="26" fill="#0F1426"/>${lamp(150,40)}<rect x="237" y="88" width="46" height="26" fill="#0F1426"/>${lamp(260,100)}${tx(150,180,s.legende || "Circuit en série : une seule boucle",{c:K.mut,s:12})}`, 195);
+    return svg(`${ln(40,40,40,92)}${ln(40,108,40,160)}${ln(40,40,240,40)}${ln(40,160,240,160)}${ln(150,40,150,160)}${ln(240,40,240,160)}${pile}<rect x="137" y="87" width="26" height="26" fill="#0F1426"/>${lamp(150,100)}<rect x="227" y="87" width="26" height="26" fill="#0F1426"/>${lamp(240,100)}${tx(150,180,s.legende || "Circuit en dérivation : plusieurs boucles",{c:K.mut,s:12})}`, 195);
+  },
+  frise(s){
+    const X = y => 20 + (y - s.de) * 260 / (s.a - s.de);
+    let g = `<rect x="20" y="88" width="260" height="14" rx="7" fill="${K.fill}"/>`;
+    (s.periodes || []).forEach(([d, f, lab, col]) => { g += `<rect x="${X(d)}" y="88" width="${Math.max(4, X(f)-X(d))}" height="14" rx="4" fill="${col || K.blue}"/>` + tx((X(d)+X(f))/2, 118, lab, {s:11, c:K.mut}); });
+    (s.ev || []).forEach(([y, lab], i) => { const up = i % 2 === 0, hl = y === s.focus, c = hl ? K.acc : K.line;
+      g += ln(X(y), up ? 60 : 102, X(y), up ? 88 : 132, {c, w:2}) + `<circle cx="${X(y)}" cy="95" r="${hl ? 7 : 5}" fill="${c}"/>`
+        + tx(Math.min(Math.max(X(y), 30), 270), up ? 48 : 146, y, {c, s:13, w:700}) + tx(Math.min(Math.max(X(y), 40), 260), up ? 30 : 164, lab, {c: hl ? K.acc : K.mut, s:11}); });
+    return svg(g, 180);
+  }
+};
 
 function answer(k){
   if (S.picked !== null) return;

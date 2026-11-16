@@ -148,4 +148,11 @@ print(counts, file=sys.stderr)
 from collections import Counter
 print(Counter(x["reponse"] for x in out), file=sys.stderr)
 check_domains(out)
+import glob as _g
+DETAILS = {}
+for _f in sorted(_g.glob(__file__.replace('questions_source.py','details_*.py'))):
+    exec(open(_f, encoding='utf-8').read())
+for x in out:
+    if x['id'] in DETAILS: x['detail'] = DETAILS[x['id']]
+print(f"corrections détaillées : {sum(1 for x in out if 'detail' in x)} / {len(out)}", file=sys.stderr)
 json.dump({"version":2,"domaines":DOMAINS,"questions":out}, open(sys.argv[1],"w"), ensure_ascii=False, indent=1)
