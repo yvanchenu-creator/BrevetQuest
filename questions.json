@@ -1098,7 +1098,15 @@
    ],
    "reponse": 3,
    "explication": "Après « il faut que », on emploie le subjonctif. Astuce : remplace par « que tu fasses ».",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On repère ce qui introduit le verbe : « il faut que ».",
+     "Après « il faut que », on exprime une obligation, une action pas encore réalisée : on emploie le subjonctif.",
+     "Test : remplace par « faire ». On dirait « il faut que tu fasses », pas « que tu fais » : c'est bien le subjonctif."
+    ],
+    "retenir": "Après « il faut que », « je veux que », « bien que », « pour que », on met le subjonctif."
+   }
   },
   {
    "id": "q032",
@@ -1114,7 +1122,35 @@
    ],
    "reponse": 3,
    "explication": "La terminaison « -ai » sans « s » d'un verbe en -er à la 1re personne indique le passé simple (à l'imparfait : je m'immobilisais).",
-   "source": "Inspiré du brevet 2025 (France, Simone de Beauvoir)"
+   "source": "Inspiré du brevet 2025 (France, Simone de Beauvoir)",
+   "detail": {
+    "etapes": [
+     "Le verbe est « s'immobiliser », un verbe en -er.",
+     "Terminaison « -ai » à la 1re personne : je m'immobilisai.",
+     "À l'imparfait, on aurait « je m'immobilisais », avec un s. Sans s, c'est le passé simple."
+    ],
+    "retenir": "Passé simple des verbes en -er : -ai, -as, -a, -âmes, -âtes, -èrent. Il sert aux actions ponctuelles du récit.",
+    "schema": {
+     "type": "table",
+     "head": [
+      "",
+      "Passé simple",
+      "Imparfait"
+     ],
+     "rows": [
+      [
+       "je",
+       "!m'immobilisai",
+       "m'immobilisais"
+      ],
+      [
+       "il",
+       "s'immobilisa",
+       "s'immobilisait"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q033",
@@ -1130,7 +1166,15 @@
    ],
    "reponse": 1,
    "explication": "« J'étais » : verbe être à l'imparfait de l'indicatif, temps de la description dans un récit au passé.",
-   "source": "Inspiré du brevet 2025 (France, Simone de Beauvoir)"
+   "source": "Inspiré du brevet 2025 (France, Simone de Beauvoir)",
+   "detail": {
+    "etapes": [
+     "« étais » vient du verbe être.",
+     "La terminaison « -ais » avec « je » est celle de l'imparfait.",
+     "Ici, l'imparfait décrit une situation, l'arrière-plan du récit."
+    ],
+    "retenir": "Dans un récit au passé : imparfait pour décrire (le décor, l'état), passé simple pour les actions de premier plan."
+   }
   },
   {
    "id": "q034",
@@ -1146,7 +1190,15 @@
    ],
    "reponse": 3,
    "explication": "« Seule » est un adjectif qualificatif. Il s'accorde au féminin singulier avec « je », car la narratrice est une femme.",
-   "source": "Inspiré du brevet 2025 (France, Simone de Beauvoir)"
+   "source": "Inspiré du brevet 2025 (France, Simone de Beauvoir)",
+   "detail": {
+    "etapes": [
+     "« seule » donne une caractéristique de la narratrice.",
+     "On peut le remplacer par un autre adjectif : « j'étais là, triste ». C'est donc un adjectif qualificatif.",
+     "Il est au féminin car la narratrice est une femme : il s'accorde avec « je »."
+    ],
+    "retenir": "L'adjectif qualificatif s'accorde en genre et en nombre avec le nom ou le pronom qu'il qualifie."
+   }
   },
   {
    "id": "q035",
@@ -1162,7 +1214,15 @@
    ],
    "reponse": 3,
    "explication": "Les deux propositions sont séparées par une simple virgule, sans mot de liaison : elles sont juxtaposées.",
-   "source": "Inspiré du brevet 2025 (France, Simone de Beauvoir)"
+   "source": "Inspiré du brevet 2025 (France, Simone de Beauvoir)",
+   "detail": {
+    "etapes": [
+     "On cherche ce qui relie les deux propositions : [j'avais rendu visite à la directrice] , [mon emploi du temps était fixé].",
+     "Il n'y a qu'une virgule, aucun mot de liaison.",
+     "Les propositions sont donc juxtaposées."
+    ],
+    "retenir": "Juxtaposition : virgule, point-virgule ou deux-points. Coordination : mais, ou, et, donc, or, ni, car. Subordination : qui, que, quand, parce que…"
+   }
   },
   {
    "id": "q036",
@@ -1178,7 +1238,15 @@
    ],
    "reponse": 1,
    "explication": "« im- » (variante de « in- » devant m, b, p) exprime le contraire : immobile = qui ne bouge pas.",
-   "source": "Inspiré du brevet 2025 (France, Simone de Beauvoir)"
+   "source": "Inspiré du brevet 2025 (France, Simone de Beauvoir)",
+   "detail": {
+    "etapes": [
+     "On découpe le mot : im- (préfixe) + mobile (radical).",
+     "« Mobile » = qui bouge.",
+     "« im- » exprime le contraire : immobile = qui ne bouge pas."
+    ],
+    "retenir": "Les préfixes in-, im-, il-, ir- expriment souvent le contraire : impossible, illisible, irréel."
+   }
   },
   {
    "id": "q037",
@@ -1194,7 +1262,15 @@
    ],
    "reponse": 1,
    "explication": "« Mobilité » partage le radical « mobil- » et le sens de mouvement.",
-   "source": "Inspiré du brevet 2025 (France, Simone de Beauvoir)"
+   "source": "Inspiré du brevet 2025 (France, Simone de Beauvoir)",
+   "detail": {
+    "etapes": [
+     "Les mots d'une même famille partagent le même radical et un sens proche.",
+     "Le radical de « mobile » est « mobil- », qui évoque le mouvement.",
+     "« Mobilité » a le même radical et le même sens. « Meuble » est un faux ami."
+    ],
+    "retenir": "Une famille de mots se construit autour d'un même radical, avec des préfixes et des suffixes."
+   }
   },
   {
    "id": "q038",
@@ -1210,7 +1286,15 @@
    ],
    "reponse": 2,
    "explication": "On rapproche la ville d'un océan sans outil de comparaison (comme, tel…) : c'est une métaphore.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On compare la ville à un océan.",
+     "Il n'y a aucun outil de comparaison (comme, tel, semblable à).",
+     "C'est donc une métaphore : on dit que la ville « est » un océan."
+    ],
+    "retenir": "Comparaison : avec un outil (comme, tel…). Métaphore : sans outil."
+   }
   },
   {
    "id": "q039",
@@ -1226,7 +1310,15 @@
    ],
    "reponse": 0,
    "explication": "La présence de l'outil « comme » indique une comparaison.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On rapproche les yeux et deux soleils.",
+     "Le mot « comme » relie les deux éléments : c'est l'outil de comparaison.",
+     "C'est donc une comparaison."
+    ],
+    "retenir": "Une comparaison a 4 éléments : le comparé (ses yeux), l'outil (comme), le comparant (deux soleils), le point commun (briller)."
+   }
   },
   {
    "id": "q040",
@@ -1242,7 +1334,15 @@
    ],
    "reponse": 1,
    "explication": "L'hyperbole exagère volontairement pour frapper l'esprit.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On ne meurt pas vraiment de soif : on a simplement très soif.",
+     "L'expression exagère pour frapper l'esprit.",
+     "C'est une hyperbole."
+    ],
+    "retenir": "Hyperbole : exagération. Son contraire, la litote, dit moins pour suggérer plus (« ce n'est pas mauvais »)."
+   }
   },
   {
    "id": "q041",
@@ -1258,7 +1358,15 @@
    ],
    "reponse": 0,
    "explication": "On prête au vent un comportement humain (hurler) : c'est une personnification.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Le vent est une chose, pas une personne ni un animal.",
+     "« hurler » est une action humaine (ou animale) qu'on lui prête.",
+     "C'est une personnification."
+    ],
+    "retenir": "Personnification : on attribue des comportements humains à une chose ou une idée."
+   }
   },
   {
    "id": "q042",
@@ -1274,7 +1382,15 @@
    ],
    "reponse": 1,
    "explication": "Avec avoir, le participe passé s'accorde avec le COD s'il est placé avant : « que » reprend « les lettres » (féminin pluriel).",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Le verbe « écrire » est conjugué avec l'auxiliaire avoir.",
+     "On cherche le COD : j'ai écrit quoi ? « que », qui remplace « les lettres ». Il est placé avant le verbe.",
+     "Le participe s'accorde donc avec « les lettres », féminin pluriel : écrites."
+    ],
+    "retenir": "Avec avoir, le participe passé s'accorde avec le COD seulement s'il est placé avant le verbe."
+   }
   },
   {
    "id": "q043",
@@ -1290,7 +1406,15 @@
    ],
    "reponse": 3,
    "explication": "Après « si » + imparfait, on utilise le conditionnel présent : je viendrais.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "La phrase commence par « si » suivi de l'imparfait (j'avais).",
+     "Dans la proposition principale, on met alors le conditionnel présent.",
+     "Je viendrais, avec -rais. « Je viendrai » (futur) serait une faute."
+    ],
+    "retenir": "Si + imparfait → conditionnel présent. Si + présent → futur (« Si j'ai le temps, je viendrai »)."
+   }
   },
   {
    "id": "q044",
@@ -1306,7 +1430,15 @@
    ],
    "reponse": 3,
    "explication": "« de Paul » complète le nom « chien » : c'est un complément du nom.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "« de Paul » est relié au nom « chien » par la préposition « de ».",
+     "Il précise de quel chien on parle.",
+     "C'est donc un complément du nom."
+    ],
+    "retenir": "Complément du nom : un groupe introduit le plus souvent par une préposition (de, à, en…) qui complète un nom."
+   }
   },
   {
    "id": "q045",
@@ -1322,7 +1454,15 @@
    ],
    "reponse": 3,
    "explication": "Gabriel révise quoi ? Ses leçons. Le complément est relié directement au verbe : c'est un COD.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On pose la question : Gabriel révise quoi ? Réponse : ses leçons.",
+     "Le complément est relié directement au verbe, sans préposition.",
+     "C'est un complément d'objet direct (COD)."
+    ],
+    "retenir": "COD : verbe + quoi ? / qui ? sans préposition. COI : verbe + à quoi ? / de quoi ? avec préposition."
+   }
   },
   {
    "id": "q046",
@@ -1338,7 +1478,15 @@
    ],
    "reponse": 3,
    "explication": "« Sembler » est un verbe d'état : l'adjectif qui suit donne une caractéristique du sujet, c'est un attribut du sujet.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "« sembler » est un verbe d'état, comme être, paraître, devenir, rester.",
+     "L'adjectif qui le suit donne une caractéristique du sujet « elle ».",
+     "C'est un attribut du sujet."
+    ],
+    "retenir": "Verbes d'état : être, paraître, sembler, devenir, demeurer, rester, avoir l'air. Ils introduisent un attribut du sujet."
+   }
   },
   {
    "id": "q047",
@@ -1354,7 +1502,15 @@
    ],
    "reponse": 3,
    "explication": "Elle est introduite par le pronom relatif « que », qui reprend « le livre » : c'est une subordonnée relative.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "La proposition commence par « que », qui remplace « le livre ».",
+     "« que » est ici un pronom relatif : il reprend un nom (l'antécédent).",
+     "La proposition complète ce nom : c'est une subordonnée relative."
+    ],
+    "retenir": "Pronoms relatifs : qui, que, quoi, dont, où, lequel… Une relative complète un nom, son antécédent."
+   }
   },
   {
    "id": "q048",
@@ -1370,7 +1526,15 @@
    ],
    "reponse": 0,
    "explication": "Introduite par la conjonction « que », elle complète le verbe « penser » (fonction COD) : c'est une conjonctive complétive.",
-   "source": "Inspiré du brevet 2025 (France, ex. 8)"
+   "source": "Inspiré du brevet 2025 (France, ex. 8)",
+   "detail": {
+    "etapes": [
+     "« que » ne remplace aucun nom : c'est une conjonction de subordination.",
+     "La proposition complète le verbe « penser » : je pense quoi ? qu'il viendra.",
+     "C'est une subordonnée conjonctive complétive, COD du verbe."
+    ],
+    "retenir": "« que » relatif reprend un nom. « que » conjonction introduit une complétive après un verbe (penser, dire, vouloir…)."
+   }
   },
   {
    "id": "q049",
@@ -1386,7 +1550,48 @@
    ],
    "reponse": 1,
    "explication": "Venir au passé simple : je vins, tu vins, il vint.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Le verbe venir est irrégulier au passé simple.",
+     "Je vins, tu vins, il vint, nous vînmes, vous vîntes, ils vinrent.",
+     "« il vit » appartient au verbe voir (ou vivre)."
+    ],
+    "retenir": "Passé simple de venir et tenir : je vins, il vint ; je tins, il tint.",
+    "schema": {
+     "type": "table",
+     "head": [
+      "Personne",
+      "Venir"
+     ],
+     "rows": [
+      [
+       "je",
+       "vins"
+      ],
+      [
+       "tu",
+       "vins"
+      ],
+      [
+       "il",
+       "!vint"
+      ],
+      [
+       "nous",
+       "vînmes"
+      ],
+      [
+       "vous",
+       "vîntes"
+      ],
+      [
+       "ils",
+       "vinrent"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q050",
@@ -1402,7 +1607,15 @@
    ],
    "reponse": 2,
    "explication": "On peut remplacer par « avait » : c'est le verbe avoir, donc « a » sans accent.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On essaie de remplacer par « avait » : « Il avait mangé ». Ça marche.",
+     "C'est donc le verbe avoir : « a » sans accent.",
+     "« à » avec accent est une préposition : « je vais à Paris »."
+    ],
+    "retenir": "a = avait (verbe avoir). à = préposition. Astuce : si on peut dire « avait », pas d'accent."
+   }
   },
   {
    "id": "q051",
@@ -1418,7 +1631,15 @@
    ],
    "reponse": 3,
    "explication": "On peut remplacer par « cela est » : c'est le pronom « c' » suivi du verbe être.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On essaie « cela est » : « Cela est important de réviser ». Ça marche.",
+     "Il faut donc écrire « C'est ».",
+     "« Ses » (les siens), « ces » (ceux-là) et « s'est » (verbe pronominal) ne conviennent pas."
+    ],
+    "retenir": "c'est = cela est ; s'est = se + est (il s'est levé) ; ses = les siens ; ces = ceux-là."
+   }
   },
   {
    "id": "q052",
@@ -1434,7 +1655,15 @@
    ],
    "reponse": 0,
    "explication": "Au passé, le futur devient conditionnel (viendrait), « je » devient « il » et « demain » devient « le lendemain ».",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Le verbe introducteur est au passé (« il a dit ») : le futur « viendrai » devient conditionnel « viendrait ».",
+     "« Je » devient « il » : on rapporte les paroles d'un autre.",
+     "« Demain » devient « le lendemain », car on ne parle plus depuis le même jour."
+    ],
+    "retenir": "Discours indirect au passé : présent → imparfait, futur → conditionnel, demain → le lendemain, hier → la veille."
+   }
   },
   {
    "id": "q053",
@@ -1450,7 +1679,15 @@
    ],
    "reponse": 2,
    "explication": "L'autrice, la narratrice et le personnage principal sont la même personne : c'est une autobiographie (des mémoires).",
-   "source": "Inspiré du brevet 2025 (France, texte de Simone de Beauvoir)"
+   "source": "Inspiré du brevet 2025 (France, texte de Simone de Beauvoir)",
+   "detail": {
+    "etapes": [
+     "Dans ce livre, Simone de Beauvoir raconte sa propre vie.",
+     "L'autrice, la narratrice et le personnage principal sont la même personne.",
+     "C'est une autobiographie (ici des mémoires, centrés sur une époque de sa vie)."
+    ],
+    "retenir": "Autobiographie : auteur = narrateur = personnage principal, récit à la 1re personne de sa propre vie."
+   }
   },
   {
    "id": "q054",
@@ -1466,7 +1703,15 @@
    ],
    "reponse": 3,
    "explication": "Le registre pathétique fait naître la pitié et la compassion.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Le texte cherche à émouvoir et à faire naître la pitié pour un personnage.",
+     "C'est le registre pathétique (du grec pathos, la souffrance).",
+     "Le registre tragique, lui, montre un personnage écrasé par un destin auquel il ne peut échapper."
+    ],
+    "retenir": "Registres : comique (faire rire), pathétique (émouvoir), tragique (fatalité), lyrique (sentiments), épique (exploits)."
+   }
   },
   {
    "id": "q055",
@@ -1482,7 +1727,15 @@
    ],
    "reponse": 3,
    "explication": "C'est une vérité toujours valable : présent de vérité générale.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "La phrase énonce un fait toujours vrai, à n'importe quelle époque.",
+     "Le présent ne désigne pas le moment où l'on parle.",
+     "C'est un présent de vérité générale (on le trouve dans les proverbes et les définitions)."
+    ],
+    "retenir": "Valeurs du présent : d'énonciation (en ce moment), de vérité générale, d'habitude, de narration (récit au passé rendu vivant)."
+   }
   },
   {
    "id": "q056",
@@ -1498,7 +1751,15 @@
    ],
    "reponse": 3,
    "explication": "Devant un verbe, « la » remplace un nom (je vois Marie → je la vois) : pronom personnel COD.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "« la » est placé devant le verbe « vois ».",
+     "Il remplace un nom : « je vois Marie » → « je la vois ».",
+     "C'est un pronom personnel, et il est COD du verbe voir."
+    ],
+    "retenir": "Devant un nom, la est un article (la maison). Devant un verbe, c'est un pronom (je la vois)."
+   }
   },
   {
    "id": "q057",
@@ -1514,7 +1775,15 @@
    ],
    "reponse": 2,
    "explication": "Un avare garde tout pour lui, à l'inverse d'une personne généreuse.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Un antonyme est un mot de sens contraire.",
+     "Une personne généreuse donne volontiers.",
+     "Son contraire est une personne avare, qui garde tout pour elle."
+    ],
+    "retenir": "Synonyme : même sens. Antonyme : sens contraire. Homonyme : même prononciation, sens différent."
+   }
   },
   {
    "id": "q058",
@@ -1530,7 +1799,15 @@
    ],
    "reponse": 0,
    "explication": "Tous ces mots se rapportent à la mer.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Un champ lexical regroupe les mots qui se rapportent à un même thème.",
+     "Vagues, écume, marée, rivage : tous ces mots évoquent la mer.",
+     "Repérer un champ lexical aide à trouver le thème principal d'un texte."
+    ],
+    "retenir": "Champ lexical : ensemble des mots d'un texte liés à un même thème."
+   }
   },
   {
    "id": "q059",
@@ -1546,7 +1823,35 @@
    ],
    "reponse": 1,
    "explication": "Au passé simple, 1re personne du pluriel des verbes en -er : -âmes (nous grimpâmes, nous rôdâmes).",
-   "source": "Inspiré du brevet 2025 (France, réécriture)"
+   "source": "Inspiré du brevet 2025 (France, réécriture)",
+   "detail": {
+    "etapes": [
+     "Le texte est au passé simple : grimpai, rôdai.",
+     "Avec « nous », les verbes en -er prennent la terminaison -âmes au passé simple.",
+     "Nous grimpâmes et nous rôdâmes (« grimpions » serait l'imparfait)."
+    ],
+    "retenir": "Passé simple en -er : -ai, -as, -a, -âmes, -âtes, -èrent. Dans une réécriture, on garde le temps du texte.",
+    "schema": {
+     "type": "table",
+     "head": [
+      "",
+      "je",
+      "nous"
+     ],
+     "rows": [
+      [
+       "grimper",
+       "grimpai",
+       "!grimpâmes"
+      ],
+      [
+       "rôder",
+       "rôdai",
+       "!rôdâmes"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q060",
@@ -1562,7 +1867,15 @@
    ],
    "reponse": 3,
    "explication": "« Il » ne remplace personne : c'est un sujet grammatical, pronom impersonnel. On le retrouve dans « il faut », « il neige ».",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Qui pleut ? Personne : « il » ne remplace aucun nom.",
+     "C'est un sujet grammatical obligatoire, sans sens.",
+     "On l'appelle pronom impersonnel : il pleut, il neige, il faut."
+    ],
+    "retenir": "Verbes impersonnels : ils ne se conjuguent qu'à la 3e personne du singulier avec « il » (il faut, il pleut, il y a)."
+   }
   },
   {
    "id": "q061",
@@ -1578,7 +1891,36 @@
    ],
    "reponse": 1,
    "explication": "L'Inde obtient son indépendance en 1947, avec la partition entre l'Inde et le Pakistan.",
-   "source": "Inspiré du brevet 2025 (histoire)"
+   "source": "Inspiré du brevet 2025 (histoire)",
+   "detail": {
+    "etapes": [
+     "Après 1945, le Royaume-Uni sort affaibli de la guerre, et le mouvement pour l'indépendance de l'Inde est très fort.",
+     "Le Parti du Congrès, avec Gandhi et Nehru, obtient des négociations.",
+     "L'Inde devient indépendante le 15 août 1947, au début de la guerre froide."
+    ],
+    "retenir": "1947 : indépendance de l'Inde, l'une des premières grandes décolonisations.",
+    "schema": {
+     "type": "frise",
+     "de": 1930,
+     "a": 1965,
+     "ev": [
+      [
+       1930,
+       "marche du sel"
+      ],
+      [
+       1947,
+       "indépendance"
+      ],
+      [
+       1962,
+       "Algérie"
+      ]
+     ],
+     "focus": 1947,
+     "periodes": []
+    }
+   }
   },
   {
    "id": "q062",
@@ -1594,7 +1936,15 @@
    ],
    "reponse": 3,
    "explication": "Gandhi prône la non-violence : boycott des produits britanniques, refus de l'impôt, marches pacifiques.",
-   "source": "Inspiré du brevet 2025 (histoire)"
+   "source": "Inspiré du brevet 2025 (histoire)",
+   "detail": {
+    "etapes": [
+     "Gandhi refuse la violence.",
+     "Il prône la désobéissance civile : boycott des produits britanniques, refus de payer certains impôts, marches pacifiques.",
+     "Cette stratégie attire l'attention du monde entier et affaiblit l'autorité britannique."
+    ],
+    "retenir": "Gandhi = non-violence et désobéissance civile pour l'indépendance de l'Inde."
+   }
   },
   {
    "id": "q063",
@@ -1610,7 +1960,36 @@
    ],
    "reponse": 2,
    "explication": "Gandhi et ses partisans marchent plus de 300 km pour produire eux-mêmes du sel, en défiant la loi britannique.",
-   "source": "Inspiré du brevet 2025 (histoire)"
+   "source": "Inspiré du brevet 2025 (histoire)",
+   "detail": {
+    "etapes": [
+     "Les Britanniques avaient le monopole du sel : les Indiens devaient l'acheter et payer une taxe.",
+     "En 1930, Gandhi marche plus de 300 km jusqu'à la mer avec des milliers de partisans.",
+     "Là, il ramasse du sel lui-même : un geste simple et symbolique de désobéissance."
+    ],
+    "retenir": "Marche du sel (1930) : un symbole de la désobéissance civile non violente.",
+    "schema": {
+     "type": "frise",
+     "de": 1920,
+     "a": 1950,
+     "ev": [
+      [
+       1920,
+       "campagnes de Gandhi"
+      ],
+      [
+       1930,
+       "marche du sel"
+      ],
+      [
+       1947,
+       "indépendance"
+      ]
+     ],
+     "focus": 1930,
+     "periodes": []
+    }
+   }
   },
   {
    "id": "q064",
@@ -1626,7 +2005,15 @@
    ],
    "reponse": 1,
    "explication": "La partition crée l'Inde (majorité hindoue) et le Pakistan (majorité musulmane), et provoque environ 10 millions de réfugiés.",
-   "source": "Inspiré du brevet 2025 (histoire)"
+   "source": "Inspiré du brevet 2025 (histoire)",
+   "detail": {
+    "etapes": [
+     "Les tensions entre hindous et musulmans sont fortes au moment de l'indépendance.",
+     "En 1947, le territoire est partagé : l'Inde (majorité hindoue) et le Pakistan (majorité musulmane).",
+     "Cette partition provoque environ 10 millions de réfugiés et des centaines de milliers de morts."
+    ],
+    "retenir": "1947 : partition entre Inde et Pakistan. Le conflit sur le Cachemire dure encore aujourd'hui."
+   }
   },
   {
    "id": "q065",
@@ -1642,7 +2029,47 @@
    ],
    "reponse": 3,
    "explication": "Le droit de vote est accordé en avril 1944, et les femmes votent pour la première fois aux municipales d'avril 1945.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Le droit de vote est accordé aux femmes par une ordonnance du 21 avril 1944, à la Libération.",
+     "Elles votent pour la première fois aux élections municipales d'avril 1945.",
+     "Avant, seuls les hommes votaient (suffrage « universel » masculin depuis 1848)."
+    ],
+    "retenir": "1944 : droit de vote des femmes. 1945 : premier vote.",
+    "schema": {
+     "type": "frise",
+     "de": 1935,
+     "a": 1980,
+     "ev": [
+      [
+       1936,
+       "Front populaire"
+      ],
+      [
+       1944,
+       "droit de vote"
+      ],
+      [
+       1945,
+       "1er vote"
+      ],
+      [
+       1975,
+       "loi Veil"
+      ]
+     ],
+     "focus": 1945,
+     "periodes": [
+      [
+       1939,
+       1945,
+       "2de Guerre mondiale",
+       "#FF6B9A"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q066",
@@ -1658,7 +2085,47 @@
    ],
    "reponse": 0,
    "explication": "L'armistice est signé le 11 novembre 1918. Le traité de Versailles suit en 1919.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "La Première Guerre mondiale commence en 1914.",
+     "L'armistice, c'est-à-dire l'arrêt des combats, est signé le 11 novembre 1918.",
+     "La paix est signée ensuite en 1919 par le traité de Versailles. Le 11 novembre est un jour férié."
+    ],
+    "retenir": "1914-1918 : Première Guerre mondiale. 11 novembre 1918 : armistice.",
+    "schema": {
+     "type": "frise",
+     "de": 1912,
+     "a": 1921,
+     "ev": [
+      [
+       1914,
+       "début"
+      ],
+      [
+       1916,
+       "Verdun"
+      ],
+      [
+       1918,
+       "armistice"
+      ],
+      [
+       1919,
+       "Versailles"
+      ]
+     ],
+     "focus": 1918,
+     "periodes": [
+      [
+       1914,
+       1918,
+       "1re Guerre mondiale",
+       "#FF6B9A"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q067",
@@ -1674,7 +2141,47 @@
    ],
    "reponse": 3,
    "explication": "Elle commence en septembre 1939 (invasion de la Pologne) et s'achève en 1945 (8 mai en Europe, 2 septembre en Asie).",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "La guerre commence le 1er septembre 1939 avec l'invasion de la Pologne par l'Allemagne.",
+     "Elle se termine en Europe le 8 mai 1945 (capitulation de l'Allemagne).",
+     "En Asie, le Japon capitule le 2 septembre 1945, après les bombes atomiques."
+    ],
+    "retenir": "1939-1945 : Seconde Guerre mondiale. 8 mai 1945 : fin en Europe.",
+    "schema": {
+     "type": "frise",
+     "de": 1936,
+     "a": 1948,
+     "ev": [
+      [
+       1939,
+       "Pologne"
+      ],
+      [
+       1940,
+       "défaite française"
+      ],
+      [
+       1944,
+       "débarquement"
+      ],
+      [
+       1945,
+       "fin"
+      ]
+     ],
+     "focus": 1945,
+     "periodes": [
+      [
+       1939,
+       1945,
+       "2de Guerre mondiale",
+       "#FF6B9A"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q068",
@@ -1690,7 +2197,15 @@
    ],
    "reponse": 2,
    "explication": "La Shoah : environ 6 millions de Juifs assassinés, notamment dans les centres de mise à mort comme Auschwitz-Birkenau.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Les nazis ont voulu exterminer les Juifs d'Europe.",
+     "Environ 6 millions de Juifs sont assassinés, notamment dans les centres de mise à mort comme Auschwitz-Birkenau.",
+     "On appelle ce génocide la Shoah (« catastrophe » en hébreu). Les Tsiganes ont aussi été victimes d'un génocide."
+    ],
+    "retenir": "Génocide : extermination volontaire et organisée d'un peuple. Shoah : génocide des Juifs par les nazis."
+   }
   },
   {
    "id": "q069",
@@ -1706,7 +2221,49 @@
    ],
    "reponse": 2,
    "explication": "En octobre 1917, Lénine et les bolcheviks prennent le pouvoir.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "En février 1917, le tsar Nicolas II abdique.",
+     "En octobre 1917, Lénine et les bolcheviks prennent le pouvoir par la force.",
+     "Ils créent ensuite l'URSS (1922), un régime communiste."
+    ],
+    "retenir": "1917 : révolutions russes. Lénine puis Staline installent un régime totalitaire.",
+    "schema": {
+     "type": "frise",
+     "de": 1910,
+     "a": 1945,
+     "ev": [
+      [
+       1917,
+       "révolution russe"
+      ],
+      [
+       1922,
+       "URSS"
+      ],
+      [
+       1933,
+       "Hitler"
+      ]
+     ],
+     "focus": 1917,
+     "periodes": [
+      [
+       1914,
+       1918,
+       "1re Guerre mondiale",
+       "#FF6B9A"
+      ],
+      [
+       1939,
+       1945,
+       "2de Guerre mondiale",
+       "#FF6B9A"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q070",
@@ -1722,7 +2279,15 @@
    ],
    "reponse": 0,
    "explication": "Le maréchal Pétain obtient les pleins pouvoirs en juillet 1940 et mène une politique de collaboration.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "En juin 1940, la France est battue par l'Allemagne.",
+     "Le maréchal Pétain signe l'armistice et obtient les pleins pouvoirs en juillet 1940.",
+     "Son régime, installé à Vichy, collabore avec l'Allemagne nazie et participe à la déportation des Juifs."
+    ],
+    "retenir": "Régime de Vichy (1940-1944) : Pétain, fin de la République, collaboration."
+   }
   },
   {
    "id": "q071",
@@ -1738,7 +2303,43 @@
    ],
    "reponse": 0,
    "explication": "Depuis Londres, à la radio BBC, de Gaulle appelle les Français à poursuivre la lutte.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Le 18 juin 1940, le général de Gaulle est à Londres.",
+     "À la radio BBC, il appelle les Français à refuser la défaite et à continuer le combat.",
+     "C'est le début de la France libre."
+    ],
+    "retenir": "18 juin 1940 : appel du général de Gaulle, naissance de la France libre.",
+    "schema": {
+     "type": "frise",
+     "de": 1938,
+     "a": 1946,
+     "ev": [
+      [
+       1940,
+       "appel du 18 juin"
+      ],
+      [
+       1943,
+       "CNR"
+      ],
+      [
+       1944,
+       "Libération"
+      ]
+     ],
+     "focus": 1940,
+     "periodes": [
+      [
+       1939,
+       1945,
+       "2de Guerre mondiale",
+       "#FF6B9A"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q072",
@@ -1754,7 +2355,40 @@
    ],
    "reponse": 0,
    "explication": "La Constitution de la Ve République est adoptée par référendum en 1958, avec de Gaulle.",
-   "source": "Inspiré du brevet 2025 (EMC)"
+   "source": "Inspiré du brevet 2025 (EMC)",
+   "detail": {
+    "etapes": [
+     "En 1958, la IVe République est en crise à cause de la guerre d'Algérie.",
+     "Le général de Gaulle revient au pouvoir.",
+     "Une nouvelle Constitution, adoptée par référendum en 1958, fonde la Ve République, avec un président fort."
+    ],
+    "retenir": "1958 : Ve République. Depuis 1962, le président est élu au suffrage universel direct.",
+    "schema": {
+     "type": "frise",
+     "de": 1944,
+     "a": 1970,
+     "ev": [
+      [
+       1946,
+       "IVe République"
+      ],
+      [
+       1954,
+       "guerre d'Algérie"
+      ],
+      [
+       1958,
+       "Ve République"
+      ],
+      [
+       1962,
+       "élection directe"
+      ]
+     ],
+     "focus": 1958,
+     "periodes": []
+    }
+   }
   },
   {
    "id": "q073",
@@ -1770,7 +2404,47 @@
    ],
    "reponse": 1,
    "explication": "Le mur tombe le 9 novembre 1989. L'Allemagne est réunifiée en 1990 et l'URSS disparaît en 1991.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "En 1961, la RDA construit un mur pour empêcher les Berlinois de l'Est de fuir à l'Ouest.",
+     "Le 9 novembre 1989, le mur tombe sous la pression des habitants.",
+     "L'Allemagne est réunifiée en 1990 et l'URSS disparaît en 1991 : fin de la guerre froide."
+    ],
+    "retenir": "Mur de Berlin : 1961-1989. Symbole de la guerre froide.",
+    "schema": {
+     "type": "frise",
+     "de": 1945,
+     "a": 1995,
+     "ev": [
+      [
+       1947,
+       "début"
+      ],
+      [
+       1961,
+       "construction du mur"
+      ],
+      [
+       1989,
+       "chute du mur"
+      ],
+      [
+       1991,
+       "fin de l'URSS"
+      ]
+     ],
+     "focus": 1989,
+     "periodes": [
+      [
+       1947,
+       1991,
+       "Guerre froide",
+       "#5B8CFF"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q074",
@@ -1786,7 +2460,47 @@
    ],
    "reponse": 0,
    "explication": "Les États-Unis (bloc de l'Ouest, capitaliste) et l'URSS (bloc de l'Est, communiste) s'affrontent de 1947 à 1991, sans guerre directe.",
-   "source": "Inspiré du brevet 2025 (histoire)"
+   "source": "Inspiré du brevet 2025 (histoire)",
+   "detail": {
+    "etapes": [
+     "Après 1945, deux superpuissances dominent le monde.",
+     "Les États-Unis (capitalisme, démocratie) et l'URSS (communisme, parti unique).",
+     "Elles s'opposent sans guerre directe, par des crises (Berlin, Cuba) et des guerres indirectes (Corée, Vietnam)."
+    ],
+    "retenir": "Guerre froide (1947-1991) : affrontement indirect entre les États-Unis et l'URSS.",
+    "schema": {
+     "type": "frise",
+     "de": 1945,
+     "a": 1995,
+     "ev": [
+      [
+       1948,
+       "blocus de Berlin"
+      ],
+      [
+       1962,
+       "crise de Cuba"
+      ],
+      [
+       1989,
+       "chute du mur"
+      ],
+      [
+       1991,
+       "fin de l'URSS"
+      ]
+     ],
+     "focus": 1962,
+     "periodes": [
+      [
+       1947,
+       1991,
+       "Guerre froide",
+       "#5B8CFF"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q075",
@@ -1802,7 +2516,43 @@
    ],
    "reponse": 0,
    "explication": "Elle commence le 1er novembre 1954 et se termine avec les accords d'Évian et l'indépendance en 1962.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Le 1er novembre 1954, des attentats du FLN marquent le début de la guerre.",
+     "La guerre dure huit ans et fait des centaines de milliers de morts.",
+     "Les accords d'Évian (mars 1962) mènent à l'indépendance de l'Algérie en juillet 1962."
+    ],
+    "retenir": "Guerre d'Algérie : 1954-1962. Elle provoque la fin de la IVe République en 1958.",
+    "schema": {
+     "type": "frise",
+     "de": 1950,
+     "a": 1965,
+     "ev": [
+      [
+       1954,
+       "début de la guerre"
+      ],
+      [
+       1958,
+       "Ve République"
+      ],
+      [
+       1962,
+       "indépendance"
+      ]
+     ],
+     "focus": 1962,
+     "periodes": [
+      [
+       1954,
+       1962,
+       "guerre d'Algérie",
+       "#FFA94D"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q076",
@@ -1818,7 +2568,40 @@
    ],
    "reponse": 0,
    "explication": "Le traité de Rome (1957) réunit 6 pays fondateurs, dont la France.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "En 1957, six pays signent le traité de Rome : France, RFA, Italie, Belgique, Pays-Bas, Luxembourg.",
+     "Il crée la Communauté économique européenne (CEE), un marché commun.",
+     "La CEE deviendra l'Union européenne en 1992 (traité de Maastricht)."
+    ],
+    "retenir": "1957 : traité de Rome (CEE, 6 pays). 1992 : Maastricht (Union européenne). 2002 : l'euro.",
+    "schema": {
+     "type": "frise",
+     "de": 1950,
+     "a": 2025,
+     "ev": [
+      [
+       1957,
+       "traité de Rome"
+      ],
+      [
+       1992,
+       "Maastricht"
+      ],
+      [
+       2002,
+       "euro"
+      ],
+      [
+       2020,
+       "Brexit"
+      ]
+     ],
+     "focus": 1957,
+     "periodes": []
+    }
+   }
   },
   {
    "id": "q077",
@@ -1834,7 +2617,15 @@
    ],
    "reponse": 1,
    "explication": "La loi Veil (1975) dépénalise l'interruption volontaire de grossesse.",
-   "source": "Inspiré du brevet 2025 (EMC, égalité femmes-hommes)"
+   "source": "Inspiré du brevet 2025 (EMC, égalité femmes-hommes)",
+   "detail": {
+    "etapes": [
+     "Simone Veil est ministre de la Santé.",
+     "En 1975, elle fait voter une loi qui légalise l'interruption volontaire de grossesse (IVG).",
+     "Elle défend ce texte malgré des attaques très violentes à l'Assemblée."
+    ],
+    "retenir": "Loi Veil (1975) : légalisation de l'IVG, une étape importante pour les droits des femmes."
+   }
   },
   {
    "id": "q078",
@@ -1850,7 +2641,43 @@
    ],
    "reponse": 3,
    "explication": "En 1936, les accords de Matignon accordent deux semaines de congés payés et la semaine de 40 heures.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "En 1936, le Front populaire (une alliance de gauche dirigée par Léon Blum) gagne les élections.",
+     "Après de grandes grèves, les accords de Matignon accordent des avancées sociales.",
+     "Deux semaines de congés payés et la semaine de 40 heures."
+    ],
+    "retenir": "1936 : Front populaire, congés payés et semaine de 40 heures.",
+    "schema": {
+     "type": "frise",
+     "de": 1918,
+     "a": 1945,
+     "ev": [
+      [
+       1929,
+       "crise économique"
+      ],
+      [
+       1933,
+       "Hitler"
+      ],
+      [
+       1936,
+       "Front populaire"
+      ]
+     ],
+     "focus": 1936,
+     "periodes": [
+      [
+       1939,
+       1945,
+       "2de Guerre mondiale",
+       "#FF6B9A"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q079",
@@ -1866,7 +2693,15 @@
    ],
    "reponse": 2,
    "explication": "Les gigafactories de la « vallée de la batterie » (Hauts-de-France) fabriquent des batteries pour les voitures électriques.",
-   "source": "Inspiré du brevet 2025 (géographie)"
+   "source": "Inspiré du brevet 2025 (géographie)",
+   "detail": {
+    "etapes": [
+     "« Giga » signifie géant. Une gigafactory est une usine immense.",
+     "Dans les Hauts-de-France, la « vallée de la batterie » produit des batteries pour voitures électriques.",
+     "Ces usines créent des milliers d'emplois dans une ancienne région industrielle."
+    ],
+    "retenir": "Gigafactory : usine géante, souvent de batteries électriques, symbole de la réindustrialisation."
+   }
   },
   {
    "id": "q080",
@@ -1882,7 +2717,15 @@
    ],
    "reponse": 0,
    "explication": "Un espace productif est un espace aménagé pour produire des richesses (industrie, agriculture, services).",
-   "source": "Inspiré du brevet 2025 (géographie)"
+   "source": "Inspiré du brevet 2025 (géographie)",
+   "detail": {
+    "etapes": [
+     "Un espace productif est un espace aménagé pour produire des richesses.",
+     "Il peut être industriel (usines), agricole (champs) ou de services (bureaux, commerces, tourisme).",
+     "Une zone d'usines et d'entrepôts est un espace productif industriel."
+    ],
+    "retenir": "Les espaces productifs : industriels, agricoles, de services. Ils sont reliés par des réseaux de transport."
+   }
   },
   {
    "id": "q081",
@@ -1898,7 +2741,15 @@
    ],
    "reponse": 3,
    "explication": "Les grandes villes (métropoles) attirent de plus en plus d'habitants, d'emplois et de fonctions de commandement.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Les grandes villes attirent de plus en plus d'habitants et d'activités.",
+     "Elles concentrent les emplois, les universités, les sièges d'entreprises, les fonctions de commandement.",
+     "Ce mouvement s'appelle la métropolisation. Paris est la principale métropole française."
+    ],
+    "retenir": "Métropolisation : concentration de la population, des activités et des pouvoirs dans les grandes villes."
+   }
   },
   {
    "id": "q082",
@@ -1914,7 +2765,44 @@
    ],
    "reponse": 1,
    "explication": "Les 5 DROM sont la Guadeloupe, la Martinique, la Guyane, La Réunion et Mayotte. La Nouvelle-Calédonie a un statut particulier.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Les 5 DROM (départements et régions d'outre-mer) sont : Guadeloupe, Martinique, Guyane, La Réunion, Mayotte.",
+     "La Nouvelle-Calédonie n'en fait pas partie.",
+     "Elle a un statut particulier, avec une large autonomie."
+    ],
+    "retenir": "5 DROM : Guadeloupe, Martinique, Guyane, La Réunion, Mayotte.",
+    "schema": {
+     "type": "table",
+     "head": [
+      "DROM",
+      "Océan / continent"
+     ],
+     "rows": [
+      [
+       "Guadeloupe",
+       "Antilles (Atlantique)"
+      ],
+      [
+       "Martinique",
+       "Antilles (Atlantique)"
+      ],
+      [
+       "Guyane",
+       "Amérique du Sud"
+      ],
+      [
+       "La Réunion",
+       "océan Indien"
+      ],
+      [
+       "Mayotte",
+       "océan Indien"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q083",
@@ -1930,7 +2818,15 @@
    ],
    "reponse": 0,
    "explication": "Avec environ 10,2 millions de km², la ZEE française est la 2e du monde, après celle des États-Unis.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "La ZEE (zone économique exclusive) est l'espace maritime où un pays exploite seul les ressources (pêche, pétrole…).",
+     "Grâce à ses territoires dans tous les océans, la France a environ 10 millions de km² de ZEE.",
+     "C'est la 2e du monde, après les États-Unis."
+    ],
+    "retenir": "ZEE : jusqu'à 370 km (200 milles marins) des côtes. Celle de la France est la 2e du monde grâce à l'outre-mer."
+   }
   },
   {
    "id": "q084",
@@ -1946,7 +2842,15 @@
    ],
    "reponse": 2,
    "explication": "Proche du Royaume-Uni, de la Belgique et de l'Allemagne, la région a aussi une tradition automobile (Valenciennes).",
-   "source": "Inspiré du brevet 2025 (géographie)"
+   "source": "Inspiré du brevet 2025 (géographie)",
+   "detail": {
+    "etapes": [
+     "Les Hauts-de-France sont proches du Royaume-Uni, de la Belgique et de l'Allemagne : une situation de carrefour.",
+     "La région a déjà des usines automobiles et une main-d'œuvre formée.",
+     "Les pouvoirs publics y investissent beaucoup pour réindustrialiser une ancienne région minière et textile."
+    ],
+    "retenir": "Pour expliquer une localisation : situation, main-d'œuvre, transports, aides publiques, héritage industriel."
+   }
   },
   {
    "id": "q085",
@@ -1962,7 +2866,15 @@
    ],
    "reponse": 2,
    "explication": "« Liberté, Égalité, Fraternité » figure dans la Constitution de 1958. « Travail, Famille, Patrie » était celle du régime de Vichy.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "La devise de la République est « Liberté, Égalité, Fraternité ».",
+     "Elle vient de la Révolution française et est inscrite dans la Constitution de 1958.",
+     "« Travail, Famille, Patrie » était la devise du régime de Vichy."
+    ],
+    "retenir": "Symboles de la République : la devise, le drapeau tricolore, La Marseillaise, Marianne, le 14 Juillet."
+   }
   },
   {
    "id": "q086",
@@ -1978,7 +2890,36 @@
    ],
    "reponse": 0,
    "explication": "La loi du 9 décembre 1905 sépare les Églises et l'État : la République garantit la liberté de conscience et ne reconnaît aucun culte.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "La loi du 9 décembre 1905 sépare les Églises et l'État.",
+     "L'État ne reconnaît et ne finance aucune religion, et garantit la liberté de croire ou de ne pas croire.",
+     "C'est le fondement de la laïcité."
+    ],
+    "retenir": "Laïcité : neutralité de l'État, liberté de conscience, égalité de tous quelle que soit la religion.",
+    "schema": {
+     "type": "frise",
+     "de": 1880,
+     "a": 1960,
+     "ev": [
+      [
+       1882,
+       "école laïque (Ferry)"
+      ],
+      [
+       1905,
+       "loi de séparation"
+      ],
+      [
+       1958,
+       "Constitution"
+      ]
+     ],
+     "focus": 1905,
+     "periodes": []
+    }
+   }
   },
   {
    "id": "q087",
@@ -1994,7 +2935,15 @@
    ],
    "reponse": 1,
    "explication": "La majorité, et donc le droit de vote, est passée de 21 à 18 ans en 1974.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "En France, on devient majeur à 18 ans.",
+     "On peut alors voter à toutes les élections.",
+     "La majorité est passée de 21 à 18 ans en 1974."
+    ],
+    "retenir": "Droit de vote à 18 ans depuis 1974. L'inscription sur les listes électorales est automatique à 18 ans."
+   }
   },
   {
    "id": "q088",
@@ -2010,7 +2959,15 @@
    ],
    "reponse": 0,
    "explication": "La DDHC du 26 août 1789 fait partie du bloc de constitutionnalité.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Le 26 août 1789, pendant la Révolution, les députés adoptent la Déclaration des droits de l'homme et du citoyen.",
+     "Son article 1er dit : « Les hommes naissent et demeurent libres et égaux en droits. »",
+     "Elle fait toujours partie de nos textes fondamentaux."
+    ],
+    "retenir": "DDHC (1789) : libertés et égalité des droits, toujours en vigueur."
+   }
   },
   {
    "id": "q089",
@@ -2026,7 +2983,15 @@
    ],
    "reponse": 2,
    "explication": "Le préambule de 1946, repris en 1958, affirme l'égalité entre les femmes et les hommes. C'est une valeur de la République.",
-   "source": "Inspiré du brevet 2025 (EMC, égalité femmes-hommes)"
+   "source": "Inspiré du brevet 2025 (EMC, égalité femmes-hommes)",
+   "detail": {
+    "etapes": [
+     "Le préambule de la Constitution de 1946, repris en 1958, l'affirme.",
+     "« La loi garantit à la femme, dans tous les domaines, des droits égaux à ceux de l'homme. »",
+     "L'égalité femmes-hommes est donc une valeur de la République, même si des inégalités existent encore (salaires…)."
+    ],
+    "retenir": "L'égalité entre les femmes et les hommes est inscrite dans la Constitution."
+   }
   },
   {
    "id": "q090",
@@ -2042,7 +3007,36 @@
    ],
    "reponse": 2,
    "explication": "Charles de Gaulle est élu en décembre 1958 et prend ses fonctions en janvier 1959.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "La Ve République est fondée en 1958.",
+     "Charles de Gaulle est élu président en décembre 1958 et prend ses fonctions en janvier 1959.",
+     "Il reste président jusqu'en 1969."
+    ],
+    "retenir": "De Gaulle : chef de la France libre (1940), fondateur et 1er président de la Ve République (1958-1969).",
+    "schema": {
+     "type": "frise",
+     "de": 1955,
+     "a": 1975,
+     "ev": [
+      [
+       1958,
+       "Ve République"
+      ],
+      [
+       1962,
+       "élection directe"
+      ],
+      [
+       1969,
+       "démission"
+      ]
+     ],
+     "focus": 1958,
+     "periodes": []
+    }
+   }
   },
   {
    "id": "q091",
@@ -2058,7 +3052,32 @@
    ],
    "reponse": 3,
    "explication": "v = d ÷ t = 150 ÷ 30 = 5 m/s.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On repère les données : d = 150 m et t = 30 s.",
+     "On applique v = d ÷ t = 150 ÷ 30.",
+     "v = 5 m/s : le cycliste parcourt 5 mètres chaque seconde."
+    ],
+    "retenir": "v = d ÷ t. Avec des mètres et des secondes, la vitesse est en m/s.",
+    "schema": {
+     "type": "table",
+     "head": [
+      "Temps (s)",
+      "1",
+      "10",
+      "30"
+     ],
+     "rows": [
+      [
+       "Distance (m)",
+       "5",
+       "50",
+       "!150"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q092",
@@ -2074,7 +3093,14 @@
    ],
    "reponse": 0,
    "explication": "La masse volumique de l'eau est 1 kg/L (ou 1 g/cm³).",
-   "source": "Inspiré du brevet 2025 (masse volumique)"
+   "source": "Inspiré du brevet 2025 (masse volumique)",
+   "detail": {
+    "etapes": [
+     "Pour l'eau, 1 L a une masse de 1 kg : sa masse volumique est 1 kg/L.",
+     "C'est aussi 1 g/mL ou 1 g/cm³."
+    ],
+    "retenir": "Masse volumique de l'eau : ρ = 1 kg/L = 1 g/cm³. Un objet moins dense que l'eau flotte."
+   }
   },
   {
    "id": "q093",
@@ -2090,7 +3116,40 @@
    ],
    "reponse": 1,
    "explication": "U = R × I = 100 × 0,05 = 5 V.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Loi d'Ohm : U = R × I, avec U en volts, R en ohms et I en ampères.",
+     "U = 100 × 0,05.",
+     "U = 5 V."
+    ],
+    "retenir": "Loi d'Ohm : U = R × I. Les intensités doivent être en ampères (50 mA = 0,05 A).",
+    "schema": {
+     "type": "table",
+     "head": [
+      "Grandeur",
+      "Symbole",
+      "Unité"
+     ],
+     "rows": [
+      [
+       "Tension",
+       "U",
+       "volt (V)"
+      ],
+      [
+       "Résistance",
+       "R",
+       "ohm (Ω)"
+      ],
+      [
+       "Intensité",
+       "I",
+       "ampère (A)"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q094",
@@ -2106,7 +3165,15 @@
    ],
    "reponse": 3,
    "explication": "P = U × I = 230 × 2 = 460 W.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Puissance électrique : P = U × I.",
+     "P = 230 × 2 = 460.",
+     "P = 460 W."
+    ],
+    "retenir": "P = U × I, en watts (W). Plus la puissance est grande, plus l'appareil consomme vite de l'énergie."
+   }
   },
   {
    "id": "q095",
@@ -2122,7 +3189,15 @@
    ],
    "reponse": 1,
    "explication": "E = P × t = 1 000 W × 2 h = 2 000 Wh = 2 kWh.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Énergie = puissance × durée : E = P × t.",
+     "Avec P en kW et t en h : 1 000 W = 1 kW, donc E = 1 × 2 = 2 kWh.",
+     "En wattheures : 1 000 × 2 = 2 000 Wh = 2 kWh."
+    ],
+    "retenir": "E = P × t. En kW et en heures, l'énergie est en kWh, l'unité de la facture d'électricité."
+   }
   },
   {
    "id": "q096",
@@ -2138,7 +3213,15 @@
    ],
    "reponse": 0,
    "explication": "La lumière va à environ 300 000 km/s. 340 m/s, c'est la vitesse du son dans l'air.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "La lumière est ce qu'il y a de plus rapide dans l'univers.",
+     "Dans le vide (ou l'air), elle parcourt environ 300 000 km chaque seconde.",
+     "Le son, lui, ne va qu'à environ 340 m/s dans l'air."
+    ],
+    "retenir": "Lumière : 300 000 km/s. Son dans l'air : 340 m/s. C'est pour ça qu'on voit l'éclair avant d'entendre le tonnerre."
+   }
   },
   {
    "id": "q097",
@@ -2154,7 +3237,15 @@
    ],
    "reponse": 0,
    "explication": "Le son est une vibration de la matière (air, eau, solide). Dans le vide, il n'y a rien à faire vibrer.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Le son est une vibration qui se transmet de proche en proche dans la matière (air, eau, solide).",
+     "Dans le vide, il n'y a pas de matière à faire vibrer.",
+     "Le son ne peut donc pas s'y propager : dans l'espace, une explosion serait silencieuse."
+    ],
+    "retenir": "Le son a besoin d'un milieu matériel. La lumière, non : elle traverse le vide."
+   }
   },
   {
    "id": "q098",
@@ -2170,7 +3261,35 @@
    ],
    "reponse": 1,
    "explication": "pH < 7 : acide ; pH = 7 : neutre ; pH > 7 : basique.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "L'échelle de pH va de 0 à 14.",
+     "pH < 7 : acide. pH = 7 : neutre. pH > 7 : basique.",
+     "3 est inférieur à 7 : la solution est acide (comme le jus de citron)."
+    ],
+    "retenir": "Plus le pH est petit, plus la solution est acide.",
+    "schema": {
+     "type": "table",
+     "head": [
+      "pH 0 à 7",
+      "pH 7",
+      "pH 7 à 14"
+     ],
+     "rows": [
+      [
+       "!acide",
+       "neutre",
+       "basique"
+      ],
+      [
+       "citron, vinaigre",
+       "eau pure",
+       "savon, eau de Javel"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q099",
@@ -2186,7 +3305,15 @@
    ],
    "reponse": 0,
    "explication": "Un ion positif (cation) a perdu un ou plusieurs électrons, qui sont négatifs.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Un atome est neutre : autant de charges + (protons) que de charges − (électrons).",
+     "Na⁺ a une charge positive en trop.",
+     "Il a donc perdu un électron (négatif). Les protons, dans le noyau, ne bougent pas."
+    ],
+    "retenir": "Ion positif : l'atome a perdu des électrons. Ion négatif : il en a gagné."
+   }
   },
   {
    "id": "q100",
@@ -2202,7 +3329,15 @@
    ],
    "reponse": 0,
    "explication": "Les atomes se réarrangent mais ne disparaissent pas : la masse se conserve (Lavoisier).",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Dans une transformation chimique, les atomes des réactifs se réarrangent pour former les produits.",
+     "Aucun atome n'apparaît ni ne disparaît.",
+     "La masse totale reste donc la même : c'est la conservation de la masse (Lavoisier)."
+    ],
+    "retenir": "« Rien ne se perd, rien ne se crée, tout se transforme. » La masse des réactifs = la masse des produits."
+   }
   },
   {
    "id": "q101",
@@ -2218,7 +3353,15 @@
    ],
    "reponse": 0,
    "explication": "P = m × g = 50 × 9,8 = 490 N. Le poids s'exprime en newtons, la masse en kilogrammes.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Le poids se calcule avec P = m × g.",
+     "P = 50 × 9,8 = 490.",
+     "P = 490 N. La masse (50 kg) ne change pas, le poids dépend de la planète."
+    ],
+    "retenir": "Poids P = m × g, en newtons (N). Masse en kg. Sur la Lune, g est environ 6 fois plus petit."
+   }
   },
   {
    "id": "q102",
@@ -2234,7 +3377,19 @@
    ],
    "reponse": 0,
    "explication": "Loi d'unicité de l'intensité : dans un circuit série, l'intensité est la même en tout point.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Dans un circuit en série, il n'y a qu'une seule boucle.",
+     "Le courant qui sort de la pile traverse chaque dipôle l'un après l'autre.",
+     "L'intensité est donc la même en tout point du circuit."
+    ],
+    "retenir": "Série : même intensité partout, les tensions s'additionnent. Dérivation : même tension, les intensités s'additionnent.",
+    "schema": {
+     "type": "circuit",
+     "k": "serie"
+    }
+   }
   },
   {
    "id": "q103",
@@ -2250,7 +3405,24 @@
    ],
    "reponse": 1,
    "explication": "Ec = ½ × m × v². La vitesse est au carré : 2² = 4. C'est pour ça que la vitesse rend les chocs si dangereux.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Énergie cinétique : Ec = ½ × m × v².",
+     "La vitesse est au carré : si v est multipliée par 2, v² est multipliée par 2² = 4.",
+     "L'énergie cinétique est donc multipliée par 4 : un choc à 100 km/h est 4 fois plus violent qu'à 50 km/h."
+    ],
+    "retenir": "Ec = ½ m v². Doubler la vitesse multiplie l'énergie (et la distance de freinage) par 4.",
+    "schema": {
+     "type": "barres",
+     "vals": [
+      1,
+      4,
+      9
+     ],
+     "legende": "Énergie cinétique pour une vitesse × 1, × 2, × 3"
+    }
+   }
   },
   {
    "id": "q104",
@@ -2266,7 +3438,15 @@
    ],
    "reponse": 1,
    "explication": "46 chromosomes, soit 23 paires.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Le noyau de chaque cellule du corps contient 46 chromosomes.",
+     "Ils vont par paires : 23 paires.",
+     "Une paire, les chromosomes sexuels, est XX chez la femme et XY chez l'homme."
+    ],
+    "retenir": "Cellule humaine : 46 chromosomes (23 paires). Gamète : 23 chromosomes."
+   }
   },
   {
    "id": "q105",
@@ -2282,7 +3462,15 @@
    ],
    "reponse": 2,
    "explication": "Les gamètes n'ont qu'un chromosome de chaque paire : 23. La fécondation rétablit 46.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Les gamètes (spermatozoïde, ovule) ne reçoivent qu'un chromosome de chaque paire.",
+     "Ils ont donc 23 chromosomes, la moitié de 46.",
+     "À la fécondation, 23 + 23 = 46 : le nombre normal est rétabli."
+    ],
+    "retenir": "Gamète : 23 chromosomes. Cellule-œuf : 23 + 23 = 46."
+   }
   },
   {
    "id": "q106",
@@ -2298,7 +3486,15 @@
    ],
    "reponse": 1,
    "explication": "La fusion des deux gamètes forme une cellule-œuf, première cellule d'un nouvel individu.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Un spermatozoïde (du père) rencontre un ovule (de la mère).",
+     "Leurs noyaux fusionnent : ils forment une cellule-œuf.",
+     "Cette cellule unique va se diviser des milliards de fois pour former un nouvel individu."
+    ],
+    "retenir": "Fécondation = fusion de deux gamètes → cellule-œuf, avec un mélange des informations des deux parents."
+   }
   },
   {
    "id": "q107",
@@ -2314,7 +3510,15 @@
    ],
    "reponse": 1,
    "explication": "Les lymphocytes B produisent des anticorps spécifiques d'un antigène.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Les lymphocytes sont des globules blancs.",
+     "Les lymphocytes B fabriquent des anticorps qui se fixent sur un microbe précis (son antigène) pour le neutraliser.",
+     "Les lymphocytes T, eux, détruisent les cellules infectées."
+    ],
+    "retenir": "Lymphocytes B → anticorps. Lymphocytes T → destruction des cellules infectées. Phagocytes → « mangent » les microbes."
+   }
   },
   {
    "id": "q108",
@@ -2330,7 +3534,15 @@
    ],
    "reponse": 0,
    "explication": "Les antibiotiques tuent les bactéries mais n'ont aucun effet sur les virus (grippe, rhume…).",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Les antibiotiques attaquent des éléments que seules les bactéries possèdent.",
+     "Les virus sont très différents : ils se multiplient à l'intérieur de nos cellules.",
+     "Un antibiotique ne sert donc à rien contre la grippe ou un rhume, qui sont des virus."
+    ],
+    "retenir": "« Les antibiotiques, c'est pas automatique » : efficaces contre les bactéries, inutiles contre les virus."
+   }
   },
   {
    "id": "q109",
@@ -2346,7 +3558,15 @@
    ],
    "reponse": 0,
    "explication": "Le vaccin présente un antigène inoffensif : l'organisme fabrique des cellules mémoire qui réagiront vite en cas de vraie infection.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Le vaccin contient un microbe tué, affaibli, ou un morceau de microbe : il est inoffensif.",
+     "Le système immunitaire réagit et fabrique des cellules mémoire.",
+     "Si le vrai microbe arrive plus tard, la réponse est rapide et forte : on ne tombe pas malade."
+    ],
+    "retenir": "Vaccin = prévention, grâce à la mémoire immunitaire. Il ne soigne pas une maladie déjà déclarée."
+   }
   },
   {
    "id": "q110",
@@ -2362,7 +3582,36 @@
    ],
    "reponse": 0,
    "explication": "CO₂ + eau + énergie lumineuse → glucose + dioxygène (O₂).",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Les feuilles captent l'énergie lumineuse grâce à la chlorophylle.",
+     "Elles absorbent le dioxyde de carbone de l'air, et les racines puisent l'eau.",
+     "La plante fabrique du glucose (matière organique) et rejette du dioxygène."
+    ],
+    "retenir": "Photosynthèse : CO₂ + eau + lumière → glucose + O₂.",
+    "schema": {
+     "type": "table",
+     "head": [
+      "La plante prend",
+      "La plante produit"
+     ],
+     "rows": [
+      [
+       "dioxyde de carbone (CO₂)",
+       "!glucose (sucre)"
+      ],
+      [
+       "eau",
+       "!dioxygène (O₂)"
+      ],
+      [
+       "lumière",
+       ""
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q111",
@@ -2378,7 +3627,27 @@
    ],
    "reponse": 0,
    "explication": "Les végétaux chlorophylliens fabriquent leur propre matière organique : ils sont à la base des chaînes alimentaires.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Les végétaux chlorophylliens fabriquent leur matière avec la lumière : ils sont producteurs.",
+     "Les herbivores les mangent, puis les carnivores mangent les herbivores : ce sont des consommateurs.",
+     "Les décomposeurs recyclent les restes."
+    ],
+    "retenir": "Chaîne alimentaire : producteur → consommateur primaire → consommateur secondaire. La flèche veut dire « est mangé par ».",
+    "schema": {
+     "type": "table",
+     "rows": [
+      [
+       "!herbe",
+       "→",
+       "lapin",
+       "→",
+       "renard"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q112",
@@ -2394,7 +3663,15 @@
    ],
    "reponse": 1,
    "explication": "La combustion du pétrole, du charbon et du gaz rejette du CO₂, qui renforce l'effet de serre.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "L'effet de serre naturel garde une partie de la chaleur du Soleil : sans lui, il ferait −18 °C sur Terre.",
+     "En brûlant pétrole, charbon et gaz, les humains rejettent beaucoup de CO₂.",
+     "Ce CO₂ renforce l'effet de serre et réchauffe le climat."
+    ],
+    "retenir": "Le CO₂ (dioxyde de carbone) est le principal gaz à effet de serre rejeté par les activités humaines."
+   }
   },
   {
    "id": "q113",
@@ -2410,7 +3687,15 @@
    ],
    "reponse": 2,
    "explication": "Le soleil est une source inépuisable à notre échelle. Charbon, pétrole et gaz sont des énergies fossiles.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Une énergie renouvelable se reconstitue rapidement à l'échelle humaine.",
+     "Le soleil, le vent, l'eau des rivières sont renouvelables.",
+     "Charbon, pétrole et gaz ont mis des millions d'années à se former : ce sont des énergies fossiles, épuisables."
+    ],
+    "retenir": "Renouvelables : solaire, éolien, hydraulique, géothermie, biomasse. Non renouvelables : fossiles et nucléaire."
+   }
   },
   {
    "id": "q114",
@@ -2426,7 +3711,15 @@
    ],
    "reponse": 0,
    "explication": "Les contraintes accumulées dans les roches finissent par provoquer une rupture : l'énergie libérée se propage en ondes sismiques.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Les plaques de la Terre bougent lentement et exercent des forces sur les roches.",
+     "Les roches se déforment jusqu'à se casser brutalement le long d'une faille.",
+     "L'énergie libérée se propage sous forme d'ondes sismiques : le sol tremble."
+    ],
+    "retenir": "Séisme = rupture brutale de roches le long d'une faille. Le foyer est en profondeur, l'épicentre juste au-dessus en surface."
+   }
   },
   {
    "id": "q115",
@@ -2442,7 +3735,15 @@
    ],
    "reponse": 0,
    "explication": "Charles Darwin publie « L'Origine des espèces » en 1859.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Charles Darwin observe que les individus d'une espèce sont tous un peu différents.",
+     "Ceux qui ont des caractères avantageux dans leur milieu survivent et se reproduisent davantage.",
+     "Au fil des générations, ces caractères deviennent plus fréquents : c'est la sélection naturelle (1859)."
+    ],
+    "retenir": "Évolution : variations entre individus + sélection naturelle par le milieu, sur de nombreuses générations."
+   }
   },
   {
    "id": "q116",
@@ -2458,7 +3759,15 @@
    ],
    "reponse": 0,
    "explication": "L'actionneur agit sur le monde (mouvement, son, lumière). Le capteur prélève une information.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Un actionneur agit sur le monde réel : il produit un mouvement, de la lumière, du son…",
+     "Le moteur transforme l'énergie électrique en mouvement : c'est un actionneur.",
+     "Un capteur, à l'inverse, prélève une information (température, présence…)."
+    ],
+    "retenir": "Capteur : il mesure, il prélève une information. Actionneur : il agit (moteur, lampe, buzzer)."
+   }
   },
   {
    "id": "q117",
@@ -2474,7 +3783,15 @@
    ],
    "reponse": 1,
    "explication": "1 octet = 8 bits. Un bit vaut 0 ou 1.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Un bit est la plus petite information : 0 ou 1.",
+     "Un octet regroupe 8 bits.",
+     "Avec 8 bits, on peut coder 2⁸ = 256 valeurs différentes."
+    ],
+    "retenir": "1 octet = 8 bits. 1 ko ≈ 1 000 octets, 1 Mo ≈ 1 million, 1 Go ≈ 1 milliard."
+   }
   },
   {
    "id": "q118",
@@ -2490,7 +3807,30 @@
    ],
    "reponse": 2,
    "explication": "Un capteur acquiert une information : il appartient à la chaîne d'information (acquérir, traiter, communiquer).",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Un détecteur de mouvement prélève une information : quelqu'un est-il là ?",
+     "Il fait donc partie de la chaîne d'information (acquérir, traiter, communiquer).",
+     "La chaîne d'énergie, elle, alimente, distribue, convertit et transmet l'énergie (moteur, lampe…)."
+    ],
+    "retenir": "Chaîne d'information : capteur → microcontrôleur → message. Chaîne d'énergie : alimentation → actionneur.",
+    "schema": {
+     "type": "table",
+     "head": [
+      "Acquérir",
+      "Traiter",
+      "Communiquer"
+     ],
+     "rows": [
+      [
+       "!capteur",
+       "microcontrôleur",
+       "ordre à l'actionneur"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q119",
@@ -2506,7 +3846,15 @@
    ],
    "reponse": 2,
    "explication": "« Si… alors… » est une structure conditionnelle : l'action n'a lieu que si la condition est vraie.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "« Si… alors… » teste une condition.",
+     "Si la température est supérieure à 25, le ventilateur s'allume. Sinon, il ne se passe rien.",
+     "C'est une instruction conditionnelle."
+    ],
+    "retenir": "Structures d'un programme : séquence (à la suite), boucle (répéter), condition (si… alors… sinon)."
+   }
   },
   {
    "id": "q120",
@@ -2522,7 +3870,15 @@
    ],
    "reponse": 1,
    "explication": "Les reins filtrent le sang pour en retirer les déchets, éliminés dans l'urine.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Le sang passe dans les reins, qui le filtrent.",
+     "Les déchets (comme l'urée) et l'eau en trop forment l'urine.",
+     "L'urine est stockée dans la vessie puis éliminée."
+    ],
+    "retenir": "Les reins filtrent le sang et produisent l'urine. Les poumons, eux, rejettent le CO₂."
+   }
   },
   {
    "id": "q121",
@@ -3971,7 +5327,15 @@
    ],
    "reponse": 1,
    "explication": "Introduite par la conjonction « quand », elle indique le moment : c'est une circonstancielle de temps.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "La proposition commence par « quand », une conjonction de subordination.",
+     "Elle répond à la question « à quel moment ? » : elle situe l'action dans le temps.",
+     "C'est une subordonnée circonstancielle de temps."
+    ],
+    "retenir": "Circonstancielles : de temps (quand, lorsque), de cause (parce que), de but (pour que), de conséquence (si bien que), de condition (si)."
+   }
   },
   {
    "id": "q172",
@@ -3987,7 +5351,15 @@
    ],
    "reponse": 0,
    "explication": "La conjonction de coordination « et » relie les deux propositions (mais, ou, et, donc, or, ni, car).",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Les deux propositions sont reliées par « et ».",
+     "« et » est une conjonction de coordination.",
+     "Les propositions sont donc coordonnées."
+    ],
+    "retenir": "Conjonctions de coordination : mais, ou, et, donc, or, ni, car (« Mais où est donc Ornicar ? »)."
+   }
   },
   {
    "id": "q173",
@@ -4003,7 +5375,15 @@
    ],
    "reponse": 3,
    "explication": "Une proposition par verbe conjugué : entra, s'assit, ouvrit. Il y en a donc 3.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On compte les verbes conjugués : entra, s'assit, ouvrit.",
+     "Il y a 3 verbes conjugués, donc 3 propositions.",
+     "Elles sont juxtaposées (virgule) puis coordonnées (et)."
+    ],
+    "retenir": "Une phrase contient autant de propositions que de verbes conjugués."
+   }
   },
   {
    "id": "q174",
@@ -4019,7 +5399,15 @@
    ],
    "reponse": 1,
    "explication": "« Elles sont parties » : avec être, le participe s'accorde avec le sujet.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Avec l'auxiliaire être, le participe passé se comporte comme un adjectif.",
+     "Il s'accorde avec le sujet : elles sont parties, il est venu, nous sommes arrivés.",
+     "Avec avoir, c'est différent : on regarde le COD."
+    ],
+    "retenir": "Être : accord avec le sujet. Avoir : accord avec le COD seulement s'il est placé avant."
+   }
   },
   {
    "id": "q175",
@@ -4035,7 +5423,15 @@
    ],
    "reponse": 3,
    "explication": "Avec « nous », le verbe être s'écrit « sommes » : nous sommes partis.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On vérifie chaque phrase.",
+     "« Nous somme » : avec nous, le verbe être s'écrit « sommes ».",
+     "Les autres sont justes : « ont mangé » (avoir, pas de COD avant), « sont venues » (accord avec elles), « cueillies » (COD « que » placé avant)."
+    ],
+    "retenir": "Être au présent : je suis, tu es, il est, nous sommes, vous êtes, ils sont."
+   }
   },
   {
    "id": "q176",
@@ -4051,7 +5447,15 @@
    ],
    "reponse": 2,
    "explication": "Un synonyme a le même sens : rapidement = vite.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Un synonyme a le même sens, ou presque.",
+     "« Rapidement » signifie « à grande vitesse ».",
+     "« Vite » a le même sens. « Lentement » est son antonyme."
+    ],
+    "retenir": "Utiliser des synonymes évite les répétitions dans une rédaction."
+   }
   },
   {
    "id": "q177",
@@ -4067,7 +5471,15 @@
    ],
    "reponse": 0,
    "explication": "« -able » signifie « qui peut être » : lavable = qui peut être lavé.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On découpe le mot : lav- (radical de laver) + -able (suffixe).",
+     "« -able » signifie « qui peut être ».",
+     "Lavable = qui peut être lavé. De même : buvable, mangeable, réparable."
+    ],
+    "retenir": "Les suffixes changent le sens ou la classe du mot : -able (possibilité), -eur (celui qui fait), -ment (adverbe)."
+   }
   },
   {
    "id": "q178",
@@ -4083,7 +5495,15 @@
    ],
    "reponse": 3,
    "explication": "L'oxymore rapproche deux mots de sens opposés : un silence ne devrait pas assourdir.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "« silence » et « assourdissant » ont des sens opposés : le silence est l'absence de bruit.",
+     "Les associer crée un effet de surprise : le silence est si pesant qu'il semble faire du bruit.",
+     "C'est un oxymore."
+    ],
+    "retenir": "Oxymore : deux mots de sens contraires côte à côte (« une obscure clarté »). Antithèse : deux idées opposées dans une phrase."
+   }
   },
   {
    "id": "q179",
@@ -4099,7 +5519,15 @@
    ],
    "reponse": 2,
    "explication": "Point de vue interne : on suit les perceptions et les pensées d'un personnage. Omniscient : le narrateur sait tout.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Le lecteur ne sait que ce que voit, entend et pense un seul personnage.",
+     "On découvre le monde par ses yeux.",
+     "C'est le point de vue interne."
+    ],
+    "retenir": "Points de vue : interne (par les yeux d'un personnage), externe (comme une caméra), omniscient (le narrateur sait tout de tous)."
+   }
   },
   {
    "id": "q180",
@@ -4115,7 +5543,15 @@
    ],
    "reponse": 3,
    "explication": "La morale, souvent au début ou à la fin, comme chez La Fontaine.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Une fable est un court récit, souvent avec des animaux, qui transmet une leçon.",
+     "Cette leçon s'appelle la morale.",
+     "Exemple chez La Fontaine : « La raison du plus fort est toujours la meilleure »."
+    ],
+    "retenir": "Fable = récit + morale. C'est un apologue : une histoire qui sert à instruire."
+   }
   },
   {
    "id": "q181",
@@ -4131,7 +5567,15 @@
    ],
    "reponse": 3,
    "explication": "Le sonnet : 2 strophes de 4 vers (quatrains) puis 2 strophes de 3 vers (tercets).",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "On compte les vers et les strophes : 4 + 4 + 3 + 3 = 14 vers.",
+     "Deux quatrains (strophes de 4 vers) puis deux tercets (strophes de 3 vers).",
+     "C'est la forme fixe du sonnet."
+    ],
+    "retenir": "Sonnet : 14 vers, 2 quatrains et 2 tercets. Alexandrin : vers de 12 syllabes."
+   }
   },
   {
    "id": "q182",
@@ -4147,7 +5591,15 @@
    ],
    "reponse": 3,
    "explication": "Prendre → pris (j'ai pris). « Prit » est le passé simple : il prit.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Pour trouver la fin du participe passé, on le met au féminin : une chose prise.",
+     "On entend un s : le participe passé est « pris ».",
+     "« prit » est le passé simple (il prit)."
+    ],
+    "retenir": "Astuce : mettre le participe au féminin pour entendre la lettre finale (prise → pris, faite → fait, dite → dit)."
+   }
   },
   {
    "id": "q183",
@@ -4163,7 +5615,43 @@
    ],
    "reponse": 3,
    "explication": "De la fin 1914 à 1918, le front se fige : les soldats vivent dans les tranchées. C'est la guerre de position.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "En 1914, les armées avancent vite : c'est la guerre de mouvement.",
+     "Fin 1914, le front se bloque. Les soldats creusent des tranchées pour se protéger.",
+     "De 1915 à 1917, c'est la guerre de position, avec des batailles terribles comme Verdun (1916)."
+    ],
+    "retenir": "1914 : guerre de mouvement. 1915-1917 : guerre de position (tranchées). 1918 : retour du mouvement et victoire alliée.",
+    "schema": {
+     "type": "frise",
+     "de": 1913,
+     "a": 1919,
+     "ev": [
+      [
+       1914,
+       "mouvement"
+      ],
+      [
+       1916,
+       "Verdun"
+      ],
+      [
+       1918,
+       "armistice"
+      ]
+     ],
+     "focus": 1916,
+     "periodes": [
+      [
+       1915,
+       1917.9,
+       "guerre de position",
+       "#FFA94D"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q184",
@@ -4179,7 +5667,15 @@
    ],
    "reponse": 3,
    "explication": "Staline impose la terreur, le culte de la personnalité et les camps du goulag.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Après la mort de Lénine (1924), Staline prend le pouvoir en URSS.",
+     "Il impose un régime totalitaire : parti unique, culte du chef, propagande, terreur.",
+     "Des millions de personnes sont envoyées dans les camps du goulag."
+    ],
+    "retenir": "Régime totalitaire : un chef, un parti unique, la propagande et la terreur contrôlent toute la société."
+   }
   },
   {
    "id": "q185",
@@ -4195,7 +5691,47 @@
    ],
    "reponse": 1,
    "explication": "Hitler est nommé chancelier en janvier 1933 et installe rapidement une dictature totalitaire.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "L'Allemagne est frappée par la crise économique de 1929.",
+     "Hitler est nommé chancelier en janvier 1933.",
+     "Il supprime très vite les libertés et installe une dictature nazie."
+    ],
+    "retenir": "1933 : Hitler au pouvoir. 1939 : il envahit la Pologne, début de la Seconde Guerre mondiale.",
+    "schema": {
+     "type": "frise",
+     "de": 1918,
+     "a": 1945,
+     "ev": [
+      [
+       1919,
+       "Versailles"
+      ],
+      [
+       1929,
+       "crise"
+      ],
+      [
+       1933,
+       "Hitler chancelier"
+      ],
+      [
+       1939,
+       "guerre"
+      ]
+     ],
+     "focus": 1933,
+     "periodes": [
+      [
+       1939,
+       1945,
+       "2de Guerre mondiale",
+       "#FF6B9A"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q186",
@@ -4211,7 +5747,47 @@
    ],
    "reponse": 2,
    "explication": "Le D-Day, le 6 juin 1944, ouvre un nouveau front à l'ouest. Paris est libéré le 25 août 1944.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Le 6 juin 1944, les Alliés débarquent sur les plages de Normandie : c'est le D-Day.",
+     "Ils ouvrent un nouveau front à l'ouest contre l'Allemagne.",
+     "Paris est libéré le 25 août 1944."
+    ],
+    "retenir": "6 juin 1944 : débarquement en Normandie. 25 août 1944 : libération de Paris.",
+    "schema": {
+     "type": "frise",
+     "de": 1939,
+     "a": 1946,
+     "ev": [
+      [
+       1940,
+       "défaite"
+      ],
+      [
+       1942,
+       "Stalingrad"
+      ],
+      [
+       1944,
+       "débarquement"
+      ],
+      [
+       1945,
+       "capitulation"
+      ]
+     ],
+     "focus": 1944,
+     "periodes": [
+      [
+       1939,
+       1945,
+       "2de Guerre mondiale",
+       "#FF6B9A"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q187",
@@ -4227,7 +5803,15 @@
    ],
    "reponse": 0,
    "explication": "Jean Moulin crée le Conseil national de la Résistance (CNR) en 1943, avant d'être arrêté et de mourir.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "La Résistance intérieure est divisée en plusieurs mouvements.",
+     "De Gaulle charge Jean Moulin de les unifier.",
+     "En 1943, Jean Moulin crée le Conseil national de la Résistance (CNR). Il est arrêté et meurt sous la torture la même année."
+    ],
+    "retenir": "Jean Moulin : unificateur de la Résistance, créateur du CNR (1943)."
+   }
   },
   {
    "id": "q188",
@@ -4243,7 +5827,15 @@
    ],
    "reponse": 0,
    "explication": "Inspirée du programme du CNR, la Sécurité sociale est créée en 1945.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Le programme du CNR prévoyait de protéger tous les Français.",
+     "En 1945, la Sécurité sociale est créée.",
+     "Elle rembourse les soins et verse des pensions de retraite et des allocations familiales."
+    ],
+    "retenir": "1945 : Sécurité sociale, droit de vote des femmes : la France se reconstruit sur de nouvelles bases."
+   }
   },
   {
    "id": "q189",
@@ -4259,7 +5851,15 @@
    ],
    "reponse": 1,
    "explication": "Les habitants s'installent de plus en plus loin du centre, souvent en maison individuelle, et se déplacent en voiture.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Beaucoup de citadins quittent le centre des villes, où les logements sont chers.",
+     "Ils s'installent dans les communes autour, souvent en maison individuelle.",
+     "La ville s'étend sur les campagnes : c'est la périurbanisation. Elle augmente l'usage de la voiture."
+    ],
+    "retenir": "Périurbanisation : extension de la ville vers les campagnes environnantes."
+   }
   },
   {
    "id": "q190",
@@ -4275,7 +5875,15 @@
    ],
    "reponse": 0,
    "explication": "L'aire d'attraction regroupe le pôle urbain et toutes les communes dont au moins 15 % des actifs y travaillent.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Une ville attire des travailleurs bien au-delà de ses limites.",
+     "L'aire d'attraction regroupe le pôle (la ville et sa banlieue) et les communes autour.",
+     "Une commune en fait partie si au moins 15 % de ses actifs travaillent dans le pôle."
+    ],
+    "retenir": "Aire d'attraction = pôle urbain + couronne, définie par les trajets domicile-travail."
+   }
   },
   {
    "id": "q191",
@@ -4291,7 +5899,15 @@
    ],
    "reponse": 1,
    "explication": "La Guyane, entre le Brésil et le Suriname, accueille le centre spatial de Kourou.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "La Guyane se trouve en Amérique du Sud, entre le Brésil et le Suriname.",
+     "Elle est couverte en grande partie par la forêt amazonienne.",
+     "Elle accueille le centre spatial de Kourou, d'où partent les fusées Ariane."
+    ],
+    "retenir": "Guyane : seul territoire français en Amérique du Sud, base spatiale de Kourou."
+   }
   },
   {
    "id": "q192",
@@ -4307,7 +5923,15 @@
    ],
    "reponse": 0,
    "explication": "La Réunion et Mayotte sont dans l'océan Indien. La Guadeloupe et la Martinique sont dans les Antilles.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "La Réunion est une île volcanique.",
+     "Elle se trouve dans l'océan Indien, à l'est de Madagascar.",
+     "Mayotte est aussi dans l'océan Indien. La Guadeloupe et la Martinique sont dans les Antilles."
+    ],
+    "retenir": "Océan Indien : La Réunion, Mayotte. Antilles : Guadeloupe, Martinique. Pacifique : Polynésie, Nouvelle-Calédonie."
+   }
   },
   {
    "id": "q193",
@@ -4323,7 +5947,40 @@
    ],
    "reponse": 0,
    "explication": "Après le Brexit, l'Union européenne compte 27 États membres.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "L'Union européenne comptait 28 pays.",
+     "Le Royaume-Uni l'a quittée en 2020 : c'est le Brexit.",
+     "Elle compte donc 27 pays."
+    ],
+    "retenir": "UE : 27 pays depuis 2020. 20 d'entre eux utilisent l'euro (depuis 2023).",
+    "schema": {
+     "type": "frise",
+     "de": 1950,
+     "a": 2025,
+     "ev": [
+      [
+       1957,
+       "6 pays"
+      ],
+      [
+       1992,
+       "UE"
+      ],
+      [
+       2004,
+       "25 pays"
+      ],
+      [
+       2020,
+       "27 pays"
+      ]
+     ],
+     "focus": 2020,
+     "periodes": []
+    }
+   }
   },
   {
    "id": "q194",
@@ -4339,7 +5996,15 @@
    ],
    "reponse": 1,
    "explication": "L'euro est utilisé en France depuis 2002 (pièces et billets).",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "L'euro a été mis en circulation en 2002 (pièces et billets).",
+     "Il a remplacé le franc en France.",
+     "C'est la monnaie de la zone euro, une partie des pays de l'UE."
+    ],
+    "retenir": "2002 : l'euro remplace le franc."
+   }
   },
   {
    "id": "q195",
@@ -4355,7 +6020,40 @@
    ],
    "reponse": 3,
    "explication": "Le pouvoir législatif appartient au Parlement, formé de l'Assemblée nationale et du Sénat.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "En France, le pouvoir législatif (faire les lois) appartient au Parlement.",
+     "Il est formé de deux assemblées : l'Assemblée nationale et le Sénat.",
+     "Le gouvernement applique les lois (pouvoir exécutif) et les juges les font respecter (pouvoir judiciaire)."
+    ],
+    "retenir": "Séparation des pouvoirs : législatif (Parlement), exécutif (président et gouvernement), judiciaire (juges).",
+    "schema": {
+     "type": "table",
+     "head": [
+      "Pouvoir",
+      "Qui ?",
+      "Rôle"
+     ],
+     "rows": [
+      [
+       "!législatif",
+       "!Parlement",
+       "!vote les lois"
+      ],
+      [
+       "exécutif",
+       "président, gouvernement",
+       "applique les lois"
+      ],
+      [
+       "judiciaire",
+       "juges",
+       "juge selon les lois"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q196",
@@ -4371,7 +6069,15 @@
    ],
    "reponse": 0,
    "explication": "Une force s'exprime en newtons (N). La masse est en kg, l'énergie en J, la puissance en W.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Une force modélise une action (pousser, tirer, attirer).",
+     "Son unité est le newton, noté N, en hommage à Isaac Newton.",
+     "On la mesure avec un dynamomètre."
+    ],
+    "retenir": "Force et poids : newton (N). Masse : kilogramme (kg). Énergie : joule (J). Puissance : watt (W)."
+   }
   },
   {
    "id": "q197",
@@ -4387,7 +6093,24 @@
    ],
    "reponse": 3,
    "explication": "En tombant, l'objet perd de l'altitude et gagne de la vitesse : l'énergie de position devient de l'énergie cinétique.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "En hauteur, l'objet possède une énergie de position.",
+     "En tombant, il perd de l'altitude et gagne de la vitesse.",
+     "L'énergie de position se transforme donc en énergie cinétique (énergie de mouvement)."
+    ],
+    "retenir": "Pendant une chute : énergie de position ↓, énergie cinétique ↑. Leur somme reste à peu près constante.",
+    "schema": {
+     "type": "barres",
+     "vals": [
+      10,
+      6,
+      2
+     ],
+     "legende": "Énergie de position au cours de la chute"
+    }
+   }
   },
   {
    "id": "q198",
@@ -4403,7 +6126,15 @@
    ],
    "reponse": 1,
    "explication": "L'ampèremètre mesure l'intensité en ampères (A). Il se branche en série.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "L'intensité du courant se mesure en ampères (A).",
+     "L'appareil s'appelle donc un ampèremètre.",
+     "Il se branche en série, dans la boucle, alors que le voltmètre se branche en dérivation."
+    ],
+    "retenir": "Ampèremètre : intensité, en série. Voltmètre : tension, en dérivation."
+   }
   },
   {
    "id": "q199",
@@ -4419,7 +6150,19 @@
    ],
    "reponse": 0,
    "explication": "Loi d'unicité des tensions : des dipôles en dérivation ont la même tension à leurs bornes.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Dans un circuit en dérivation, chaque branche est reliée directement aux bornes de la pile.",
+     "Chaque lampe reçoit donc la même tension.",
+     "Si une lampe grille, les autres continuent de briller : c'est le montage des maisons."
+    ],
+    "retenir": "Dérivation : même tension aux bornes de chaque branche, et les intensités des branches s'additionnent.",
+    "schema": {
+     "type": "circuit",
+     "k": "derivation"
+    }
+   }
   },
   {
    "id": "q200",
@@ -4435,7 +6178,15 @@
    ],
    "reponse": 2,
    "explication": "Le courant passe sans rien qui le limite : il devient très intense et chauffe les fils.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Un court-circuit relie directement les deux bornes de la pile ou de la prise, sans rien entre elles.",
+     "Rien ne limite le courant : son intensité devient très grande.",
+     "Les fils chauffent fortement : risque de brûlure ou d'incendie. Les fusibles et disjoncteurs coupent alors le courant."
+    ],
+    "retenir": "Court-circuit = courant très intense = danger. Fusibles et disjoncteurs protègent les installations."
+   }
   },
   {
    "id": "q201",
@@ -4451,7 +6202,14 @@
    ],
    "reponse": 3,
    "explication": "Une molécule d'eau contient 2 atomes d'hydrogène et 1 atome d'oxygène.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Une molécule d'eau est formée de 2 atomes d'hydrogène (H) et 1 atome d'oxygène (O).",
+     "On l'écrit H₂O : le petit 2 indique deux atomes d'hydrogène."
+    ],
+    "retenir": "Formules à connaître : H₂O (eau), CO₂ (dioxyde de carbone), O₂ (dioxygène), N₂ (diazote)."
+   }
   },
   {
    "id": "q202",
@@ -4467,7 +6225,15 @@
    ],
    "reponse": 3,
    "explication": "C + O₂ → CO₂. Le dioxyde de carbone trouble l'eau de chaux.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Lors de la combustion, le carbone (C) réagit avec le dioxygène (O₂).",
+     "Il se forme du dioxyde de carbone : C + O₂ → CO₂.",
+     "On le reconnaît car il trouble l'eau de chaux."
+    ],
+    "retenir": "Combustion du carbone : C + O₂ → CO₂. Test du CO₂ : l'eau de chaux se trouble."
+   }
   },
   {
    "id": "q203",
@@ -4483,7 +6249,15 @@
    ],
    "reponse": 2,
    "explication": "Le son va à environ 340 m/s dans l'air, bien moins vite que la lumière.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Le son se propage dans l'air à environ 340 m/s.",
+     "Il va plus vite dans l'eau (environ 1 500 m/s) et dans les solides.",
+     "Astuce : en comptant les secondes entre l'éclair et le tonnerre, on estime la distance de l'orage (environ 1 km toutes les 3 s)."
+    ],
+    "retenir": "Son dans l'air : 340 m/s, soit environ 1 km en 3 s."
+   }
   },
   {
    "id": "q204",
@@ -4499,7 +6273,30 @@
    ],
    "reponse": 2,
    "explication": "L'oreille humaine entend de 20 Hz à 20 000 Hz. Au-dessus, ce sont des ultrasons (utilisés pour l'échographie).",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "L'oreille humaine entend les sons de 20 Hz à 20 000 Hz.",
+     "Au-dessous de 20 Hz : infrasons. Au-dessus de 20 000 Hz : ultrasons.",
+     "Les chauves-souris et l'échographie utilisent les ultrasons."
+    ],
+    "retenir": "Fréquence en hertz (Hz) : plus elle est grande, plus le son est aigu.",
+    "schema": {
+     "type": "table",
+     "head": [
+      "< 20 Hz",
+      "20 à 20 000 Hz",
+      "> 20 000 Hz"
+     ],
+     "rows": [
+      [
+       "infrasons",
+       "sons audibles",
+       "!ultrasons"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q205",
@@ -4515,7 +6312,15 @@
    ],
    "reponse": 1,
    "explication": "Le Soleil est à environ 150 millions de km : la lumière met environ 8 minutes à nous parvenir.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Le Soleil est à environ 150 millions de km de la Terre.",
+     "La lumière va à 300 000 km/s : t = d ÷ v = 150 000 000 ÷ 300 000 = 500 s.",
+     "500 s, c'est environ 8 minutes et 20 secondes."
+    ],
+    "retenir": "t = d ÷ v. Quand on regarde le Soleil, on le voit tel qu'il était il y a 8 minutes."
+   }
   },
   {
    "id": "q206",
@@ -4531,7 +6336,15 @@
    ],
    "reponse": 1,
    "explication": "C'est la distance parcourue par la lumière en un an, environ 9 500 milliards de km.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Une année-lumière est la distance que parcourt la lumière en une année.",
+     "Malgré son nom, ce n'est pas une durée mais une distance.",
+     "Elle vaut environ 9 500 milliards de km : on l'utilise pour les distances entre étoiles."
+    ],
+    "retenir": "Année-lumière (al) = une distance, environ 9 500 milliards de km."
+   }
   },
   {
    "id": "q207",
@@ -4547,7 +6360,15 @@
    ],
    "reponse": 0,
    "explication": "Les globules rouges transportent le dioxygène des poumons vers les organes.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Les globules rouges contiennent de l'hémoglobine, qui fixe le dioxygène.",
+     "Ils prennent le dioxygène dans les poumons et le transportent jusqu'aux organes.",
+     "Les globules blancs, eux, défendent l'organisme contre les microbes."
+    ],
+    "retenir": "Globules rouges : transport du O₂. Globules blancs : défense. Plaquettes : coagulation."
+   }
   },
   {
    "id": "q208",
@@ -4563,7 +6384,15 @@
    ],
    "reponse": 3,
    "explication": "Les nutriments traversent la paroi de l'intestin grêle, très repliée et riche en vaisseaux sanguins.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "La digestion découpe les aliments en petites molécules : les nutriments.",
+     "Dans l'intestin grêle, ces nutriments traversent la paroi et passent dans le sang.",
+     "La paroi est très repliée (villosités) : sa grande surface facilite le passage."
+    ],
+    "retenir": "Absorption des nutriments : dans l'intestin grêle. Le sang les distribue ensuite à toutes les cellules."
+   }
   },
   {
    "id": "q209",
@@ -4579,7 +6408,15 @@
    ],
    "reponse": 0,
    "explication": "Un gène est un morceau d'un chromosome (ADN) qui détermine un caractère, comme le groupe sanguin.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Les chromosomes sont faits d'une longue molécule : l'ADN.",
+     "Un gène est une portion de cette molécule.",
+     "Il porte une information qui détermine un caractère héréditaire (groupe sanguin, couleur des yeux…)."
+    ],
+    "retenir": "ADN → chromosomes → gènes. Les différentes versions d'un gène s'appellent des allèles."
+   }
   },
   {
    "id": "q210",
@@ -4595,7 +6432,15 @@
    ],
    "reponse": 1,
    "explication": "Les vrais jumeaux viennent d'une seule cellule-œuf : ils ont le même ADN.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Une seule cellule-œuf se forme après la fécondation.",
+     "Très tôt, elle se sépare en deux groupes de cellules qui se développent chacun en un embryon.",
+     "Les deux enfants ont exactement le même ADN : ce sont de vrais jumeaux. Les faux jumeaux viennent de deux ovules différents."
+    ],
+    "retenir": "Vrais jumeaux : 1 cellule-œuf, même ADN. Faux jumeaux : 2 ovules fécondés par 2 spermatozoïdes."
+   }
   },
   {
    "id": "q211",
@@ -4611,7 +6456,15 @@
    ],
    "reponse": 2,
    "explication": "Les fossiles (coquilles, empreintes, os) permettent de reconstituer l'histoire de la vie.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Un fossile est un reste (os, coquille) ou une trace (empreinte) d'un être vivant.",
+     "Il s'est conservé dans une roche sédimentaire pendant des millions d'années.",
+     "Les fossiles montrent que les espèces ont changé au cours du temps."
+    ],
+    "retenir": "Les fossiles sont des preuves de l'évolution des êtres vivants."
+   }
   },
   {
    "id": "q212",
@@ -4627,7 +6480,27 @@
    ],
    "reponse": 3,
    "explication": "Le microcontrôleur exécute le programme : il traite les informations des capteurs et pilote les actionneurs.",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Le microcontrôleur est le « cerveau » de l'objet.",
+     "Il reçoit les informations des capteurs, exécute le programme et décide.",
+     "Il envoie ensuite des ordres aux actionneurs (moteur, lampe, buzzer)."
+    ],
+    "retenir": "Capteur → microcontrôleur (programme) → actionneur.",
+    "schema": {
+     "type": "table",
+     "rows": [
+      [
+       "capteur",
+       "→",
+       "!microcontrôleur",
+       "→",
+       "actionneur"
+      ]
+     ]
+    }
+   }
   },
   {
    "id": "q213",
@@ -4643,7 +6516,15 @@
    ],
    "reponse": 3,
    "explication": "Le cahier des charges fixe ce que l'objet doit faire et les contraintes (taille, coût, sécurité…).",
-   "source": "Notion fréquente au brevet"
+   "source": "Notion fréquente au brevet",
+   "detail": {
+    "etapes": [
+     "Avant de fabriquer un objet, on écrit son cahier des charges.",
+     "Il décrit le besoin (à quoi sert l'objet) et les contraintes (taille, coût, sécurité, énergie…).",
+     "Il sert ensuite à vérifier que l'objet fabriqué convient."
+    ],
+    "retenir": "Cahier des charges = besoin + fonctions + contraintes."
+   }
   }
  ]
 }

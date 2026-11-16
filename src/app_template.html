@@ -64,9 +64,10 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-off
 .retenir{background:var(--panel2);border:1px solid var(--accent);border-radius:14px;padding:12px 14px;font-size:14px;color:var(--soft);display:flex;flex-direction:column;gap:4px}
 .retenir b{color:var(--accent);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
 .schema{width:100%;max-width:380px;height:auto;align-self:center;display:block}
-.stable{border-collapse:collapse;align-self:center;font-variant-numeric:tabular-nums}
+.stable{border-collapse:collapse;max-width:100%;align-self:center;font-variant-numeric:tabular-nums}
 .stable td,.stable th{border:1px solid var(--line);padding:8px 12px;text-align:center;font-size:15px}
 .stable th{color:var(--muted);font-weight:600}
+@media(max-width:480px){.stable td,.stable th{padding:6px 7px;font-size:13px}}
 .stable .hl{color:var(--accent);font-weight:700}
 .linkbtn{background:none;border:none;color:var(--accent);font-weight:700;font-size:15px;cursor:pointer;padding:8px 0;align-self:flex-start;min-height:44px}
 .big{font-family:var(--display);font-size:44px;font-weight:700;color:var(--accent);line-height:1}
@@ -505,13 +506,36 @@ const SCHEMAS = {
     return svg(`${ln(40,40,40,92)}${ln(40,108,40,160)}${ln(40,40,240,40)}${ln(40,160,240,160)}${ln(150,40,150,160)}${ln(240,40,240,160)}${pile}<rect x="137" y="87" width="26" height="26" fill="#0F1426"/>${lamp(150,100)}<rect x="227" y="87" width="26" height="26" fill="#0F1426"/>${lamp(240,100)}${tx(150,180,s.legende || "Circuit en dérivation : plusieurs boucles",{c:K.mut,s:12})}`, 195);
   },
   frise(s){
-    const X = y => 20 + (y - s.de) * 260 / (s.a - s.de);
-    let g = `<rect x="20" y="88" width="260" height="14" rx="7" fill="${K.fill}"/>`;
-    (s.periodes || []).forEach(([d, f, lab, col]) => { g += `<rect x="${X(d)}" y="88" width="${Math.max(4, X(f)-X(d))}" height="14" rx="4" fill="${col || K.blue}"/>` + tx((X(d)+X(f))/2, 118, lab, {s:11, c:K.mut}); });
-    (s.ev || []).forEach(([y, lab], i) => { const up = i % 2 === 0, hl = y === s.focus, c = hl ? K.acc : K.line;
-      g += ln(X(y), up ? 60 : 102, X(y), up ? 88 : 132, {c, w:2}) + `<circle cx="${X(y)}" cy="95" r="${hl ? 7 : 5}" fill="${c}"/>`
-        + tx(Math.min(Math.max(X(y), 30), 270), up ? 48 : 146, y, {c, s:13, w:700}) + tx(Math.min(Math.max(X(y), 40), 260), up ? 30 : 164, lab, {c: hl ? K.acc : K.mut, s:11}); });
-    return svg(g, 180);
+    const W = 300, BAR = 86, cw = 6, X = y => 22 + (y - s.de) * 256 / (s.a - s.de);
+    const half = t => String(t).length * cw / 2 + 3, cx = (x, t) => Math.min(Math.max(x, half(t) + 2), W - half(t) - 2);
+    const lanes = {"-1":[], "-2":[], "1":[], "2":[]}; // derniers intervalles occupés par voie
+    const evs = (s.ev || []).slice().sort((p, q) => p[0] - q[0]);
+    const fits = (k, l, r) => !lanes[k].some(([a, b]) => l < b + 6 && r > a - 6);
+    let maxDown = 0, maxUp = 0, items = [];
+    evs.forEach(([y, lab], i) => {
+      const x = X(y), lc = cx(x, lab), l = lc - half(lab), r = lc + half(lab);
+      const pref = i % 2 === 0 ? [-1, 1, -2, 2] : [1, -1, 2, -2];
+      const k = pref.find(k => fits(String(k), l, r)) || pref[0];
+      lanes[String(k)].push([l, r]); items.push([y, lab, x, lc, k]);
+      if (k > 0) maxDown = Math.max(maxDown, k); else maxUp = Math.max(maxUp, -k);
+    });
+    const off = maxUp === 2 ? 0 : -36; // remonte tout si une seule voie au-dessus
+    const B = BAR + off, yearY = k => k < 0 ? B - 22 - (-k - 1) * 36 : B + 30 + (k - 1) * 36, labY = k => k < 0 ? yearY(k) - 15 : yearY(k) + 15;
+    let g = `<rect x="22" y="${B-7}" width="256" height="14" rx="7" fill="${K.fill}"/>`;
+    const per = s.periodes || [];
+    per.forEach(([d, f, , col]) => { g += `<rect x="${X(d)}" y="${B-7}" width="${Math.max(4, X(f)-X(d))}" height="14" rx="4" fill="${col || K.blue}"/>`; });
+    items.forEach(([y, lab, x, lc, k]) => { const hl = y === s.focus, c = hl ? K.acc : K.line;
+      g += ln(x, k < 0 ? yearY(k) + 9 : B, x, k < 0 ? B : yearY(k) - 9, {c, w: hl ? 2 : 1.5}); });
+    items.forEach(([y, lab, x, lc, k]) => { const hl = y === s.focus, c = hl ? K.acc : K.line;
+      g += `<circle cx="${x}" cy="${B}" r="${hl ? 7 : 5}" fill="${c}"/>` + tx(Math.min(Math.max(x, 18), W - 18), yearY(k), y, {c, s:13, w:700}) + tx(lc, labY(k), lab, {c: hl ? K.acc : K.mut, s:11}); });
+    let bottom = maxDown ? labY(maxDown) + 12 : B + 14;
+    if (per.length){ // légende des périodes, sous la frise
+      let lx = 22, ly = bottom + 10;
+      per.forEach(([, , lab, col]) => { const w = String(lab).length * cw + 22; if (lx + w > W - 4 && lx > 22){ lx = 22; ly += 18; }
+        g += `<rect x="${lx}" y="${ly-5}" width="12" height="10" rx="3" fill="${col || K.blue}"/>` + tx(lx + 17, ly, lab, {s:11, c:K.mut, a:"start"}); lx += w + 8; });
+      bottom = ly + 12;
+    }
+    return svg(g, Math.round(bottom + 4));
   }
 };
 
