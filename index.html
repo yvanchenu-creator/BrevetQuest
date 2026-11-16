@@ -79,12 +79,58 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-off
 <div class="app" id="app"></div>
 
 <script>
-const BANK = {
- "version": 1,
+const DATA = {
+ "version": 2,
+ "domaines": {
+  "Maths": [
+   "Nombres et calculs",
+   "Puissances",
+   "Arithmétique",
+   "Calcul littéral et équations",
+   "Fonctions",
+   "Proportionnalité et pourcentages",
+   "Statistiques et probabilités",
+   "Périmètres et aires",
+   "Volumes",
+   "Grandeurs composées",
+   "Géométrie du triangle",
+   "Transformations",
+   "Algorithmique et tableur"
+  ],
+  "Français": [
+   "Conjugaison",
+   "Classes et fonctions",
+   "La phrase complexe",
+   "Orthographe et accords",
+   "Vocabulaire",
+   "Figures de style",
+   "Lecture et littérature"
+  ],
+  "Histoire-Géo": [
+   "1914-1939 : guerre et totalitarismes",
+   "La Seconde Guerre mondiale",
+   "Guerre froide et décolonisation",
+   "La France depuis 1945",
+   "Espaces productifs et villes",
+   "Territoires, outre-mer et Europe",
+   "EMC"
+  ],
+  "Sciences": [
+   "Mouvement, forces et énergie",
+   "Électricité",
+   "Matière et chimie",
+   "Lumière et son",
+   "Corps humain et santé",
+   "Génétique et évolution",
+   "Planète et environnement",
+   "Technologie"
+  ]
+ },
  "questions": [
   {
    "id": "q001",
    "matiere": "Maths",
+   "domaine": "Statistiques et probabilités",
    "theme": "Probabilités",
    "question": "Une urne contient 3 boules vertes, 5 rouges et 2 bleues. On tire une boule au hasard. Quelle est la probabilité qu'elle soit verte ?",
    "choix": [
@@ -100,6 +146,7 @@ const BANK = {
   {
    "id": "q002",
    "matiere": "Maths",
+   "domaine": "Arithmétique",
    "theme": "Arithmétique",
    "question": "Quelle est la décomposition en facteurs premiers de 1 050 ?",
    "choix": [
@@ -115,6 +162,7 @@ const BANK = {
   {
    "id": "q003",
    "matiere": "Maths",
+   "domaine": "Proportionnalité et pourcentages",
    "theme": "Pourcentages",
    "question": "Un article coûte 50 €. Son prix augmente de 14 %. Quel est son nouveau prix ?",
    "choix": [
@@ -130,6 +178,7 @@ const BANK = {
   {
    "id": "q004",
    "matiere": "Maths",
+   "domaine": "Périmètres et aires",
    "theme": "Agrandissement",
    "question": "On agrandit une figure en multipliant toutes ses longueurs par 3. Son aire est multipliée par :",
    "choix": [
@@ -145,6 +194,7 @@ const BANK = {
   {
    "id": "q005",
    "matiere": "Maths",
+   "domaine": "Statistiques et probabilités",
    "theme": "Statistiques",
    "question": "Quelle est la médiane de la série de tailles (en cm) : 152 ; 158 ; 160 ; 163 ; 171 ?",
    "choix": [
@@ -160,6 +210,7 @@ const BANK = {
   {
    "id": "q006",
    "matiere": "Maths",
+   "domaine": "Statistiques et probabilités",
    "theme": "Statistiques",
    "question": "Quelle est la moyenne des notes 12 ; 15 ; 9 ; 14 ?",
    "choix": [
@@ -175,6 +226,7 @@ const BANK = {
   {
    "id": "q007",
    "matiere": "Maths",
+   "domaine": "Géométrie du triangle",
    "theme": "Pythagore",
    "question": "Un triangle est rectangle. Ses deux côtés de l'angle droit mesurent 6 cm et 8 cm. Combien mesure l'hypoténuse ?",
    "choix": [
@@ -190,6 +242,7 @@ const BANK = {
   {
    "id": "q008",
    "matiere": "Maths",
+   "domaine": "Géométrie du triangle",
    "theme": "Pythagore",
    "question": "Un triangle a des côtés de 5 cm, 12 cm et 13 cm. Est-il rectangle ?",
    "choix": [
@@ -205,6 +258,7 @@ const BANK = {
   {
    "id": "q009",
    "matiere": "Maths",
+   "domaine": "Géométrie du triangle",
    "theme": "Thalès",
    "question": "Les droites (MN) et (BC) sont parallèles, avec M sur [AB] et N sur [AC]. AM = 3, AB = 5 et AC = 10. Combien vaut AN ?",
    "choix": [
@@ -220,6 +274,7 @@ const BANK = {
   {
    "id": "q010",
    "matiere": "Maths",
+   "domaine": "Géométrie du triangle",
    "theme": "Trigonométrie",
    "question": "Dans un triangle rectangle, le cosinus d'un angle aigu est égal à :",
    "choix": [
@@ -235,6 +290,7 @@ const BANK = {
   {
    "id": "q011",
    "matiere": "Maths",
+   "domaine": "Grandeurs composées",
    "theme": "Vitesse",
    "question": "Malo parcourt 12 km en 45 minutes. Quelle est sa vitesse moyenne ?",
    "choix": [
@@ -250,6 +306,7 @@ const BANK = {
   {
    "id": "q012",
    "matiere": "Maths",
+   "domaine": "Calcul littéral et équations",
    "theme": "Calcul littéral",
    "question": "Programme : choisir un nombre, ajouter 3, multiplier par 2, soustraire 6. Si on choisit 5, on obtient :",
    "choix": [
@@ -265,6 +322,7 @@ const BANK = {
   {
    "id": "q013",
    "matiere": "Maths",
+   "domaine": "Calcul littéral et équations",
    "theme": "Calcul littéral",
    "question": "Quelle est la forme développée de (x + 3)(x − 2) ?",
    "choix": [
@@ -280,6 +338,7 @@ const BANK = {
   {
    "id": "q014",
    "matiere": "Maths",
+   "domaine": "Calcul littéral et équations",
    "theme": "Calcul littéral",
    "question": "Comment factoriser x² − 9 ?",
    "choix": [
@@ -295,6 +354,7 @@ const BANK = {
   {
    "id": "q015",
    "matiere": "Maths",
+   "domaine": "Calcul littéral et équations",
    "theme": "Équations",
    "question": "Quelle est la solution de l'équation 3x + 5 = 20 ?",
    "choix": [
@@ -310,6 +370,7 @@ const BANK = {
   {
    "id": "q016",
    "matiere": "Maths",
+   "domaine": "Fonctions",
    "theme": "Fonctions",
    "question": "Soit f(x) = 2x − 3. Combien vaut f(4) ?",
    "choix": [
@@ -325,6 +386,7 @@ const BANK = {
   {
    "id": "q017",
    "matiere": "Maths",
+   "domaine": "Fonctions",
    "theme": "Fonctions",
    "question": "Soit f(x) = 3x. Quel est l'antécédent de 12 par f ?",
    "choix": [
@@ -340,6 +402,7 @@ const BANK = {
   {
    "id": "q018",
    "matiere": "Maths",
+   "domaine": "Arithmétique",
    "theme": "Arithmétique",
    "question": "Quel est le plus grand nombre de lots identiques qu'on peut faire avec 84 poissons rouges et 60 poissons noirs ?",
    "choix": [
@@ -355,6 +418,7 @@ const BANK = {
   {
    "id": "q019",
    "matiere": "Maths",
+   "domaine": "Arithmétique",
    "theme": "Arithmétique",
    "question": "Lequel de ces nombres est premier ?",
    "choix": [
@@ -370,6 +434,7 @@ const BANK = {
   {
    "id": "q020",
    "matiere": "Maths",
+   "domaine": "Volumes",
    "theme": "Volumes",
    "question": "Quel est le volume d'un cylindre de rayon 3 cm et de hauteur 10 cm ?",
    "choix": [
@@ -385,6 +450,7 @@ const BANK = {
   {
    "id": "q021",
    "matiere": "Maths",
+   "domaine": "Volumes",
    "theme": "Volumes",
    "question": "Un aquarium (pavé droit) mesure 20 cm × 10 cm × 5 cm. Quel est son volume en litres ?",
    "choix": [
@@ -400,6 +466,7 @@ const BANK = {
   {
    "id": "q022",
    "matiere": "Maths",
+   "domaine": "Grandeurs composées",
    "theme": "Grandeurs",
    "question": "2,5 heures, c'est :",
    "choix": [
@@ -415,6 +482,7 @@ const BANK = {
   {
    "id": "q023",
    "matiere": "Maths",
+   "domaine": "Proportionnalité et pourcentages",
    "theme": "Pourcentages",
    "question": "Un jeu vidéo à 80 € est soldé à −25 %. Quel est son nouveau prix ?",
    "choix": [
@@ -430,6 +498,7 @@ const BANK = {
   {
    "id": "q024",
    "matiere": "Maths",
+   "domaine": "Proportionnalité et pourcentages",
    "theme": "Proportionnalité",
    "question": "3 kg de pommes coûtent 7,50 €. Combien coûtent 5 kg ?",
    "choix": [
@@ -445,6 +514,7 @@ const BANK = {
   {
    "id": "q025",
    "matiere": "Maths",
+   "domaine": "Transformations",
    "theme": "Transformations",
    "question": "Une homothétie de rapport −2 transforme une figure en une figure :",
    "choix": [
@@ -460,6 +530,7 @@ const BANK = {
   {
    "id": "q026",
    "matiere": "Maths",
+   "domaine": "Algorithmique et tableur",
    "theme": "Algorithmique",
    "question": "Dans Scratch, « répéter 3 fois : avancer de 50, tourner de 120° » trace :",
    "choix": [
@@ -475,6 +546,7 @@ const BANK = {
   {
    "id": "q027",
    "matiere": "Maths",
+   "domaine": "Algorithmique et tableur",
    "theme": "Algorithmique",
    "question": "Pour tracer un hexagone régulier, de quel angle le lutin doit-il tourner après chaque côté ?",
    "choix": [
@@ -490,6 +562,7 @@ const BANK = {
   {
    "id": "q028",
    "matiere": "Maths",
+   "domaine": "Algorithmique et tableur",
    "theme": "Tableur",
    "question": "Dans un tableur, quelle formule écrire en B1 pour calculer 3 fois le nombre de A1, plus 2 ?",
    "choix": [
@@ -505,6 +578,7 @@ const BANK = {
   {
    "id": "q029",
    "matiere": "Maths",
+   "domaine": "Statistiques et probabilités",
    "theme": "Probabilités",
    "question": "On lance un dé équilibré à 6 faces. Quelle est la probabilité d'obtenir un multiple de 3 ?",
    "choix": [
@@ -520,6 +594,7 @@ const BANK = {
   {
    "id": "q030",
    "matiere": "Maths",
+   "domaine": "Puissances",
    "theme": "Puissances",
    "question": "Combien vaut 10³ × 10⁻⁵ ?",
    "choix": [
@@ -535,6 +610,7 @@ const BANK = {
   {
    "id": "q031",
    "matiere": "Français",
+   "domaine": "Conjugaison",
    "theme": "Conjugaison",
    "question": "Dans « Il faut que tu viennes », à quel mode est le verbe « venir » ?",
    "choix": [
@@ -550,6 +626,7 @@ const BANK = {
   {
    "id": "q032",
    "matiere": "Français",
+   "domaine": "Conjugaison",
    "theme": "Conjugaison",
    "question": "« Je m'immobilisai en haut du grand escalier. » À quel temps est le verbe ?",
    "choix": [
@@ -565,6 +642,7 @@ const BANK = {
   {
    "id": "q033",
    "matiere": "Français",
+   "domaine": "Conjugaison",
    "theme": "Conjugaison",
    "question": "« J'étais là, seule, les mains vides. » À quel temps est « étais » ?",
    "choix": [
@@ -580,6 +658,7 @@ const BANK = {
   {
    "id": "q034",
    "matiere": "Français",
+   "domaine": "Classes et fonctions",
    "theme": "Grammaire",
    "question": "Dans « J'étais là, seule, les mains vides », quelle est la classe grammaticale de « seule » ?",
    "choix": [
@@ -595,6 +674,7 @@ const BANK = {
   {
    "id": "q035",
    "matiere": "Français",
+   "domaine": "La phrase complexe",
    "theme": "Grammaire",
    "question": "« J'avais rendu visite à la directrice, mon emploi du temps était fixé. » Comment les deux propositions sont-elles reliées ?",
    "choix": [
@@ -610,6 +690,7 @@ const BANK = {
   {
    "id": "q036",
    "matiere": "Français",
+   "domaine": "Vocabulaire",
    "theme": "Vocabulaire",
    "question": "Dans le mot « immobile », que signifie le préfixe « im- » ?",
    "choix": [
@@ -625,6 +706,7 @@ const BANK = {
   {
    "id": "q037",
    "matiere": "Français",
+   "domaine": "Vocabulaire",
    "theme": "Vocabulaire",
    "question": "Quel mot est de la même famille que « mobile » ?",
    "choix": [
@@ -640,6 +722,7 @@ const BANK = {
   {
    "id": "q038",
    "matiere": "Français",
+   "domaine": "Figures de style",
    "theme": "Figures de style",
    "question": "« Cette ville est un océan de lumières. » Quelle est cette figure de style ?",
    "choix": [
@@ -655,6 +738,7 @@ const BANK = {
   {
    "id": "q039",
    "matiere": "Français",
+   "domaine": "Figures de style",
    "theme": "Figures de style",
    "question": "« Ses yeux brillaient comme deux soleils. » Quelle est cette figure de style ?",
    "choix": [
@@ -670,6 +754,7 @@ const BANK = {
   {
    "id": "q040",
    "matiere": "Français",
+   "domaine": "Figures de style",
    "theme": "Figures de style",
    "question": "« Je meurs de soif ! » Quelle est cette figure de style ?",
    "choix": [
@@ -685,6 +770,7 @@ const BANK = {
   {
    "id": "q041",
    "matiere": "Français",
+   "domaine": "Figures de style",
    "theme": "Figures de style",
    "question": "« Le vent hurlait dans les arbres. » Quelle est cette figure de style ?",
    "choix": [
@@ -700,6 +786,7 @@ const BANK = {
   {
    "id": "q042",
    "matiere": "Français",
+   "domaine": "Orthographe et accords",
    "theme": "Orthographe",
    "question": "Quelle phrase est correctement accordée ?",
    "choix": [
@@ -715,6 +802,7 @@ const BANK = {
   {
    "id": "q043",
    "matiere": "Français",
+   "domaine": "Conjugaison",
    "theme": "Conjugaison",
    "question": "Complète : « Si j'avais le temps, je … te voir. »",
    "choix": [
@@ -730,6 +818,7 @@ const BANK = {
   {
    "id": "q044",
    "matiere": "Français",
+   "domaine": "Classes et fonctions",
    "theme": "Grammaire",
    "question": "Dans « Le chien de Paul dort », quelle est la fonction de « de Paul » ?",
    "choix": [
@@ -745,6 +834,7 @@ const BANK = {
   {
    "id": "q045",
    "matiere": "Français",
+   "domaine": "Classes et fonctions",
    "theme": "Grammaire",
    "question": "Dans « Gabriel révise ses leçons », quelle est la fonction de « ses leçons » ?",
    "choix": [
@@ -760,6 +850,7 @@ const BANK = {
   {
    "id": "q046",
    "matiere": "Français",
+   "domaine": "Classes et fonctions",
    "theme": "Grammaire",
    "question": "Dans « Elle semble fatiguée », quelle est la fonction de « fatiguée » ?",
    "choix": [
@@ -775,6 +866,7 @@ const BANK = {
   {
    "id": "q047",
    "matiere": "Français",
+   "domaine": "La phrase complexe",
    "theme": "Grammaire",
    "question": "« Le livre que je lis est passionnant. » Quelle est la nature de « que je lis » ?",
    "choix": [
@@ -790,6 +882,7 @@ const BANK = {
   {
    "id": "q048",
    "matiere": "Français",
+   "domaine": "La phrase complexe",
    "theme": "Grammaire",
    "question": "« Je pense qu'il viendra. » Quelle est la nature de « qu'il viendra » ?",
    "choix": [
@@ -805,6 +898,7 @@ const BANK = {
   {
    "id": "q049",
    "matiere": "Français",
+   "domaine": "Conjugaison",
    "theme": "Conjugaison",
    "question": "Quel est le passé simple de « venir » à la 3e personne du singulier ?",
    "choix": [
@@ -820,6 +914,7 @@ const BANK = {
   {
    "id": "q050",
    "matiere": "Français",
+   "domaine": "Orthographe et accords",
    "theme": "Orthographe",
    "question": "Complète : « Il … mangé tout le gâteau. »",
    "choix": [
@@ -835,6 +930,7 @@ const BANK = {
   {
    "id": "q051",
    "matiere": "Français",
+   "domaine": "Orthographe et accords",
    "theme": "Orthographe",
    "question": "Complète : « … important de réviser un peu chaque jour. »",
    "choix": [
@@ -850,6 +946,7 @@ const BANK = {
   {
    "id": "q052",
    "matiere": "Français",
+   "domaine": "Lecture et littérature",
    "theme": "Discours rapporté",
    "question": "Il a dit : « Je viendrai demain. » Au discours indirect, cela donne :",
    "choix": [
@@ -865,6 +962,7 @@ const BANK = {
   {
    "id": "q053",
    "matiere": "Français",
+   "domaine": "Lecture et littérature",
    "theme": "Littérature",
    "question": "« La Force de l'âge » de Simone de Beauvoir, où l'autrice raconte sa propre vie, est :",
    "choix": [
@@ -880,6 +978,7 @@ const BANK = {
   {
    "id": "q054",
    "matiere": "Français",
+   "domaine": "Lecture et littérature",
    "theme": "Littérature",
    "question": "Un texte qui cherche à émouvoir le lecteur et à susciter sa pitié relève du registre :",
    "choix": [
@@ -895,6 +994,7 @@ const BANK = {
   {
    "id": "q055",
    "matiere": "Français",
+   "domaine": "Conjugaison",
    "theme": "Conjugaison",
    "question": "« La Terre tourne autour du Soleil. » Quelle est la valeur du présent ?",
    "choix": [
@@ -910,6 +1010,7 @@ const BANK = {
   {
    "id": "q056",
    "matiere": "Français",
+   "domaine": "Classes et fonctions",
    "theme": "Grammaire",
    "question": "Dans « Je la vois », quelle est la nature de « la » ?",
    "choix": [
@@ -925,6 +1026,7 @@ const BANK = {
   {
    "id": "q057",
    "matiere": "Français",
+   "domaine": "Vocabulaire",
    "theme": "Vocabulaire",
    "question": "Quel est l'antonyme (le contraire) de « généreux » ?",
    "choix": [
@@ -940,6 +1042,7 @@ const BANK = {
   {
    "id": "q058",
    "matiere": "Français",
+   "domaine": "Vocabulaire",
    "theme": "Vocabulaire",
    "question": "« Vagues, écume, marée, rivage » forment le champ lexical de :",
    "choix": [
@@ -955,6 +1058,7 @@ const BANK = {
   {
    "id": "q059",
    "matiere": "Français",
+   "domaine": "Orthographe et accords",
    "theme": "Réécriture",
    "question": "Réécris au pluriel : « Je grimpai et je rôdai dans les ruelles. »",
    "choix": [
@@ -970,6 +1074,7 @@ const BANK = {
   {
    "id": "q060",
    "matiere": "Français",
+   "domaine": "Classes et fonctions",
    "theme": "Grammaire",
    "question": "Dans « Il pleut », le pronom « il » est :",
    "choix": [
@@ -985,6 +1090,7 @@ const BANK = {
   {
    "id": "q061",
    "matiere": "Histoire-Géo",
+   "domaine": "Guerre froide et décolonisation",
    "theme": "Décolonisation",
    "question": "En quelle année l'Inde devient-elle indépendante ?",
    "choix": [
@@ -1000,6 +1106,7 @@ const BANK = {
   {
    "id": "q062",
    "matiere": "Histoire-Géo",
+   "domaine": "Guerre froide et décolonisation",
    "theme": "Décolonisation",
    "question": "Quelle méthode Gandhi utilise-t-il pour lutter contre la domination britannique ?",
    "choix": [
@@ -1015,6 +1122,7 @@ const BANK = {
   {
    "id": "q063",
    "matiere": "Histoire-Géo",
+   "domaine": "Guerre froide et décolonisation",
    "theme": "Décolonisation",
    "question": "Qu'est-ce que la « marche du sel » de 1930 ?",
    "choix": [
@@ -1030,6 +1138,7 @@ const BANK = {
   {
    "id": "q064",
    "matiere": "Histoire-Géo",
+   "domaine": "Guerre froide et décolonisation",
    "theme": "Décolonisation",
    "question": "En 1947, l'ancienne colonie britannique des Indes est partagée en deux États :",
    "choix": [
@@ -1045,6 +1154,7 @@ const BANK = {
   {
    "id": "q065",
    "matiere": "Histoire-Géo",
+   "domaine": "La France depuis 1945",
    "theme": "Société",
    "question": "En quelle année les Françaises votent-elles pour la première fois ?",
    "choix": [
@@ -1060,6 +1170,7 @@ const BANK = {
   {
    "id": "q066",
    "matiere": "Histoire-Géo",
+   "domaine": "1914-1939 : guerre et totalitarismes",
    "theme": "Première Guerre mondiale",
    "question": "Quelle date marque la fin des combats de la Première Guerre mondiale ?",
    "choix": [
@@ -1075,6 +1186,7 @@ const BANK = {
   {
    "id": "q067",
    "matiere": "Histoire-Géo",
+   "domaine": "La Seconde Guerre mondiale",
    "theme": "Seconde Guerre mondiale",
    "question": "Quelles sont les dates de la Seconde Guerre mondiale ?",
    "choix": [
@@ -1090,6 +1202,7 @@ const BANK = {
   {
    "id": "q068",
    "matiere": "Histoire-Géo",
+   "domaine": "La Seconde Guerre mondiale",
    "theme": "Seconde Guerre mondiale",
    "question": "Comment appelle-t-on le génocide des Juifs d'Europe par les nazis ?",
    "choix": [
@@ -1105,6 +1218,7 @@ const BANK = {
   {
    "id": "q069",
    "matiere": "Histoire-Géo",
+   "domaine": "1914-1939 : guerre et totalitarismes",
    "theme": "Régimes totalitaires",
    "question": "En quelle année a lieu la révolution russe qui porte les bolcheviks au pouvoir ?",
    "choix": [
@@ -1120,6 +1234,7 @@ const BANK = {
   {
    "id": "q070",
    "matiere": "Histoire-Géo",
+   "domaine": "La Seconde Guerre mondiale",
    "theme": "Seconde Guerre mondiale",
    "question": "Qui dirige le régime de Vichy, qui collabore avec l'Allemagne nazie ?",
    "choix": [
@@ -1135,6 +1250,7 @@ const BANK = {
   {
    "id": "q071",
    "matiere": "Histoire-Géo",
+   "domaine": "La Seconde Guerre mondiale",
    "theme": "Seconde Guerre mondiale",
    "question": "Que se passe-t-il le 18 juin 1940 ?",
    "choix": [
@@ -1150,6 +1266,7 @@ const BANK = {
   {
    "id": "q072",
    "matiere": "Histoire-Géo",
+   "domaine": "La France depuis 1945",
    "theme": "République",
    "question": "En quelle année la Ve République est-elle fondée ?",
    "choix": [
@@ -1165,6 +1282,7 @@ const BANK = {
   {
    "id": "q073",
    "matiere": "Histoire-Géo",
+   "domaine": "Guerre froide et décolonisation",
    "theme": "Guerre froide",
    "question": "Le mur de Berlin est construit en 1961. Quand tombe-t-il ?",
    "choix": [
@@ -1180,6 +1298,7 @@ const BANK = {
   {
    "id": "q074",
    "matiere": "Histoire-Géo",
+   "domaine": "Guerre froide et décolonisation",
    "theme": "Guerre froide",
    "question": "Pendant la guerre froide, quelles sont les deux superpuissances qui s'opposent ?",
    "choix": [
@@ -1195,6 +1314,7 @@ const BANK = {
   {
    "id": "q075",
    "matiere": "Histoire-Géo",
+   "domaine": "Guerre froide et décolonisation",
    "theme": "Décolonisation",
    "question": "Quelles sont les dates de la guerre d'Algérie ?",
    "choix": [
@@ -1210,6 +1330,7 @@ const BANK = {
   {
    "id": "q076",
    "matiere": "Histoire-Géo",
+   "domaine": "Territoires, outre-mer et Europe",
    "theme": "Construction européenne",
    "question": "Quel traité crée la Communauté économique européenne (CEE) en 1957 ?",
    "choix": [
@@ -1225,6 +1346,7 @@ const BANK = {
   {
    "id": "q077",
    "matiere": "Histoire-Géo",
+   "domaine": "La France depuis 1945",
    "theme": "Société",
    "question": "Quelle loi de 1975 est portée par Simone Veil ?",
    "choix": [
@@ -1240,6 +1362,7 @@ const BANK = {
   {
    "id": "q078",
    "matiere": "Histoire-Géo",
+   "domaine": "1914-1939 : guerre et totalitarismes",
    "theme": "Entre-deux-guerres",
    "question": "Quelle mesure célèbre le Front populaire obtient-il en 1936 ?",
    "choix": [
@@ -1255,6 +1378,7 @@ const BANK = {
   {
    "id": "q079",
    "matiere": "Histoire-Géo",
+   "domaine": "Espaces productifs et villes",
    "theme": "Géographie",
    "question": "Qu'est-ce qu'une « gigafactory » ?",
    "choix": [
@@ -1270,6 +1394,7 @@ const BANK = {
   {
    "id": "q080",
    "matiere": "Histoire-Géo",
+   "domaine": "Espaces productifs et villes",
    "theme": "Géographie",
    "question": "Une zone où se concentrent usines, entrepôts et emplois industriels est :",
    "choix": [
@@ -1285,6 +1410,7 @@ const BANK = {
   {
    "id": "q081",
    "matiere": "Histoire-Géo",
+   "domaine": "Espaces productifs et villes",
    "theme": "Géographie",
    "question": "Qu'est-ce que la métropolisation ?",
    "choix": [
@@ -1300,6 +1426,7 @@ const BANK = {
   {
    "id": "q082",
    "matiere": "Histoire-Géo",
+   "domaine": "Territoires, outre-mer et Europe",
    "theme": "Géographie",
    "question": "Lequel de ces territoires n'est PAS un département et région d'outre-mer (DROM) ?",
    "choix": [
@@ -1315,6 +1442,7 @@ const BANK = {
   {
    "id": "q083",
    "matiere": "Histoire-Géo",
+   "domaine": "Territoires, outre-mer et Europe",
    "theme": "Géographie",
    "question": "Grâce à ses territoires ultramarins, la France possède :",
    "choix": [
@@ -1330,6 +1458,7 @@ const BANK = {
   {
    "id": "q084",
    "matiere": "Histoire-Géo",
+   "domaine": "Espaces productifs et villes",
    "theme": "Géographie",
    "question": "Quel atout explique l'implantation d'usines de batteries dans les Hauts-de-France ?",
    "choix": [
@@ -1345,6 +1474,7 @@ const BANK = {
   {
    "id": "q085",
    "matiere": "Histoire-Géo",
+   "domaine": "EMC",
    "theme": "EMC",
    "question": "Quelle est la devise de la République française ?",
    "choix": [
@@ -1360,6 +1490,7 @@ const BANK = {
   {
    "id": "q086",
    "matiere": "Histoire-Géo",
+   "domaine": "EMC",
    "theme": "EMC",
    "question": "Quelle loi de 1905 fonde la laïcité en France ?",
    "choix": [
@@ -1375,6 +1506,7 @@ const BANK = {
   {
    "id": "q087",
    "matiere": "Histoire-Géo",
+   "domaine": "EMC",
    "theme": "EMC",
    "question": "À partir de quel âge peut-on voter en France ?",
    "choix": [
@@ -1390,6 +1522,7 @@ const BANK = {
   {
    "id": "q088",
    "matiere": "Histoire-Géo",
+   "domaine": "EMC",
    "theme": "EMC",
    "question": "Quel texte de 1789 affirme que « les hommes naissent et demeurent libres et égaux en droits » ?",
    "choix": [
@@ -1405,6 +1538,7 @@ const BANK = {
   {
    "id": "q089",
    "matiere": "Histoire-Géo",
+   "domaine": "EMC",
    "theme": "EMC",
    "question": "Le préambule de la Constitution garantit à la femme, dans tous les domaines, des droits :",
    "choix": [
@@ -1420,6 +1554,7 @@ const BANK = {
   {
    "id": "q090",
    "matiere": "Histoire-Géo",
+   "domaine": "La France depuis 1945",
    "theme": "République",
    "question": "Qui est le premier président de la Ve République ?",
    "choix": [
@@ -1435,6 +1570,7 @@ const BANK = {
   {
    "id": "q091",
    "matiere": "Sciences",
+   "domaine": "Mouvement, forces et énergie",
    "theme": "Physique-chimie",
    "question": "Un cycliste parcourt 150 m en 30 s. Quelle est sa vitesse moyenne ?",
    "choix": [
@@ -1450,6 +1586,7 @@ const BANK = {
   {
    "id": "q092",
    "matiere": "Sciences",
+   "domaine": "Matière et chimie",
    "theme": "Physique-chimie",
    "question": "Quelle est la masse d'un litre d'eau ?",
    "choix": [
@@ -1465,6 +1602,7 @@ const BANK = {
   {
    "id": "q093",
    "matiere": "Sciences",
+   "domaine": "Électricité",
    "theme": "Électricité",
    "question": "Loi d'Ohm : une résistance de 100 Ω est traversée par un courant de 0,05 A. Quelle est la tension à ses bornes ?",
    "choix": [
@@ -1480,6 +1618,7 @@ const BANK = {
   {
    "id": "q094",
    "matiere": "Sciences",
+   "domaine": "Électricité",
    "theme": "Électricité",
    "question": "Un appareil fonctionne sous 230 V et est traversé par 2 A. Quelle est sa puissance ?",
    "choix": [
@@ -1495,6 +1634,7 @@ const BANK = {
   {
    "id": "q095",
    "matiere": "Sciences",
+   "domaine": "Mouvement, forces et énergie",
    "theme": "Énergie",
    "question": "Un radiateur de 1 000 W fonctionne pendant 2 heures. Quelle énergie consomme-t-il ?",
    "choix": [
@@ -1510,6 +1650,7 @@ const BANK = {
   {
    "id": "q096",
    "matiere": "Sciences",
+   "domaine": "Lumière et son",
    "theme": "Physique-chimie",
    "question": "Quelle est la vitesse de la lumière dans le vide ?",
    "choix": [
@@ -1525,6 +1666,7 @@ const BANK = {
   {
    "id": "q097",
    "matiere": "Sciences",
+   "domaine": "Lumière et son",
    "theme": "Physique-chimie",
    "question": "Le son peut-il se propager dans le vide ?",
    "choix": [
@@ -1540,6 +1682,7 @@ const BANK = {
   {
    "id": "q098",
    "matiere": "Sciences",
+   "domaine": "Matière et chimie",
    "theme": "Chimie",
    "question": "Une solution de pH 3 est :",
    "choix": [
@@ -1555,6 +1698,7 @@ const BANK = {
   {
    "id": "q099",
    "matiere": "Sciences",
+   "domaine": "Matière et chimie",
    "theme": "Chimie",
    "question": "L'ion sodium Na⁺ est un atome de sodium qui a :",
    "choix": [
@@ -1570,6 +1714,7 @@ const BANK = {
   {
    "id": "q100",
    "matiere": "Sciences",
+   "domaine": "Matière et chimie",
    "theme": "Chimie",
    "question": "Lors d'une transformation chimique, la masse totale :",
    "choix": [
@@ -1585,6 +1730,7 @@ const BANK = {
   {
    "id": "q101",
    "matiere": "Sciences",
+   "domaine": "Mouvement, forces et énergie",
    "theme": "Physique-chimie",
    "question": "Quel est le poids d'un objet de 50 kg sur Terre (g = 9,8 N/kg) ?",
    "choix": [
@@ -1600,6 +1746,7 @@ const BANK = {
   {
    "id": "q102",
    "matiere": "Sciences",
+   "domaine": "Électricité",
    "theme": "Électricité",
    "question": "Dans un circuit en série, l'intensité du courant est :",
    "choix": [
@@ -1615,6 +1762,7 @@ const BANK = {
   {
    "id": "q103",
    "matiere": "Sciences",
+   "domaine": "Mouvement, forces et énergie",
    "theme": "Énergie",
    "question": "Si la vitesse d'une voiture double, son énergie cinétique est :",
    "choix": [
@@ -1630,6 +1778,7 @@ const BANK = {
   {
    "id": "q104",
    "matiere": "Sciences",
+   "domaine": "Génétique et évolution",
    "theme": "SVT",
    "question": "Combien de chromosomes possède une cellule humaine (hors gamètes) ?",
    "choix": [
@@ -1645,6 +1794,7 @@ const BANK = {
   {
    "id": "q105",
    "matiere": "Sciences",
+   "domaine": "Génétique et évolution",
    "theme": "SVT",
    "question": "Combien de chromosomes contient un spermatozoïde ou un ovule ?",
    "choix": [
@@ -1660,6 +1810,7 @@ const BANK = {
   {
    "id": "q106",
    "matiere": "Sciences",
+   "domaine": "Génétique et évolution",
    "theme": "SVT",
    "question": "La fécondation, c'est :",
    "choix": [
@@ -1675,6 +1826,7 @@ const BANK = {
   {
    "id": "q107",
    "matiere": "Sciences",
+   "domaine": "Corps humain et santé",
    "theme": "SVT",
    "question": "Quelles cellules produisent les anticorps ?",
    "choix": [
@@ -1690,6 +1842,7 @@ const BANK = {
   {
    "id": "q108",
    "matiere": "Sciences",
+   "domaine": "Corps humain et santé",
    "theme": "SVT",
    "question": "Les antibiotiques sont efficaces contre :",
    "choix": [
@@ -1705,6 +1858,7 @@ const BANK = {
   {
    "id": "q109",
    "matiere": "Sciences",
+   "domaine": "Corps humain et santé",
    "theme": "SVT",
    "question": "Comment agit un vaccin ?",
    "choix": [
@@ -1720,6 +1874,7 @@ const BANK = {
   {
    "id": "q110",
    "matiere": "Sciences",
+   "domaine": "Planète et environnement",
    "theme": "SVT",
    "question": "Grâce à la photosynthèse, une plante verte fabrique de la matière organique à partir de :",
    "choix": [
@@ -1735,6 +1890,7 @@ const BANK = {
   {
    "id": "q111",
    "matiere": "Sciences",
+   "domaine": "Planète et environnement",
    "theme": "SVT",
    "question": "Dans une chaîne alimentaire, les producteurs primaires sont :",
    "choix": [
@@ -1750,6 +1906,7 @@ const BANK = {
   {
    "id": "q112",
    "matiere": "Sciences",
+   "domaine": "Planète et environnement",
    "theme": "SVT",
    "question": "Quel gaz est le principal responsable de l'augmentation de l'effet de serre due aux activités humaines ?",
    "choix": [
@@ -1765,6 +1922,7 @@ const BANK = {
   {
    "id": "q113",
    "matiere": "Sciences",
+   "domaine": "Planète et environnement",
    "theme": "SVT",
    "question": "Laquelle de ces énergies est renouvelable ?",
    "choix": [
@@ -1780,6 +1938,7 @@ const BANK = {
   {
    "id": "q114",
    "matiere": "Sciences",
+   "domaine": "Planète et environnement",
    "theme": "SVT",
    "question": "Un séisme est provoqué par :",
    "choix": [
@@ -1795,6 +1954,7 @@ const BANK = {
   {
    "id": "q115",
    "matiere": "Sciences",
+   "domaine": "Génétique et évolution",
    "theme": "SVT",
    "question": "Quel scientifique a proposé la théorie de l'évolution par sélection naturelle ?",
    "choix": [
@@ -1810,6 +1970,7 @@ const BANK = {
   {
    "id": "q116",
    "matiere": "Sciences",
+   "domaine": "Technologie",
    "theme": "Technologie",
    "question": "Dans un objet technique, un moteur électrique est :",
    "choix": [
@@ -1825,6 +1986,7 @@ const BANK = {
   {
    "id": "q117",
    "matiere": "Sciences",
+   "domaine": "Technologie",
    "theme": "Technologie",
    "question": "Combien de bits contient un octet ?",
    "choix": [
@@ -1840,6 +2002,7 @@ const BANK = {
   {
    "id": "q118",
    "matiere": "Sciences",
+   "domaine": "Technologie",
    "theme": "Technologie",
    "question": "Un détecteur de mouvement fait partie de :",
    "choix": [
@@ -1855,6 +2018,7 @@ const BANK = {
   {
    "id": "q119",
    "matiere": "Sciences",
+   "domaine": "Technologie",
    "theme": "Technologie",
    "question": "Dans un programme, « si la température > 25 alors allumer le ventilateur » est :",
    "choix": [
@@ -1870,6 +2034,7 @@ const BANK = {
   {
    "id": "q120",
    "matiere": "Sciences",
+   "domaine": "Corps humain et santé",
    "theme": "SVT",
    "question": "Quel organe filtre le sang et produit l'urine ?",
    "choix": [
@@ -1881,9 +2046,1499 @@ const BANK = {
    "reponse": 1,
    "explication": "Les reins filtrent le sang pour en retirer les déchets, éliminés dans l'urine.",
    "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q121",
+   "matiere": "Maths",
+   "domaine": "Nombres et calculs",
+   "theme": "Priorités",
+   "question": "Combien vaut 3 + 4 × 5 ?",
+   "choix": [
+    "60",
+    "23",
+    "27",
+    "35"
+   ],
+   "reponse": 1,
+   "explication": "La multiplication passe avant l'addition : 4 × 5 = 20, puis 3 + 20 = 23.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q122",
+   "matiere": "Maths",
+   "domaine": "Nombres et calculs",
+   "theme": "Priorités",
+   "question": "Combien vaut 20 − 2 × (3 + 4) ?",
+   "choix": [
+    "126",
+    "6",
+    "11",
+    "17"
+   ],
+   "reponse": 1,
+   "explication": "D'abord les parenthèses : 3 + 4 = 7. Puis la multiplication : 2 × 7 = 14. Enfin 20 − 14 = 6.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q123",
+   "matiere": "Maths",
+   "domaine": "Nombres et calculs",
+   "theme": "Nombres relatifs",
+   "question": "Combien vaut (−3) × (−4) ?",
+   "choix": [
+    "−12",
+    "−7",
+    "12",
+    "7"
+   ],
+   "reponse": 2,
+   "explication": "Le produit de deux nombres négatifs est positif : (−3) × (−4) = 12.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q124",
+   "matiere": "Maths",
+   "domaine": "Nombres et calculs",
+   "theme": "Nombres relatifs",
+   "question": "Combien vaut −5 + 8 ?",
+   "choix": [
+    "3",
+    "13",
+    "−3",
+    "−13"
+   ],
+   "reponse": 0,
+   "explication": "On part de −5 et on avance de 8 : on arrive à 3.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q125",
+   "matiere": "Maths",
+   "domaine": "Nombres et calculs",
+   "theme": "Fractions",
+   "question": "Combien vaut 2/3 × 9/4 ?",
+   "choix": [
+    "11/7",
+    "8/27",
+    "3/2",
+    "2/3"
+   ],
+   "reponse": 2,
+   "explication": "On multiplie les numérateurs et les dénominateurs : 18/12, qui se simplifie par 6 en 3/2.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q126",
+   "matiere": "Maths",
+   "domaine": "Nombres et calculs",
+   "theme": "Fractions",
+   "question": "Quelle est la forme simplifiée de 18/24 ?",
+   "choix": [
+    "6/7",
+    "9/16",
+    "3/4",
+    "2/3"
+   ],
+   "reponse": 2,
+   "explication": "18 et 24 sont tous deux divisibles par 6 : 18/24 = 3/4.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q127",
+   "matiere": "Maths",
+   "domaine": "Puissances",
+   "theme": "Puissances",
+   "question": "Combien vaut 2⁵ ?",
+   "choix": [
+    "7",
+    "32",
+    "10",
+    "25"
+   ],
+   "reponse": 1,
+   "explication": "2⁵ = 2 × 2 × 2 × 2 × 2 = 32. Attention, ce n'est pas 2 × 5.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q128",
+   "matiere": "Maths",
+   "domaine": "Puissances",
+   "theme": "Notation scientifique",
+   "question": "Quelle est l'écriture scientifique de 45 000 ?",
+   "choix": [
+    "45 × 10³",
+    "4,5 × 10⁴",
+    "4,5 × 10³",
+    "0,45 × 10⁵"
+   ],
+   "reponse": 1,
+   "explication": "En notation scientifique, le premier nombre est entre 1 et 10 : 45 000 = 4,5 × 10 000 = 4,5 × 10⁴.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q129",
+   "matiere": "Maths",
+   "domaine": "Puissances",
+   "theme": "Notation scientifique",
+   "question": "Quelle est l'écriture scientifique de 0,003 ?",
+   "choix": [
+    "3 × 10³",
+    "3 × 10⁻³",
+    "3 × 10⁻²",
+    "0,3 × 10⁻²"
+   ],
+   "reponse": 1,
+   "explication": "0,003 = 3 millièmes = 3 × 10⁻³.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q130",
+   "matiere": "Maths",
+   "domaine": "Puissances",
+   "theme": "Puissances",
+   "question": "Combien vaut (−2)⁴ ?",
+   "choix": [
+    "16",
+    "−8",
+    "−16",
+    "8"
+   ],
+   "reponse": 0,
+   "explication": "(−2) × (−2) × (−2) × (−2) = 16 : un nombre pair de facteurs négatifs donne un résultat positif.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q131",
+   "matiere": "Maths",
+   "domaine": "Puissances",
+   "theme": "Puissances",
+   "question": "Combien vaut 10⁶ ÷ 10² ?",
+   "choix": [
+    "10⁴",
+    "10³",
+    "10⁸",
+    "10¹²"
+   ],
+   "reponse": 0,
+   "explication": "Pour diviser des puissances de 10, on soustrait les exposants : 6 − 2 = 4.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q132",
+   "matiere": "Maths",
+   "domaine": "Puissances",
+   "theme": "Puissances",
+   "question": "Le préfixe « giga » (comme dans gigaoctet) signifie :",
+   "choix": [
+    "10⁶",
+    "10¹²",
+    "10⁹",
+    "10³"
+   ],
+   "reponse": 2,
+   "explication": "kilo = 10³, méga = 10⁶, giga = 10⁹, téra = 10¹².",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q133",
+   "matiere": "Maths",
+   "domaine": "Arithmétique",
+   "theme": "Arithmétique",
+   "question": "Combien le nombre 12 a-t-il de diviseurs ?",
+   "choix": [
+    "5",
+    "4",
+    "6",
+    "12"
+   ],
+   "reponse": 2,
+   "explication": "Les diviseurs de 12 sont 1, 2, 3, 4, 6 et 12 : il y en a 6.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q134",
+   "matiere": "Maths",
+   "domaine": "Arithmétique",
+   "theme": "Arithmétique",
+   "question": "Lequel de ces nombres est divisible par 9 ?",
+   "choix": [
+    "745",
+    "812",
+    "738",
+    "728"
+   ],
+   "reponse": 2,
+   "explication": "Un nombre est divisible par 9 si la somme de ses chiffres l'est : 7 + 3 + 8 = 18.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q135",
+   "matiere": "Maths",
+   "domaine": "Arithmétique",
+   "theme": "Arithmétique",
+   "question": "Quel est le PGCD de 35 et 24 ?",
+   "choix": [
+    "35",
+    "5",
+    "1",
+    "7"
+   ],
+   "reponse": 2,
+   "explication": "35 = 5 × 7 et 24 = 2³ × 3 n'ont aucun facteur premier commun : leur PGCD est 1, la fraction 35/24 est irréductible.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q136",
+   "matiere": "Maths",
+   "domaine": "Calcul littéral et équations",
+   "theme": "Équations",
+   "question": "Quelle est la solution de 2x − 7 = 3x + 1 ?",
+   "choix": [
+    "x = 6",
+    "x = −6",
+    "x = 8",
+    "x = −8"
+   ],
+   "reponse": 3,
+   "explication": "On regroupe les x d'un côté : −7 − 1 = 3x − 2x, donc x = −8.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q137",
+   "matiere": "Maths",
+   "domaine": "Calcul littéral et équations",
+   "theme": "Calcul littéral",
+   "question": "Quelle est la forme développée de (2x + 1)² ?",
+   "choix": [
+    "2x² + 4x + 1",
+    "4x² + 1",
+    "4x² + 2x + 1",
+    "4x² + 4x + 1"
+   ],
+   "reponse": 3,
+   "explication": "(a + b)² = a² + 2ab + b², avec a = 2x et b = 1 : 4x² + 4x + 1.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q138",
+   "matiere": "Maths",
+   "domaine": "Fonctions",
+   "theme": "Fonctions",
+   "question": "Une fonction linéaire s'écrit sous la forme :",
+   "choix": [
+    "f(x) = ax²",
+    "f(x) = ax",
+    "f(x) = a/x",
+    "f(x) = ax + b avec b ≠ 0"
+   ],
+   "reponse": 1,
+   "explication": "Une fonction linéaire est de la forme f(x) = ax. Elle traduit une situation de proportionnalité.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q139",
+   "matiere": "Maths",
+   "domaine": "Fonctions",
+   "theme": "Fonctions",
+   "question": "La représentation graphique d'une fonction affine est :",
+   "choix": [
+    "une courbe en escalier",
+    "un cercle",
+    "une droite",
+    "une parabole"
+   ],
+   "reponse": 2,
+   "explication": "Toute fonction affine f(x) = ax + b est représentée par une droite.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q140",
+   "matiere": "Maths",
+   "domaine": "Fonctions",
+   "theme": "Fonctions",
+   "question": "Quel est le coefficient directeur de f(x) = −2x + 5 ?",
+   "choix": [
+    "−5",
+    "2",
+    "−2",
+    "5"
+   ],
+   "reponse": 2,
+   "explication": "Dans f(x) = ax + b, a est le coefficient directeur (ici −2) et b l'ordonnée à l'origine (ici 5).",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q141",
+   "matiere": "Maths",
+   "domaine": "Fonctions",
+   "theme": "Fonctions",
+   "question": "Soit g(x) = x² − 1. Combien vaut g(−3) ?",
+   "choix": [
+    "−10",
+    "−7",
+    "8",
+    "10"
+   ],
+   "reponse": 2,
+   "explication": "(−3)² = 9, donc g(−3) = 9 − 1 = 8.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q142",
+   "matiere": "Maths",
+   "domaine": "Proportionnalité et pourcentages",
+   "theme": "Échelles",
+   "question": "Sur une carte à l'échelle 1/25 000, 4 cm représentent :",
+   "choix": [
+    "100 m",
+    "4 km",
+    "1 km",
+    "10 km"
+   ],
+   "reponse": 2,
+   "explication": "4 × 25 000 = 100 000 cm = 1 000 m = 1 km.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q143",
+   "matiere": "Maths",
+   "domaine": "Proportionnalité et pourcentages",
+   "theme": "Pourcentages",
+   "question": "Un prix passe de 40 € à 50 €. De quel pourcentage a-t-il augmenté ?",
+   "choix": [
+    "10 %",
+    "50 %",
+    "25 %",
+    "20 %"
+   ],
+   "reponse": 2,
+   "explication": "Hausse de 10 € sur 40 € : 10 ÷ 40 = 0,25 = 25 %.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q144",
+   "matiere": "Maths",
+   "domaine": "Proportionnalité et pourcentages",
+   "theme": "Proportionnalité",
+   "question": "Dans un tableau de proportionnalité, 2 correspond à 6. À quoi correspond 5 ?",
+   "choix": [
+    "9",
+    "12",
+    "18",
+    "15"
+   ],
+   "reponse": 3,
+   "explication": "Le coefficient de proportionnalité est 6 ÷ 2 = 3, donc 5 × 3 = 15.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q145",
+   "matiere": "Maths",
+   "domaine": "Statistiques et probabilités",
+   "theme": "Statistiques",
+   "question": "Quelle est l'étendue de la série 4 ; 9 ; 12 ; 7 ; 15 ?",
+   "choix": [
+    "4",
+    "15",
+    "11",
+    "9"
+   ],
+   "reponse": 2,
+   "explication": "Étendue = plus grande valeur − plus petite valeur = 15 − 4 = 11.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q146",
+   "matiere": "Maths",
+   "domaine": "Statistiques et probabilités",
+   "theme": "Probabilités",
+   "question": "Quelle est la probabilité d'un événement certain ?",
+   "choix": [
+    "1",
+    "0,5",
+    "0",
+    "100"
+   ],
+   "reponse": 0,
+   "explication": "Une probabilité est toujours entre 0 (impossible) et 1 (certain).",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q147",
+   "matiere": "Maths",
+   "domaine": "Périmètres et aires",
+   "theme": "Aires",
+   "question": "Quelle est l'aire d'un disque de rayon 5 cm ?",
+   "choix": [
+    "5π cm²",
+    "100π cm²",
+    "10π cm²",
+    "25π cm²"
+   ],
+   "reponse": 3,
+   "explication": "A = π × r² = π × 5² = 25π cm², soit environ 78,5 cm².",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q148",
+   "matiere": "Maths",
+   "domaine": "Périmètres et aires",
+   "theme": "Périmètres",
+   "question": "Quel est le périmètre d'un cercle de diamètre 10 cm ?",
+   "choix": [
+    "20π cm",
+    "5π cm",
+    "10π cm",
+    "25π cm"
+   ],
+   "reponse": 2,
+   "explication": "P = π × diamètre = 10π cm, soit environ 31,4 cm.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q149",
+   "matiere": "Maths",
+   "domaine": "Périmètres et aires",
+   "theme": "Aires",
+   "question": "Quelle est l'aire d'un triangle de base 8 cm et de hauteur 5 cm ?",
+   "choix": [
+    "20 cm²",
+    "26 cm²",
+    "40 cm²",
+    "13 cm²"
+   ],
+   "reponse": 0,
+   "explication": "A = base × hauteur ÷ 2 = 8 × 5 ÷ 2 = 20 cm².",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q150",
+   "matiere": "Maths",
+   "domaine": "Périmètres et aires",
+   "theme": "Périmètres",
+   "question": "Quel est le périmètre d'un rectangle de 7 cm sur 3 cm ?",
+   "choix": [
+    "10 cm",
+    "21 cm",
+    "42 cm",
+    "20 cm"
+   ],
+   "reponse": 3,
+   "explication": "P = 2 × (longueur + largeur) = 2 × (7 + 3) = 20 cm. 21 cm², c'est son aire.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q151",
+   "matiere": "Maths",
+   "domaine": "Périmètres et aires",
+   "theme": "Aires",
+   "question": "1 m², c'est :",
+   "choix": [
+    "1 000 cm²",
+    "10 000 cm²",
+    "1 000 000 cm²",
+    "100 cm²"
+   ],
+   "reponse": 1,
+   "explication": "1 m = 100 cm, donc 1 m² = 100 cm × 100 cm = 10 000 cm².",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q152",
+   "matiere": "Maths",
+   "domaine": "Volumes",
+   "theme": "Volumes",
+   "question": "Quel est le volume d'un cube d'arête 4 cm ?",
+   "choix": [
+    "64 cm³",
+    "16 cm³",
+    "12 cm³",
+    "48 cm³"
+   ],
+   "reponse": 0,
+   "explication": "V = arête³ = 4 × 4 × 4 = 64 cm³.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q153",
+   "matiere": "Maths",
+   "domaine": "Volumes",
+   "theme": "Volumes",
+   "question": "Une pyramide a une base de 30 cm² et une hauteur de 10 cm. Quel est son volume ?",
+   "choix": [
+    "150 cm³",
+    "40 cm³",
+    "100 cm³",
+    "300 cm³"
+   ],
+   "reponse": 2,
+   "explication": "V = aire de la base × hauteur ÷ 3 = 30 × 10 ÷ 3 = 100 cm³.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q154",
+   "matiere": "Maths",
+   "domaine": "Volumes",
+   "theme": "Volumes",
+   "question": "Quelle est la formule du volume d'un cône de rayon r et de hauteur h ?",
+   "choix": [
+    "π × r² × h ÷ 3",
+    "2 × π × r × h",
+    "4/3 × π × r³",
+    "π × r² × h"
+   ],
+   "reponse": 0,
+   "explication": "Comme une pyramide, un cône a pour volume aire de la base × hauteur ÷ 3, avec une base de π × r².",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q155",
+   "matiere": "Maths",
+   "domaine": "Volumes",
+   "theme": "Volumes",
+   "question": "Quel est le volume d'une boule de rayon 3 cm ?",
+   "choix": [
+    "36π cm³",
+    "12π cm³",
+    "27π cm³",
+    "108π cm³"
+   ],
+   "reponse": 0,
+   "explication": "V = 4/3 × π × r³ = 4/3 × π × 27 = 36π cm³.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q156",
+   "matiere": "Maths",
+   "domaine": "Volumes",
+   "theme": "Volumes",
+   "question": "1 m³, c'est :",
+   "choix": [
+    "10 L",
+    "1 000 L",
+    "10 000 L",
+    "100 L"
+   ],
+   "reponse": 1,
+   "explication": "1 m³ = 1 000 dm³, et 1 dm³ = 1 L, donc 1 m³ = 1 000 L.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q157",
+   "matiere": "Maths",
+   "domaine": "Grandeurs composées",
+   "theme": "Vitesse",
+   "question": "Une voiture roule à 90 km/h. Quelle est sa vitesse en m/s ?",
+   "choix": [
+    "32,4 m/s",
+    "25 m/s",
+    "90 m/s",
+    "15 m/s"
+   ],
+   "reponse": 1,
+   "explication": "90 km/h = 90 000 m en 3 600 s, soit 90 000 ÷ 3 600 = 25 m/s.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q158",
+   "matiere": "Maths",
+   "domaine": "Grandeurs composées",
+   "theme": "Vitesse",
+   "question": "Quelle distance parcourt-on en 2 h 30 min à 60 km/h ?",
+   "choix": [
+    "132 km",
+    "150 km",
+    "120 km",
+    "180 km"
+   ],
+   "reponse": 1,
+   "explication": "2 h 30 min = 2,5 h, et d = v × t = 60 × 2,5 = 150 km.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q159",
+   "matiere": "Maths",
+   "domaine": "Grandeurs composées",
+   "theme": "Débit",
+   "question": "Un robinet remplit un seau de 60 L en 5 minutes. Quel est son débit ?",
+   "choix": [
+    "65 L/min",
+    "12 L/min",
+    "300 L/min",
+    "5 L/min"
+   ],
+   "reponse": 1,
+   "explication": "Débit = volume ÷ durée = 60 ÷ 5 = 12 L/min.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q160",
+   "matiere": "Maths",
+   "domaine": "Grandeurs composées",
+   "theme": "Masse volumique",
+   "question": "Un objet de 200 g a un volume de 250 cm³. Quelle est sa masse volumique ?",
+   "choix": [
+    "0,8 g/cm³",
+    "1,25 g/cm³",
+    "50 g/cm³",
+    "450 g/cm³"
+   ],
+   "reponse": 0,
+   "explication": "ρ = masse ÷ volume = 200 ÷ 250 = 0,8 g/cm³. Il flotte sur l'eau (1 g/cm³).",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q161",
+   "matiere": "Maths",
+   "domaine": "Géométrie du triangle",
+   "theme": "Trigonométrie",
+   "question": "ABC est rectangle en A. Que vaut sin(B) ?",
+   "choix": [
+    "AB / BC",
+    "AB / AC",
+    "AC / BC",
+    "AC / AB"
+   ],
+   "reponse": 2,
+   "explication": "sinus = côté opposé ÷ hypoténuse. Le côté opposé à B est AC, l'hypoténuse est BC.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q162",
+   "matiere": "Maths",
+   "domaine": "Géométrie du triangle",
+   "theme": "Angles",
+   "question": "Quelle est la somme des angles d'un triangle ?",
+   "choix": [
+    "360°",
+    "270°",
+    "90°",
+    "180°"
+   ],
+   "reponse": 3,
+   "explication": "Dans n'importe quel triangle, la somme des trois angles vaut 180°.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q163",
+   "matiere": "Maths",
+   "domaine": "Transformations",
+   "theme": "Transformations",
+   "question": "Quelle transformation fait glisser une figure sans la tourner ni la retourner ?",
+   "choix": [
+    "Une rotation",
+    "Une translation",
+    "Une homothétie",
+    "Une symétrie axiale"
+   ],
+   "reponse": 1,
+   "explication": "La translation déplace la figure dans une direction, un sens et sur une longueur donnés.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q164",
+   "matiere": "Maths",
+   "domaine": "Transformations",
+   "theme": "Transformations",
+   "question": "Une homothétie de rapport 0,5 transforme une figure en une figure :",
+   "choix": [
+    "identique",
+    "retournée",
+    "réduite de moitié",
+    "agrandie 2 fois"
+   ],
+   "reponse": 2,
+   "explication": "Un rapport entre 0 et 1 donne une réduction : ici les longueurs sont divisées par 2.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q165",
+   "matiere": "Maths",
+   "domaine": "Transformations",
+   "theme": "Transformations",
+   "question": "Une rotation conserve :",
+   "choix": [
+    "seulement les longueurs",
+    "les longueurs et les angles",
+    "seulement les angles",
+    "ni les longueurs ni les angles"
+   ],
+   "reponse": 1,
+   "explication": "Rotation, translation et symétries conservent les longueurs, les angles et les aires.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q166",
+   "matiere": "Maths",
+   "domaine": "Transformations",
+   "theme": "Transformations",
+   "question": "Une symétrie centrale est une rotation de :",
+   "choix": [
+    "360°",
+    "45°",
+    "180°",
+    "90°"
+   ],
+   "reponse": 2,
+   "explication": "Le symétrique d'un point par rapport à O est son image par la rotation de centre O et d'angle 180°.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q167",
+   "matiere": "Maths",
+   "domaine": "Transformations",
+   "theme": "Transformations",
+   "question": "Combien un carré a-t-il d'axes de symétrie ?",
+   "choix": [
+    "4",
+    "1",
+    "8",
+    "2"
+   ],
+   "reponse": 0,
+   "explication": "Un carré a 4 axes : ses 2 diagonales et les 2 médiatrices de ses côtés.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q168",
+   "matiere": "Maths",
+   "domaine": "Algorithmique et tableur",
+   "theme": "Algorithmique",
+   "question": "Dans un programme, à quoi sert une variable ?",
+   "choix": [
+    "À répéter des instructions",
+    "À arrêter le programme",
+    "À dessiner une forme",
+    "À stocker une valeur qui peut changer"
+   ],
+   "reponse": 3,
+   "explication": "Une variable est une « boîte » nommée qui garde une valeur (un score, un compteur…).",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q169",
+   "matiere": "Maths",
+   "domaine": "Algorithmique et tableur",
+   "theme": "Algorithmique",
+   "question": "Le lutin exécute « répéter 10 fois : avancer de 20 pas ». Quelle distance parcourt-il ?",
+   "choix": [
+    "10 pas",
+    "30 pas",
+    "20 pas",
+    "200 pas"
+   ],
+   "reponse": 3,
+   "explication": "10 répétitions de 20 pas : 10 × 20 = 200 pas.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q170",
+   "matiere": "Maths",
+   "domaine": "Algorithmique et tableur",
+   "theme": "Tableur",
+   "question": "Quelle formule calcule la somme des cellules A1 à A5 ?",
+   "choix": [
+    "=SOMME(A1;A5)",
+    "=A1:A5",
+    "SOMME(A1:A5)",
+    "=SOMME(A1:A5)"
+   ],
+   "reponse": 3,
+   "explication": "Le « : » désigne une plage de cellules (A1 jusqu'à A5). « ; » n'additionnerait que A1 et A5.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q171",
+   "matiere": "Français",
+   "domaine": "La phrase complexe",
+   "theme": "Phrase complexe",
+   "question": "« Quand il pleut, je reste à la maison. » Quelle est la nature de « Quand il pleut » ?",
+   "choix": [
+    "Proposition indépendante",
+    "Proposition subordonnée circonstancielle de temps",
+    "Groupe nominal",
+    "Proposition subordonnée relative"
+   ],
+   "reponse": 1,
+   "explication": "Introduite par la conjonction « quand », elle indique le moment : c'est une circonstancielle de temps.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q172",
+   "matiere": "Français",
+   "domaine": "La phrase complexe",
+   "theme": "Phrase complexe",
+   "question": "« Je travaille et je réussis. » Comment les propositions sont-elles reliées ?",
+   "choix": [
+    "Par coordination",
+    "Par apposition",
+    "Par subordination",
+    "Par juxtaposition"
+   ],
+   "reponse": 0,
+   "explication": "La conjonction de coordination « et » relie les deux propositions (mais, ou, et, donc, or, ni, car).",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q173",
+   "matiere": "Français",
+   "domaine": "La phrase complexe",
+   "theme": "Phrase complexe",
+   "question": "Combien de propositions compte la phrase « Il entra, s'assit et ouvrit son livre » ?",
+   "choix": [
+    "1",
+    "4",
+    "2",
+    "3"
+   ],
+   "reponse": 3,
+   "explication": "Une proposition par verbe conjugué : entra, s'assit, ouvrit. Il y en a donc 3.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q174",
+   "matiere": "Français",
+   "domaine": "Orthographe et accords",
+   "theme": "Orthographe",
+   "question": "Avec l'auxiliaire être, le participe passé s'accorde avec :",
+   "choix": [
+    "rien, il est invariable",
+    "le sujet",
+    "le COD",
+    "le complément du nom"
+   ],
+   "reponse": 1,
+   "explication": "« Elles sont parties » : avec être, le participe s'accorde avec le sujet.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q175",
+   "matiere": "Français",
+   "domaine": "Orthographe et accords",
+   "theme": "Orthographe",
+   "question": "Quelle phrase contient une faute ?",
+   "choix": [
+    "Ils ont mangé tôt.",
+    "Les fleurs que j'ai cueillies.",
+    "Elles sont venues hier.",
+    "Nous somme partis tôt."
+   ],
+   "reponse": 3,
+   "explication": "Avec « nous », le verbe être s'écrit « sommes » : nous sommes partis.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q176",
+   "matiere": "Français",
+   "domaine": "Vocabulaire",
+   "theme": "Vocabulaire",
+   "question": "Quel est le synonyme de « rapidement » ?",
+   "choix": [
+    "Doucement",
+    "Lentement",
+    "Vite",
+    "Souvent"
+   ],
+   "reponse": 2,
+   "explication": "Un synonyme a le même sens : rapidement = vite.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q177",
+   "matiere": "Français",
+   "domaine": "Vocabulaire",
+   "theme": "Vocabulaire",
+   "question": "Dans « lavable », que signifie le suffixe « -able » ?",
+   "choix": [
+    "Qui peut être",
+    "Qui fait",
+    "Qui ne peut pas être",
+    "Qui a été"
+   ],
+   "reponse": 0,
+   "explication": "« -able » signifie « qui peut être » : lavable = qui peut être lavé.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q178",
+   "matiere": "Français",
+   "domaine": "Figures de style",
+   "theme": "Figures de style",
+   "question": "« Un silence assourdissant » : quelle est cette figure de style ?",
+   "choix": [
+    "Une litote",
+    "Une hyperbole",
+    "Une comparaison",
+    "Un oxymore"
+   ],
+   "reponse": 3,
+   "explication": "L'oxymore rapproche deux mots de sens opposés : un silence ne devrait pas assourdir.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q179",
+   "matiere": "Français",
+   "domaine": "Lecture et littérature",
+   "theme": "Littérature",
+   "question": "Le narrateur ne raconte que ce que voit et pense un seul personnage. C'est un point de vue :",
+   "choix": [
+    "externe",
+    "omniscient",
+    "interne",
+    "objectif"
+   ],
+   "reponse": 2,
+   "explication": "Point de vue interne : on suit les perceptions et les pensées d'un personnage. Omniscient : le narrateur sait tout.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q180",
+   "matiere": "Français",
+   "domaine": "Lecture et littérature",
+   "theme": "Littérature",
+   "question": "Dans une fable, comment s'appelle la leçon que l'on doit retenir ?",
+   "choix": [
+    "Le titre",
+    "La chute",
+    "Le refrain",
+    "La morale"
+   ],
+   "reponse": 3,
+   "explication": "La morale, souvent au début ou à la fin, comme chez La Fontaine.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q181",
+   "matiere": "Français",
+   "domaine": "Lecture et littérature",
+   "theme": "Littérature",
+   "question": "Un poème de 14 vers composé de deux quatrains et de deux tercets est :",
+   "choix": [
+    "un haïku",
+    "une ode",
+    "une ballade",
+    "un sonnet"
+   ],
+   "reponse": 3,
+   "explication": "Le sonnet : 2 strophes de 4 vers (quatrains) puis 2 strophes de 3 vers (tercets).",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q182",
+   "matiere": "Français",
+   "domaine": "Conjugaison",
+   "theme": "Conjugaison",
+   "question": "Quel est le participe passé du verbe « prendre » ?",
+   "choix": [
+    "prit",
+    "prendu",
+    "prenu",
+    "pris"
+   ],
+   "reponse": 3,
+   "explication": "Prendre → pris (j'ai pris). « Prit » est le passé simple : il prit.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q183",
+   "matiere": "Histoire-Géo",
+   "domaine": "1914-1939 : guerre et totalitarismes",
+   "theme": "Première Guerre mondiale",
+   "question": "Comment appelle-t-on la phase de la Grande Guerre où les soldats s'enterrent dans des tranchées, comme à Verdun ?",
+   "choix": [
+    "La guerre de mouvement",
+    "La guerre éclair",
+    "La guerre froide",
+    "La guerre de position"
+   ],
+   "reponse": 3,
+   "explication": "De la fin 1914 à 1918, le front se fige : les soldats vivent dans les tranchées. C'est la guerre de position.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q184",
+   "matiere": "Histoire-Géo",
+   "domaine": "1914-1939 : guerre et totalitarismes",
+   "theme": "Régimes totalitaires",
+   "question": "Qui dirige l'URSS de manière totalitaire de la fin des années 1920 à 1953 ?",
+   "choix": [
+    "Lénine",
+    "Trotski",
+    "Khrouchtchev",
+    "Staline"
+   ],
+   "reponse": 3,
+   "explication": "Staline impose la terreur, le culte de la personnalité et les camps du goulag.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q185",
+   "matiere": "Histoire-Géo",
+   "domaine": "1914-1939 : guerre et totalitarismes",
+   "theme": "Régimes totalitaires",
+   "question": "En quelle année Hitler arrive-t-il au pouvoir en Allemagne ?",
+   "choix": [
+    "1939",
+    "1933",
+    "1919",
+    "1929"
+   ],
+   "reponse": 1,
+   "explication": "Hitler est nommé chancelier en janvier 1933 et installe rapidement une dictature totalitaire.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q186",
+   "matiere": "Histoire-Géo",
+   "domaine": "La Seconde Guerre mondiale",
+   "theme": "Seconde Guerre mondiale",
+   "question": "À quelle date a lieu le débarquement allié en Normandie ?",
+   "choix": [
+    "25 août 1944",
+    "8 mai 1945",
+    "6 juin 1944",
+    "18 juin 1940"
+   ],
+   "reponse": 2,
+   "explication": "Le D-Day, le 6 juin 1944, ouvre un nouveau front à l'ouest. Paris est libéré le 25 août 1944.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q187",
+   "matiere": "Histoire-Géo",
+   "domaine": "La Seconde Guerre mondiale",
+   "theme": "Seconde Guerre mondiale",
+   "question": "Qui unifie les mouvements de la Résistance intérieure en 1943, à la demande du général de Gaulle ?",
+   "choix": [
+    "Jean Moulin",
+    "Philippe Pétain",
+    "Léon Blum",
+    "Pierre Laval"
+   ],
+   "reponse": 0,
+   "explication": "Jean Moulin crée le Conseil national de la Résistance (CNR) en 1943, avant d'être arrêté et de mourir.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q188",
+   "matiere": "Histoire-Géo",
+   "domaine": "La France depuis 1945",
+   "theme": "Société",
+   "question": "Quelle institution créée en 1945 protège les Français face à la maladie et à la vieillesse ?",
+   "choix": [
+    "La Sécurité sociale",
+    "L'Union européenne",
+    "Le Sénat",
+    "L'ONU"
+   ],
+   "reponse": 0,
+   "explication": "Inspirée du programme du CNR, la Sécurité sociale est créée en 1945.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q189",
+   "matiere": "Histoire-Géo",
+   "domaine": "Espaces productifs et villes",
+   "theme": "Villes",
+   "question": "Qu'appelle-t-on la périurbanisation ?",
+   "choix": [
+    "La rénovation des centres-villes",
+    "L'extension des villes vers les campagnes qui les entourent",
+    "Le départ des habitants à l'étranger",
+    "La construction de tours"
+   ],
+   "reponse": 1,
+   "explication": "Les habitants s'installent de plus en plus loin du centre, souvent en maison individuelle, et se déplacent en voiture.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q190",
+   "matiere": "Histoire-Géo",
+   "domaine": "Espaces productifs et villes",
+   "theme": "Villes",
+   "question": "Qu'est-ce que l'aire d'attraction d'une ville ?",
+   "choix": [
+    "Les communes dont beaucoup d'actifs viennent travailler dans le pôle urbain",
+    "Le centre historique",
+    "Le parc d'attractions",
+    "Les quartiers touristiques"
+   ],
+   "reponse": 0,
+   "explication": "L'aire d'attraction regroupe le pôle urbain et toutes les communes dont au moins 15 % des actifs y travaillent.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q191",
+   "matiere": "Histoire-Géo",
+   "domaine": "Territoires, outre-mer et Europe",
+   "theme": "Outre-mer",
+   "question": "Quel territoire français se trouve en Amérique du Sud ?",
+   "choix": [
+    "La Réunion",
+    "La Guyane",
+    "Mayotte",
+    "La Corse"
+   ],
+   "reponse": 1,
+   "explication": "La Guyane, entre le Brésil et le Suriname, accueille le centre spatial de Kourou.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q192",
+   "matiere": "Histoire-Géo",
+   "domaine": "Territoires, outre-mer et Europe",
+   "theme": "Outre-mer",
+   "question": "Dans quel océan se trouve La Réunion ?",
+   "choix": [
+    "L'océan Indien",
+    "L'océan Atlantique",
+    "L'océan Arctique",
+    "L'océan Pacifique"
+   ],
+   "reponse": 0,
+   "explication": "La Réunion et Mayotte sont dans l'océan Indien. La Guadeloupe et la Martinique sont dans les Antilles.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q193",
+   "matiere": "Histoire-Géo",
+   "domaine": "Territoires, outre-mer et Europe",
+   "theme": "Europe",
+   "question": "Combien de pays compte l'Union européenne depuis le départ du Royaume-Uni en 2020 ?",
+   "choix": [
+    "27",
+    "30",
+    "28",
+    "25"
+   ],
+   "reponse": 0,
+   "explication": "Après le Brexit, l'Union européenne compte 27 États membres.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q194",
+   "matiere": "Histoire-Géo",
+   "domaine": "Territoires, outre-mer et Europe",
+   "theme": "Europe",
+   "question": "Quelle monnaie la France partage-t-elle avec de nombreux pays de l'Union européenne ?",
+   "choix": [
+    "La livre",
+    "L'euro",
+    "Le dollar",
+    "Le franc"
+   ],
+   "reponse": 1,
+   "explication": "L'euro est utilisé en France depuis 2002 (pièces et billets).",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q195",
+   "matiere": "Histoire-Géo",
+   "domaine": "EMC",
+   "theme": "EMC",
+   "question": "En France, qui vote les lois ?",
+   "choix": [
+    "Le président de la République",
+    "Le Premier ministre",
+    "Le Conseil constitutionnel",
+    "Le Parlement (Assemblée nationale et Sénat)"
+   ],
+   "reponse": 3,
+   "explication": "Le pouvoir législatif appartient au Parlement, formé de l'Assemblée nationale et du Sénat.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q196",
+   "matiere": "Sciences",
+   "domaine": "Mouvement, forces et énergie",
+   "theme": "Mouvement",
+   "question": "Quelle est l'unité d'une force ?",
+   "choix": [
+    "Le newton",
+    "Le kilogramme",
+    "Le joule",
+    "Le watt"
+   ],
+   "reponse": 0,
+   "explication": "Une force s'exprime en newtons (N). La masse est en kg, l'énergie en J, la puissance en W.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q197",
+   "matiere": "Sciences",
+   "domaine": "Mouvement, forces et énergie",
+   "theme": "Énergie",
+   "question": "Quand un objet tombe, son énergie de position se transforme surtout en :",
+   "choix": [
+    "énergie électrique",
+    "énergie chimique",
+    "énergie lumineuse",
+    "énergie cinétique"
+   ],
+   "reponse": 3,
+   "explication": "En tombant, l'objet perd de l'altitude et gagne de la vitesse : l'énergie de position devient de l'énergie cinétique.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q198",
+   "matiere": "Sciences",
+   "domaine": "Électricité",
+   "theme": "Électricité",
+   "question": "Quel appareil mesure l'intensité du courant ?",
+   "choix": [
+    "L'ohmmètre",
+    "L'ampèremètre",
+    "Le voltmètre",
+    "Le wattmètre"
+   ],
+   "reponse": 1,
+   "explication": "L'ampèremètre mesure l'intensité en ampères (A). Il se branche en série.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q199",
+   "matiere": "Sciences",
+   "domaine": "Électricité",
+   "theme": "Électricité",
+   "question": "Dans un circuit en dérivation, la tension aux bornes de chaque branche est :",
+   "choix": [
+    "la même",
+    "nulle",
+    "plus grande dans la branche la plus longue",
+    "divisée par le nombre de branches"
+   ],
+   "reponse": 0,
+   "explication": "Loi d'unicité des tensions : des dipôles en dérivation ont la même tension à leurs bornes.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q200",
+   "matiere": "Sciences",
+   "domaine": "Électricité",
+   "theme": "Électricité",
+   "question": "Quel est le danger d'un court-circuit ?",
+   "choix": [
+    "La pile se recharge",
+    "Le courant s'arrête sans danger",
+    "Un courant très intense qui peut faire chauffer les fils et provoquer un incendie",
+    "La lampe brille plus fort"
+   ],
+   "reponse": 2,
+   "explication": "Le courant passe sans rien qui le limite : il devient très intense et chauffe les fils.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q201",
+   "matiere": "Sciences",
+   "domaine": "Matière et chimie",
+   "theme": "Chimie",
+   "question": "Quelle est la formule chimique de l'eau ?",
+   "choix": [
+    "CO₂",
+    "NaCl",
+    "O₂",
+    "H₂O"
+   ],
+   "reponse": 3,
+   "explication": "Une molécule d'eau contient 2 atomes d'hydrogène et 1 atome d'oxygène.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q202",
+   "matiere": "Sciences",
+   "domaine": "Matière et chimie",
+   "theme": "Chimie",
+   "question": "La combustion du carbone dans le dioxygène produit :",
+   "choix": [
+    "de l'eau",
+    "de l'azote",
+    "du sel",
+    "du dioxyde de carbone"
+   ],
+   "reponse": 3,
+   "explication": "C + O₂ → CO₂. Le dioxyde de carbone trouble l'eau de chaux.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q203",
+   "matiere": "Sciences",
+   "domaine": "Lumière et son",
+   "theme": "Lumière et son",
+   "question": "À quelle vitesse le son se propage-t-il dans l'air ?",
+   "choix": [
+    "Il ne se propage pas",
+    "Environ 300 000 km/s",
+    "Environ 340 m/s",
+    "Environ 3 m/s"
+   ],
+   "reponse": 2,
+   "explication": "Le son va à environ 340 m/s dans l'air, bien moins vite que la lumière.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q204",
+   "matiere": "Sciences",
+   "domaine": "Lumière et son",
+   "theme": "Lumière et son",
+   "question": "Un son de fréquence supérieure à 20 000 Hz est :",
+   "choix": [
+    "une lumière",
+    "un infrason",
+    "un ultrason",
+    "un son grave"
+   ],
+   "reponse": 2,
+   "explication": "L'oreille humaine entend de 20 Hz à 20 000 Hz. Au-dessus, ce sont des ultrasons (utilisés pour l'échographie).",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q205",
+   "matiere": "Sciences",
+   "domaine": "Lumière et son",
+   "theme": "Lumière et son",
+   "question": "Combien de temps la lumière du Soleil met-elle pour arriver sur Terre ?",
+   "choix": [
+    "1 heure",
+    "Environ 8 minutes",
+    "1 jour",
+    "1 seconde"
+   ],
+   "reponse": 1,
+   "explication": "Le Soleil est à environ 150 millions de km : la lumière met environ 8 minutes à nous parvenir.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q206",
+   "matiere": "Sciences",
+   "domaine": "Lumière et son",
+   "theme": "Lumière et son",
+   "question": "Une année-lumière est :",
+   "choix": [
+    "une énergie",
+    "une distance",
+    "une durée",
+    "une vitesse"
+   ],
+   "reponse": 1,
+   "explication": "C'est la distance parcourue par la lumière en un an, environ 9 500 milliards de km.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q207",
+   "matiere": "Sciences",
+   "domaine": "Corps humain et santé",
+   "theme": "Santé",
+   "question": "Quel est le rôle des globules rouges ?",
+   "choix": [
+    "Transporter le dioxygène",
+    "Arrêter les saignements",
+    "Combattre les microbes",
+    "Digérer les aliments"
+   ],
+   "reponse": 0,
+   "explication": "Les globules rouges transportent le dioxygène des poumons vers les organes.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q208",
+   "matiere": "Sciences",
+   "domaine": "Corps humain et santé",
+   "theme": "Santé",
+   "question": "Où les nutriments passent-ils dans le sang ?",
+   "choix": [
+    "Dans l'estomac",
+    "Dans la bouche",
+    "Dans le foie",
+    "Dans l'intestin grêle"
+   ],
+   "reponse": 3,
+   "explication": "Les nutriments traversent la paroi de l'intestin grêle, très repliée et riche en vaisseaux sanguins.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q209",
+   "matiere": "Sciences",
+   "domaine": "Génétique et évolution",
+   "theme": "Génétique",
+   "question": "Un gène est :",
+   "choix": [
+    "une portion d'ADN qui porte une information héréditaire",
+    "une cellule",
+    "une protéine du sang",
+    "un organe"
+   ],
+   "reponse": 0,
+   "explication": "Un gène est un morceau d'un chromosome (ADN) qui détermine un caractère, comme le groupe sanguin.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q210",
+   "matiere": "Sciences",
+   "domaine": "Génétique et évolution",
+   "theme": "Génétique",
+   "question": "De vrais jumeaux proviennent :",
+   "choix": [
+    "de parents différents",
+    "d'une seule cellule-œuf qui se sépare en deux",
+    "de deux spermatozoïdes dans un ovule",
+    "de deux ovules fécondés"
+   ],
+   "reponse": 1,
+   "explication": "Les vrais jumeaux viennent d'une seule cellule-œuf : ils ont le même ADN.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q211",
+   "matiere": "Sciences",
+   "domaine": "Planète et environnement",
+   "theme": "Planète",
+   "question": "Qu'est-ce qu'un fossile ?",
+   "choix": [
+    "Un cristal",
+    "Une météorite",
+    "Un reste ou une trace d'être vivant conservé dans une roche",
+    "Une roche volcanique"
+   ],
+   "reponse": 2,
+   "explication": "Les fossiles (coquilles, empreintes, os) permettent de reconstituer l'histoire de la vie.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q212",
+   "matiere": "Sciences",
+   "domaine": "Technologie",
+   "theme": "Technologie",
+   "question": "Dans un objet programmable, à quoi sert la carte microcontrôleur (Arduino, micro:bit) ?",
+   "choix": [
+    "À fournir l'énergie",
+    "À décorer l'objet",
+    "À capter la lumière",
+    "À traiter les informations et commander les actionneurs"
+   ],
+   "reponse": 3,
+   "explication": "Le microcontrôleur exécute le programme : il traite les informations des capteurs et pilote les actionneurs.",
+   "source": "Notion fréquente au brevet"
+  },
+  {
+   "id": "q213",
+   "matiere": "Sciences",
+   "domaine": "Technologie",
+   "theme": "Technologie",
+   "question": "Que décrit le cahier des charges d'un objet technique ?",
+   "choix": [
+    "Le mode d'emploi",
+    "Son prix de vente",
+    "Le nom de l'inventeur",
+    "Le besoin et les contraintes à respecter"
+   ],
+   "reponse": 3,
+   "explication": "Le cahier des charges fixe ce que l'objet doit faire et les contraintes (taille, coût, sécurité…).",
+   "source": "Notion fréquente au brevet"
   }
  ]
-}.questions;
+};
+const BANK = DATA.questions;
+const DOMAINS = DATA.domaines || {};
 const SUBJECTS = [
   {id:"Maths", color:"var(--maths)", icon:'<path d="M5 12h14M12 5v14"/>'},
   {id:"Français", color:"var(--fr)", icon:'<path d="M4 20h4L19 9l-4-4L4 16v4zM13 7l4 4"/>'},
@@ -1925,8 +3580,8 @@ function liveStreak(){
   const t = today();
   return (P.lastDay === t || P.lastDay === addDays(t,-1)) ? P.streak : 0;
 }
-function mastery(subject){
-  const qs = BANK.filter(q => q.matiere === subject);
+function mastery(subject, domain){
+  const qs = BANK.filter(q => q.matiere === subject && (!domain || q.domaine === domain));
   const pts = qs.reduce((s,q) => { const st = P.stats[q.id]; return s + (st ? Math.min(st.box||0, 3) : 0); }, 0);
   return Math.round(pts / (qs.length*3) * 100);
 }
@@ -1940,8 +3595,8 @@ function rank(q){ // plus petit = plus prioritaire
   if (st.due <= t) return Math.random();
   return 2 + (st.box||0) + Math.random();
 }
-function pick(subject, n){
-  if (subject) return BANK.filter(q => q.matiere === subject).sort((a,b) => rank(a)-rank(b)).slice(0,n);
+function pick(subject, n, domain){
+  if (subject) return BANK.filter(q => q.matiere === subject && (!domain || q.domaine === domain)).sort((a,b) => rank(a)-rank(b)).slice(0,n);
   const out = SUBJECTS.map(s => BANK.filter(q => q.matiere === s.id).sort((a,b) => rank(a)-rank(b))[0]);
   const rest = BANK.filter(q => !out.includes(q)).sort((a,b) => rank(a)-rank(b));
   return shuffle(out.concat(rest.slice(0, n-out.length)));
@@ -1956,6 +3611,7 @@ function render(){
   if (S.screen === "home") renderHome();
   else if (S.screen === "quiz") renderQuiz();
   else if (S.screen === "badges") renderBadges();
+  else if (S.screen === "subject") renderSubject();
   else if (S.screen === "parent") renderParent();
   else renderEnd();
 }
@@ -2014,7 +3670,7 @@ function renderParent(){
     return {s, ok, n, pct: n ? Math.round(ok/n*100) : null};
   });
   const themes = {};
-  BANK.forEach(q => { const st = P.stats[q.id]; if (!st) return; const k = q.matiere + " · " + q.theme; const o = themes[k] = themes[k] || {ok:0, n:0}; o.ok += st.ok||0; o.n += (st.ok||0) + (st.ko||0); });
+  BANK.forEach(q => { const st = P.stats[q.id]; if (!st) return; const k = q.matiere + " · " + (q.domaine || q.theme); const o = themes[k] = themes[k] || {ok:0, n:0}; o.ok += st.ok||0; o.n += (st.ok||0) + (st.ko||0); });
   const weak = Object.entries(themes).filter(([,o]) => o.n >= 2 && o.ok/o.n < 0.6).sort((a,b) => a[1].ok/a[1].n - b[1].ok/b[1].n).slice(0,5);
   const seen = Object.keys(P.stats).length;
   const dayName = d => { const [y,m,dd] = d.split("-").map(Number); return new Date(y, m-1, dd).toLocaleDateString("fr-FR", {weekday:"short"}).slice(0,3); };
@@ -2089,11 +3745,37 @@ function renderHome(){
   document.getElementById("goParent").onclick = () => { S = {screen:"parent"}; render(); window.scrollTo(0,0); };
   document.getElementById("goMix").onclick = () => start(null, !mix);
   const d = document.getElementById("goDue"); if (d) d.onclick = startDue;
-  app.querySelectorAll("[data-subj]").forEach(b => b.onclick = () => start(b.dataset.subj, false));
+  app.querySelectorAll("[data-subj]").forEach(b => b.onclick = () => { S = {screen:"subject", subject:b.dataset.subj}; render(); window.scrollTo(0,0); });
 }
 
-function start(subject, isDaily){
-  S = {screen:"quiz", subject, daily:isDaily, qs:pick(subject, 5), i:0, picked:null, ok:0, xp:0, t0:Date.now()};
+function renderSubject(){
+  const subj = SUBJECTS.find(s => s.id === S.subject), doms = DOMAINS[S.subject] || [];
+  app.innerHTML = backBar(esc(S.subject)) + `
+    <div class="card" style="flex-direction:row;align-items:center;gap:14px">
+      <div style="flex:1;display:flex;flex-direction:column;gap:6px"><span class="display" style="font-size:17px">Toute la matière</span>
+        <span class="bar thin"><i style="width:${mastery(S.subject)}%;background:${subj.color}"></i></span>
+        <span class="muted small">${mastery(S.subject)} % maîtrisé · ${BANK.filter(q => q.matiere === S.subject).length} questions</span></div>
+      <button class="btn main" data-dom="" style="width:auto;padding:0 18px">Jouer</button>
+    </div>
+    <h2 style="font-size:18px">Choisis un domaine</h2>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      ${doms.map(d => { const m = mastery(S.subject, d), n = BANK.filter(q => q.matiere === S.subject && q.domaine === d).length; return `
+        <button class="subj" data-dom="${esc(d)}" style="flex-direction:row;align-items:center;gap:12px">
+          <span style="width:10px;align-self:stretch;border-radius:999px;background:${subj.color};opacity:${0.35 + m/154}"></span>
+          <span style="flex:1;display:flex;flex-direction:column;gap:6px;min-width:0">
+            <span class="name">${esc(d)}</span>
+            <span class="bar thin"><i style="width:${m}%;background:${subj.color}"></i></span>
+            <span class="muted small">${m} % maîtrisé · ${n} questions</span>
+          </span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+        </button>`; }).join("")}
+    </div>`;
+  document.getElementById("back").onclick = () => { S = {screen:"home"}; render(); };
+  app.querySelectorAll("[data-dom]").forEach(b => b.onclick = () => start(S.subject, false, b.dataset.dom || null));
+}
+
+function start(subject, isDaily, domain){
+  S = {screen:"quiz", subject, domain: domain || null, daily:isDaily, qs:pick(subject, 5, domain), i:0, picked:null, ok:0, xp:0, t0:Date.now()};
   render(); window.scrollTo(0,0);
 }
 function startDue(){
@@ -2112,7 +3794,7 @@ function renderQuiz(){
       <div class="bar" style="flex:1"><i style="width:${pct}%"></i></div>
       <span class="display" style="color:var(--accent);font-size:15px">${S.xp} XP</span>
     </div>
-    <div class="row"><span class="pill" style="background:${COLOR[q.matiere]}">${esc(q.matiere)}</span><span class="muted small">${esc(q.theme)} · ${S.i+1} sur ${S.qs.length}</span></div>
+    <div class="row"><span class="pill" style="background:${COLOR[q.matiere]}">${esc(q.matiere)}</span><span class="muted small">${esc(q.domaine || q.theme)} · ${S.i+1} sur ${S.qs.length}</span></div>
     <div class="qtext">${esc(q.question)}</div>
     <div class="choices">
       ${q.choix.map((c,k) => {
@@ -2187,13 +3869,13 @@ function renderEnd(){
       <div style="display:flex;flex-direction:column;gap:2px"><span class="small muted" style="font-weight:700;letter-spacing:.08em;text-transform:uppercase">Nouveau badge</span>
       <span class="display" style="font-size:19px">${esc(b.name)}</span><span class="small" style="color:var(--soft)">${esc(b.desc)}</span></div></div>`).join("")}
     ${missed.length ? `<div class="card"><span class="display" style="font-size:16px">À revoir demain</span>
-      ${missed.map(q => `<div class="row"><span style="width:10px;height:10px;border-radius:50%;background:${COLOR[q.matiere]};flex-shrink:0"></span><span class="small">${esc(q.matiere)} · ${esc(q.theme)}</span></div>`).join("")}
+      ${missed.map(q => `<div class="row"><span style="width:10px;height:10px;border-radius:50%;background:${COLOR[q.matiere]};flex-shrink:0"></span><span class="small">${esc(q.matiere)} · ${esc(q.domaine || q.theme)}</span></div>`).join("")}
       <span class="muted small">Les questions ratées reviennent jusqu'à ce que tu les maîtrises.</span></div>` : ""}
     <div class="row">
       <button class="btn ghost" id="again" style="flex:1">Encore 5</button>
       <button class="btn main" id="home" style="flex:1.4">Retour à l'accueil</button>
     </div>`;
-  document.getElementById("again").onclick = () => start(S.subject, false);
+  document.getElementById("again").onclick = () => start(S.subject, false, S.domain);
   document.getElementById("home").onclick = () => { S = {screen:"home"}; render(); };
 }
 

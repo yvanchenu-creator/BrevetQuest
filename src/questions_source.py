@@ -132,6 +132,9 @@ Q = [
 ("Sciences","SVT","Quel organe filtre le sang et produit l'urine ?",["Le foie","Les reins","Le cœur","L'estomac"],1,"Les reins filtrent le sang pour en retirer les déchets, éliminés dans l'urine.",NF),
 ]
 
+
+exec(open(__file__.replace('questions_source.py','questions_v2.py'), encoding='utf-8').read())
+
 out = []
 counts = {}
 import random
@@ -140,8 +143,9 @@ for n,(m,t,q,c,a,e,s) in enumerate(Q,1):
     assert len(c)==4 and 0<=a<4, q
     good=c[a]; c=c[:]; rng.shuffle(c); a=c.index(good)
     counts[m]=counts.get(m,0)+1
-    out.append({"id":f"q{n:03d}","matiere":m,"theme":t,"question":q,"choix":c,"reponse":a,"explication":e,"source":s})
+    out.append({"id":f"q{n:03d}","matiere":m,"domaine":domain_of(m,t,q),"theme":t,"question":q,"choix":c,"reponse":a,"explication":e,"source":s})
 print(counts, file=sys.stderr)
 from collections import Counter
 print(Counter(x["reponse"] for x in out), file=sys.stderr)
-json.dump({"version":1,"questions":out}, open(sys.argv[1],"w"), ensure_ascii=False, indent=1)
+check_domains(out)
+json.dump({"version":2,"domaines":DOMAINS,"questions":out}, open(sys.argv[1],"w"), ensure_ascii=False, indent=1)

@@ -68,7 +68,9 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-off
 <div class="app" id="app"></div>
 
 <script>
-const BANK = __DATA__.questions;
+const DATA = __DATA__;
+const BANK = DATA.questions;
+const DOMAINS = DATA.domaines || {};
 const SUBJECTS = [
   {id:"Maths", color:"var(--maths)", icon:'<path d="M5 12h14M12 5v14"/>'},
   {id:"Français", color:"var(--fr)", icon:'<path d="M4 20h4L19 9l-4-4L4 16v4zM13 7l4 4"/>'},
@@ -110,8 +112,8 @@ function liveStreak(){
   const t = today();
   return (P.lastDay === t || P.lastDay === addDays(t,-1)) ? P.streak : 0;
 }
-function mastery(subject){
-  const qs = BANK.filter(q => q.matiere === subject);
+function mastery(subject, domain){
+  const qs = BANK.filter(q => q.matiere === subject && (!domain || q.domaine === domain));
   const pts = qs.reduce((s,q) => { const st = P.stats[q.id]; return s + (st ? Math.min(st.box||0, 3) : 0); }, 0);
   return Math.round(pts / (qs.length*3) * 100);
 }
@@ -125,8 +127,8 @@ function rank(q){ // plus petit = plus prioritaire
   if (st.due <= t) return Math.random();
   return 2 + (st.box||0) + Math.random();
 }
-function pick(subject, n){
-  if (subject) return BANK.filter(q => q.matiere === subject).sort((a,b) => rank(a)-rank(b)).slice(0,n);
+function pick(subject, n, domain){
+  if (subject) return BANK.filter(q => q.matiere === subject && (!domain || q.domaine === domain)).sort((a,b) => rank(a)-rank(b)).slice(0,n);
   const out = SUBJECTS.map(s => BANK.filter(q => q.matiere === s.id).sort((a,b) => rank(a)-rank(b))[0]);
   const rest = BANK.filter(q => !out.includes(q)).sort((a,b) => rank(a)-rank(b));
   return shuffle(out.concat(rest.slice(0, n-out.length)));
@@ -141,6 +143,7 @@ function render(){
   if (S.screen === "home") renderHome();
   else if (S.screen === "quiz") renderQuiz();
   else if (S.screen === "badges") renderBadges();
+  else if (S.screen === "subject") renderSubject();
   else if (S.screen === "parent") renderParent();
   else renderEnd();
 }
@@ -199,7 +202,7 @@ function renderParent(){
     return {s, ok, n, pct: n ? Math.round(ok/n*100) : null};
   });
   const themes = {};
-  BANK.forEach(q => { const st = P.stats[q.id]; if (!st) return; const k = q.matiere + " · " + q.theme; const o = themes[k] = themes[k] || {ok:0, n:0}; o.ok += st.ok||0; o.n += (st.ok||0) + (st.ko||0); });
+  BANK.forEach(q => { const st = P.stats[q.id]; if (!st) return; const k = q.matiere + " · " + (q.domaine || q.theme); const o = themes[k] = themes[k] || {ok:0, n:0}; o.ok += st.ok||0; o.n += (st.ok||0) + (st.ko||0); });
   const weak = Object.entries(themes).filter(([,o]) => o.n >= 2 && o.ok/o.n < 0.6).sort((a,b) => a[1].ok/a[1].n - b[1].ok/b[1].n).slice(0,5);
   const seen = Object.keys(P.stats).length;
   const dayName = d => { const [y,m,dd] = d.split("-").map(Number); return new Date(y, m-1, dd).toLocaleDateString("fr-FR", {weekday:"short"}).slice(0,3); };
@@ -274,11 +277,37 @@ function renderHome(){
   document.getElementById("goParent").onclick = () => { S = {screen:"parent"}; render(); window.scrollTo(0,0); };
   document.getElementById("goMix").onclick = () => start(null, !mix);
   const d = document.getElementById("goDue"); if (d) d.onclick = startDue;
-  app.querySelectorAll("[data-subj]").forEach(b => b.onclick = () => start(b.dataset.subj, false));
+  app.querySelectorAll("[data-subj]").forEach(b => b.onclick = () => { S = {screen:"subject", subject:b.dataset.subj}; render(); window.scrollTo(0,0); });
 }
 
-function start(subject, isDaily){
-  S = {screen:"quiz", subject, daily:isDaily, qs:pick(subject, 5), i:0, picked:null, ok:0, xp:0, t0:Date.now()};
+function renderSubject(){
+  const subj = SUBJECTS.find(s => s.id === S.subject), doms = DOMAINS[S.subject] || [];
+  app.innerHTML = backBar(esc(S.subject)) + `
+    <div class="card" style="flex-direction:row;align-items:center;gap:14px">
+      <div style="flex:1;display:flex;flex-direction:column;gap:6px"><span class="display" style="font-size:17px">Toute la matière</span>
+        <span class="bar thin"><i style="width:${mastery(S.subject)}%;background:${subj.color}"></i></span>
+        <span class="muted small">${mastery(S.subject)} % maîtrisé · ${BANK.filter(q => q.matiere === S.subject).length} questions</span></div>
+      <button class="btn main" data-dom="" style="width:auto;padding:0 18px">Jouer</button>
+    </div>
+    <h2 style="font-size:18px">Choisis un domaine</h2>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      ${doms.map(d => { const m = mastery(S.subject, d), n = BANK.filter(q => q.matiere === S.subject && q.domaine === d).length; return `
+        <button class="subj" data-dom="${esc(d)}" style="flex-direction:row;align-items:center;gap:12px">
+          <span style="width:10px;align-self:stretch;border-radius:999px;background:${subj.color};opacity:${0.35 + m/154}"></span>
+          <span style="flex:1;display:flex;flex-direction:column;gap:6px;min-width:0">
+            <span class="name">${esc(d)}</span>
+            <span class="bar thin"><i style="width:${m}%;background:${subj.color}"></i></span>
+            <span class="muted small">${m} % maîtrisé · ${n} questions</span>
+          </span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+        </button>`; }).join("")}
+    </div>`;
+  document.getElementById("back").onclick = () => { S = {screen:"home"}; render(); };
+  app.querySelectorAll("[data-dom]").forEach(b => b.onclick = () => start(S.subject, false, b.dataset.dom || null));
+}
+
+function start(subject, isDaily, domain){
+  S = {screen:"quiz", subject, domain: domain || null, daily:isDaily, qs:pick(subject, 5, domain), i:0, picked:null, ok:0, xp:0, t0:Date.now()};
   render(); window.scrollTo(0,0);
 }
 function startDue(){
@@ -297,7 +326,7 @@ function renderQuiz(){
       <div class="bar" style="flex:1"><i style="width:${pct}%"></i></div>
       <span class="display" style="color:var(--accent);font-size:15px">${S.xp} XP</span>
     </div>
-    <div class="row"><span class="pill" style="background:${COLOR[q.matiere]}">${esc(q.matiere)}</span><span class="muted small">${esc(q.theme)} · ${S.i+1} sur ${S.qs.length}</span></div>
+    <div class="row"><span class="pill" style="background:${COLOR[q.matiere]}">${esc(q.matiere)}</span><span class="muted small">${esc(q.domaine || q.theme)} · ${S.i+1} sur ${S.qs.length}</span></div>
     <div class="qtext">${esc(q.question)}</div>
     <div class="choices">
       ${q.choix.map((c,k) => {
@@ -372,13 +401,13 @@ function renderEnd(){
       <div style="display:flex;flex-direction:column;gap:2px"><span class="small muted" style="font-weight:700;letter-spacing:.08em;text-transform:uppercase">Nouveau badge</span>
       <span class="display" style="font-size:19px">${esc(b.name)}</span><span class="small" style="color:var(--soft)">${esc(b.desc)}</span></div></div>`).join("")}
     ${missed.length ? `<div class="card"><span class="display" style="font-size:16px">À revoir demain</span>
-      ${missed.map(q => `<div class="row"><span style="width:10px;height:10px;border-radius:50%;background:${COLOR[q.matiere]};flex-shrink:0"></span><span class="small">${esc(q.matiere)} · ${esc(q.theme)}</span></div>`).join("")}
+      ${missed.map(q => `<div class="row"><span style="width:10px;height:10px;border-radius:50%;background:${COLOR[q.matiere]};flex-shrink:0"></span><span class="small">${esc(q.matiere)} · ${esc(q.domaine || q.theme)}</span></div>`).join("")}
       <span class="muted small">Les questions ratées reviennent jusqu'à ce que tu les maîtrises.</span></div>` : ""}
     <div class="row">
       <button class="btn ghost" id="again" style="flex:1">Encore 5</button>
       <button class="btn main" id="home" style="flex:1.4">Retour à l'accueil</button>
     </div>`;
-  document.getElementById("again").onclick = () => start(S.subject, false);
+  document.getElementById("again").onclick = () => start(S.subject, false, S.domain);
   document.getElementById("home").onclick = () => { S = {screen:"home"}; render(); };
 }
 
