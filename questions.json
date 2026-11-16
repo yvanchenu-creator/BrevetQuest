@@ -85,6 +85,23 @@
       ]
      ]
     }
+   },
+   "figure": {
+    "type": "urne",
+    "boules": [
+     [
+      "#3DDC97",
+      3
+     ],
+     [
+      "#FF7A7A",
+      5
+     ],
+     [
+      "#5B8CFF",
+      2
+     ]
+    ]
    }
   },
   {
@@ -312,6 +329,19 @@
       "BC": "?"
      }
     }
+   },
+   "figure": {
+    "type": "tri_rect",
+    "pts": [
+     "A",
+     "B",
+     "C"
+    ],
+    "cotes": {
+     "AB": "6 cm",
+     "AC": "8 cm",
+     "BC": "?"
+    }
    }
   },
   {
@@ -349,6 +379,21 @@
       "BC": "13 cm"
      }
     }
+   },
+   "figure": {
+    "type": "tri_rect",
+    "pts": [
+     "A",
+     "B",
+     "C"
+    ],
+    "sans_angle": true,
+    "cotes": {
+     "AB": "5 cm",
+     "AC": "12 cm",
+     "BC": "13 cm"
+    },
+    "legende": "Rectangle en A ?"
    }
   },
   {
@@ -382,6 +427,15 @@
       "AC": "10",
       "AN": "?"
      }
+    }
+   },
+   "figure": {
+    "type": "thales",
+    "cotes": {
+     "AM": "3",
+     "AB": "5",
+     "AC": "10",
+     "AN": "?"
     }
    }
   },
@@ -421,6 +475,20 @@
      },
      "angle": "B"
     }
+   },
+   "figure": {
+    "type": "tri_rect",
+    "pts": [
+     "A",
+     "B",
+     "C"
+    ],
+    "cotes": {
+     "AB": "adjacent",
+     "BC": "hypoténuse",
+     "AC": "opposé"
+    },
+    "angle": "B"
    }
   },
   {
@@ -774,6 +842,14 @@
       "h": "h = 10 cm"
      }
     }
+   },
+   "figure": {
+    "type": "solide",
+    "k": "cylindre",
+    "labels": {
+     "r": "r = 3 cm",
+     "h": "h = 10 cm"
+    }
    }
   },
   {
@@ -806,6 +882,15 @@
       "l": "10 cm",
       "h": "5 cm"
      }
+    }
+   },
+   "figure": {
+    "type": "solide",
+    "k": "pave",
+    "labels": {
+     "L": "20 cm",
+     "l": "10 cm",
+     "h": "5 cm"
     }
    }
   },
@@ -982,6 +1067,11 @@
      "n": 6,
      "angle": "60°"
     }
+   },
+   "figure": {
+    "type": "polygone",
+    "n": 6,
+    "angle": "?"
    }
   },
   {
@@ -3389,6 +3479,11 @@
      "type": "circuit",
      "k": "serie"
     }
+   },
+   "figure": {
+    "type": "circuit",
+    "k": "serie",
+    "legende": "Circuit en série"
    }
   },
   {
@@ -4651,6 +4746,11 @@
      "r": "5 cm",
      "disque": true
     }
+   },
+   "figure": {
+    "type": "cercle",
+    "r": "5 cm",
+    "disque": true
    }
   },
   {
@@ -4678,6 +4778,10 @@
      "type": "cercle",
      "d": "10 cm"
     }
+   },
+   "figure": {
+    "type": "cercle",
+    "d": "10 cm"
    }
   },
   {
@@ -4707,6 +4811,11 @@
      "b": "8 cm",
      "h": "5 cm"
     }
+   },
+   "figure": {
+    "type": "tri_hauteur",
+    "b": "8 cm",
+    "h": "5 cm"
    }
   },
   {
@@ -4736,6 +4845,11 @@
      "w": "7 cm",
      "h": "3 cm"
     }
+   },
+   "figure": {
+    "type": "rect",
+    "w": "7 cm",
+    "h": "3 cm"
    }
   },
   {
@@ -4797,6 +4911,15 @@
       "h": "4 cm"
      }
     }
+   },
+   "figure": {
+    "type": "solide",
+    "k": "cube",
+    "labels": {
+     "L": "4 cm",
+     "l": "4 cm",
+     "h": "4 cm"
+    }
    }
   },
   {
@@ -4828,6 +4951,14 @@
       "h": "10 cm",
       "base": "aire de base : 30 cm²"
      }
+    }
+   },
+   "figure": {
+    "type": "solide",
+    "k": "pyramide",
+    "labels": {
+     "h": "10 cm",
+     "base": "aire de base : 30 cm²"
     }
    }
   },
@@ -4891,6 +5022,13 @@
      "labels": {
       "r": "r = 3 cm"
      }
+    }
+   },
+   "figure": {
+    "type": "solide",
+    "k": "boule",
+    "labels": {
+     "r": "r = 3 cm"
     }
    }
   },
@@ -5046,6 +5184,15 @@
      },
      "angle": "B"
     }
+   },
+   "figure": {
+    "type": "tri_rect",
+    "pts": [
+     "A",
+     "B",
+     "C"
+    ],
+    "angle": "B"
    }
   },
   {
@@ -6162,6 +6309,11 @@
      "type": "circuit",
      "k": "derivation"
     }
+   },
+   "figure": {
+    "type": "circuit",
+    "k": "derivation",
+    "legende": "Circuit en dérivation"
    }
   },
   {

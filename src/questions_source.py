@@ -154,5 +154,9 @@ for _f in sorted(_g.glob(__file__.replace('questions_source.py','details_*.py'))
     exec(open(_f, encoding='utf-8').read())
 for x in out:
     if x['id'] in DETAILS: x['detail'] = DETAILS[x['id']]
+exec(open(__file__.replace('questions_source.py','figures.py'), encoding='utf-8').read())
+for x in out:
+    if x['id'] in FIGURES: x['figure'] = FIGURES[x['id']]
+print(f"figures dans l'énoncé : {sum(1 for x in out if 'figure' in x)}", file=sys.stderr)
 print(f"corrections détaillées : {sum(1 for x in out if 'detail' in x)} / {len(out)}", file=sys.stderr)
 json.dump({"version":2,"domaines":DOMAINS,"questions":out}, open(sys.argv[1],"w"), ensure_ascii=False, indent=1)

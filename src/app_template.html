@@ -63,6 +63,8 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-off
 .detail li::marker{color:var(--accent);font-weight:700}
 .retenir{background:var(--panel2);border:1px solid var(--accent);border-radius:14px;padding:12px 14px;font-size:14px;color:var(--soft);display:flex;flex-direction:column;gap:4px}
 .retenir b{color:var(--accent);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.qfig{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:8px;display:flex;justify-content:center}
+.qfig .schema{max-height:200px}
 .schema{width:100%;max-width:380px;height:auto;align-self:center;display:block}
 .stable{border-collapse:collapse;max-width:100%;align-self:center;font-variant-numeric:tabular-nums}
 .stable td,.stable th{border:1px solid var(--line);padding:8px 12px;text-align:center;font-size:15px}
@@ -341,6 +343,7 @@ function renderQuiz(){
     </div>
     <div class="row"><span class="pill" style="background:${COLOR[q.matiere]}">${esc(q.matiere)}</span><span class="muted small">${esc(q.domaine || q.theme)} · ${S.i+1} sur ${S.qs.length}</span></div>
     <div class="qtext">${esc(q.question)}</div>
+    ${q.figure ? `<div class="qfig">${schema(q.figure)}</div>` : ""}
     <div class="choices">
       ${q.choix.map((c,k) => {
         let cls = "";
@@ -391,9 +394,9 @@ const SCHEMAS = {
     if (s.angle === b) arc = `<path d="M100,65 A30,30 0 0 0 119,58" fill="none" stroke="${K.acc}" stroke-width="2.5"/>`;
     if (s.angle === c) arc = `<path d="M235,165 A35,35 0 0 1 241,143" fill="none" stroke="${K.acc}" stroke-width="2.5"/>`;
     return svg(`<polygon points="100,165 100,35 270,165" fill="${K.fill}" stroke="${K.line}" stroke-width="2.5" stroke-linejoin="round"/>
-      <path d="M100,150 h15 v15" fill="none" stroke="${K.line}" stroke-width="2"/>${arc}
+      ${s.sans_angle ? "" : `<path d="M100,150 h15 v15" fill="none" stroke="${K.line}" stroke-width="2"/>`}${arc}
       ${tx(88,175,a)}${tx(88,28,b)}${tx(282,175,c)}
-      ${ab ? tx(88,100,ab,{c:lc(ab),a:"end"}) : ""}${ac ? tx(185,186,ac,{c:lc(ac)}) : ""}${bc ? tx(192,88,bc,{c:lc(bc),a:"start"}) : ""}`, 200);
+      ${ab ? tx(88,100,ab,{c:lc(ab),a:"end"}) : ""}${ac ? tx(185,186,ac,{c:lc(ac)}) : ""}${bc ? tx(192,88,bc,{c:lc(bc),a:"start"}) : ""}${s.legende ? tx(150,200,s.legende,{c:K.mut,s:12}) : ""}`, s.legende ? 212 : 200);
   },
   thales(s){
     const k = s.cotes || {};
